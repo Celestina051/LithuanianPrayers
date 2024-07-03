@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lithuanian Prayers to the Mother of God</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lithuanian Prayers to the Mother of God</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#prayers">Prayers</a></li>
+                <li><a href="#litanys">Litanies</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome</h2>
+        <p>Welcome to the collection of Lithuanian prayers and litanies to the Mother of God.</p>
+    </section>
+
+    <section id="prayers">
+        <h2>Prayers</h2>
+        <article>
+            <h3>Prayer 1</h3>
+            <p>[Translated prayer text here]</p>
+        </article>
+        <article>
+            <h3>Prayer 2</h3>
+            <p>[Translated prayer text here]</p>
+        </article>
+        <!-- Add more prayers as needed -->
+    </section>
+
+    <section id="litanys">
+        <h2>Litanies</h2>
+        <article>
+            <h3>Litany 1</h3>
+            <p>[Translated litany text here]</p>
+        </article>
+        <article>
+            <h3>Litany 2</h3>
+            <p>[Translated litany text here]</p>
+        </article>
+        <!-- Add more litanies as needed -->
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>This website is dedicated to providing Lithuanian translations of prayers and litanies to the Mother of God.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you have any questions or suggestions, please <a href="mailto:your-email@example.com">contact us</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Lithuanian Prayers to the Mother of God</p>
+    </footer>
+</body>
+</html>
