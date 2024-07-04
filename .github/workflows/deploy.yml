@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3  # Update to v3
+        uses: actions/checkout@v3 # Ensure it's v3 for Node 20
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
