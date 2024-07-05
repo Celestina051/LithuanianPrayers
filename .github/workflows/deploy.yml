@@ -26,6 +26,11 @@ jobs:
       - name: Build Jekyll site
         run: bundle _2.4.22_ exec jekyll build
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
