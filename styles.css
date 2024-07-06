@@ -9,7 +9,8 @@ body {
 header {
     background-color: #4CAF50;
     color: white;
-    padding: 0.5em 0; /* Reduced padding for thinner lines */
+    height: 40px; /* Adjusted height for thinner lines */
+    line-height: 40px; /* Vertically center the text */
     text-align: center;
 }
 
@@ -27,11 +28,11 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px; /* Added padding for better clickability */
+    padding: 10px 15px;
 }
 
 nav ul li a:hover {
-    background-color: #3e8e41; /* Adds a hover effect */
+    background-color: #3e8e41;
 }
 
 section {
@@ -45,8 +46,9 @@ h1, h2, h3 {
 footer {
     background-color: #4CAF50;
     color: white;
+    height: 30px; /* Adjusted height for thinner lines */
+    line-height: 30px; /* Vertically center the text */
     text-align: center;
-    padding: 5px 0; /* Reduced padding for thinner lines */
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -55,7 +57,7 @@ footer {
 /* Responsive Design */
 @media (max-width: 600px) {
     nav ul li {
-        display: block; /* Stack the links vertically */
-        text-align: center; /* Center align links */
+        display: block;
+        text-align: center;
     }
 }
