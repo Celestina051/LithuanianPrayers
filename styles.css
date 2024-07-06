@@ -7,10 +7,9 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #007BFF;
     color: white;
-    height: 40px; /* Adjusted height for thinner lines */
-    line-height: 40px; /* Vertically center the text */
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -18,21 +17,22 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+    margin: 0 10px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 10px 15px; /* Added padding for better clickability */
 }
 
 nav ul li a:hover {
-    background-color: #3e8e41;
+    background-color: #0056b3; /* Adds a hover effect */
 }
 
 section {
@@ -40,24 +40,26 @@ section {
 }
 
 h1, h2, h3 {
-    color: #4CAF50;
+    color: #007BFF;
 }
 
 footer {
-    background-color: #4CAF50;
+    background-color: #007BFF;
     color: white;
-    height: 30px; /* Adjusted height for thinner lines */
-    line-height: 30px; /* Vertically center the text */
     text-align: center;
+    padding: 10px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
+    box-sizing: border-box;
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Stack the links vertically */
+    }
     nav ul li {
-        display: block;
-        text-align: center;
+        margin: 5px 0;
     }
 }
