@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #0000FF;
     color: white;
     padding: 1em 0;
     text-align: center;
@@ -17,7 +17,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    background-color: #4CAF50;
+    background-color: #0000FF;
 }
 
 nav ul li {
@@ -32,7 +32,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #3e8e41;
+    background-color: #000080;
 }
 
 section {
@@ -40,11 +40,11 @@ section {
 }
 
 h1, h2, h3 {
-    color: #4CAF50;
+    color: #0000FF;
 }
 
 footer {
-    background-color: #4CAF50;
+    background-color: #0000FF;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -76,7 +76,7 @@ footer {
 .litanies-title {
     text-align: center;
     margin: 20px 0;
-    color: #4CAF50;
+    color: #0000FF;
 }
 
 /* Responsive Design */
