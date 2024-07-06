@@ -1,4 +1,4 @@
-body {
+bbody {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -27,11 +27,11 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 10px 15px; /* Added padding for better clickability */
 }
 
 nav ul li a:hover {
-    background-color: #3e8e41;
+    background-color: #3e8e41; /* Adds a hover effect */
 }
 
 section {
@@ -52,10 +52,29 @@ footer {
     bottom: 0;
 }
 
+.litanies {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.litanies li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.litanies li::before {
+    content: ".";
+    position: absolute;
+    left: 0;
+    color: #000;
+    font-weight: bold;
+}
+
 /* Responsive Design */
 @media (max-width: 600px) {
     nav ul li {
-        display: block;
-        text-align: center;
+        display: block; /* Stack the links vertically */
+        text-align: center; /* Center align links */
     }
 }
