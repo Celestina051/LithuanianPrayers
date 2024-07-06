@@ -27,11 +27,11 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px; /* Added padding for better clickability */
+    padding: 10px 15px;
 }
 
 nav ul li a:hover {
-    background-color: #3e8e41; /* Adds a hover effect */
+    background-color: #3e8e41;
 }
 
 section {
@@ -55,7 +55,7 @@ footer {
 /* Responsive Design */
 @media (max-width: 600px) {
     nav ul li {
-        display: block; /* Stack the links vertically */
-        text-align: center; /* Center align links */
+        display: block;
+        text-align: center;
     }
 }
