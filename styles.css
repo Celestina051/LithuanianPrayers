@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #0000FF;
+    background-color: #0000FF; /* Blue color */
     color: white;
     padding: 1em 0;
     text-align: center;
@@ -17,7 +17,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    background-color: #0000FF;
+    text-align: center;
 }
 
 nav ul li {
@@ -32,7 +32,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #000080;
+    background-color: #3e8e41;
 }
 
 section {
@@ -40,11 +40,12 @@ section {
 }
 
 h1, h2, h3 {
-    color: #0000FF;
+    color: #0000FF; /* Blue color */
+    text-align: center;
 }
 
 footer {
-    background-color: #0000FF;
+    background-color: #0000FF; /* Blue color */
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -53,30 +54,29 @@ footer {
     bottom: 0;
 }
 
-.litanies-list {
+.litany-list {
     list-style-type: none;
     padding: 0;
-    margin: 20px 0;
-    text-align: left;
-}
-
-.litanies-list li {
-    margin-bottom: 10px;
-}
-
-.litanies-list li a {
-    text-decoration: none;
-    color: #007BFF;
-}
-
-.litanies-list li a:hover {
-    text-decoration: underline;
-}
-
-.litanies-title {
     text-align: center;
-    margin: 20px 0;
-    color: #0000FF;
+}
+
+.litany-list li {
+    margin: 5px 0;
+}
+
+.litany-list li a {
+    color: #0000FF; /* Blue color */
+    text-decoration: none;
+}
+
+.litany-list li a::before {
+    content: '.';
+    margin-right: 5px;
+    color: #0000FF; /* Blue color */
+}
+
+.litany-list li a:hover {
+    text-decoration: underline;
 }
 
 /* Responsive Design */
