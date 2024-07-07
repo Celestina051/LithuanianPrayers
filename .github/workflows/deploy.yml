@@ -1,4 +1,4 @@
-name: Build and Deploy Jekyll site to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -8,31 +8,39 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '2.7'
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
 
-      - name: Install dependencies
-        run: |
-          gem install bundler -v 2.4.22
-          bundle _2.4.22_ install
+    - name: Install dependencies
+      run: npm install
 
-      - name: Build Jekyll site
-        run: bundle _2.4.22_ exec jekyll build
+    - name: Build project
+      run: npm run build
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: github-pages-${{ github.run_id }}
+        path: ./build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          personal_token: ${{ secrets.GH_PAT }}
-          publish_dir: ./_site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Download artifact
+      uses: actions/download-artifact@v2
+      with:
+        name: github-pages-${{ github.run_id }}
+        path: ./build
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
