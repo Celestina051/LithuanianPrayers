@@ -1,18 +1,19 @@
-name: Deploy to GitHub Pages
+name: GitHub Pages Deployment
 
 on:
   push:
     branches:
-      - main
+      - main  # Adjust this if your main branch is named differently
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
+      - name: Setup Node.js environment
         uses: actions/setup-node@v3
         with:
           node-version: '20'
@@ -27,4 +28,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./build  # Adjust this to your build directory if different
