@@ -10,21 +10,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3  # Updated to v3
+        uses: actions/checkout@v3  # Updated to the latest version
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3  # Updated to v3
+        uses: actions/setup-node@v3  # Updated to the latest version
         with:
           node-version: '20'  # Use Node.js 20
 
       - name: Install dependencies
         run: npm install
 
+      - name: Verify Node.js version
+        run: node -v  # Verify the Node.js version being used
+
       - name: Build project
         run: npm run build
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3  # Updated to v3
+        uses: actions/upload-artifact@v3  # Updated to the latest version
         with:
           name: github-pages-${{ github.run_id }}
           path: ./build
@@ -34,13 +37,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v3  # Updated to v3
+        uses: actions/download-artifact@v3  # Updated to the latest version
         with:
           name: github-pages-${{ github.run_id }}
           path: ./build
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+        uses: peace
