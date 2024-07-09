@@ -4,43 +4,45 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
     background-color: #4CAF50;
     color: white;
+    padding: 1em 0;
     text-align: center;
-    padding: 20px 0;
 }
 
-header nav ul {
+nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    text-align: center;
 }
 
-header nav ul li {
+nav ul li {
     display: inline;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
-header nav ul li a {
+nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    padding: 10px 15px; /* Added padding for better clickability */
 }
 
-header nav ul li a:hover {
-    text-decoration: underline;
+nav ul li a:hover {
+    background-color: #3e8e41; /* Adds a hover effect */
 }
 
 section {
     padding: 20px;
-    text-align: center;
+    flex: 1;
 }
 
-h1, h2 {
+h1, h2, h3 {
     color: #4CAF50;
 }
 
@@ -49,15 +51,15 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
     width: 100%;
+    position: relative;
     bottom: 0;
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
-    header nav ul li {
-        display: block;
-        margin-bottom: 10px;
+    nav ul li {
+        display: block; /* Stack the links vertically */
+        text-align: center; /* Center align links */
     }
 }
