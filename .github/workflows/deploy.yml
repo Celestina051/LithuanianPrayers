@@ -6,41 +6,19 @@ on:
       - main
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3  # Updated to the latest version
+        uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3  # Updated to the latest version
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
         with:
-          node-version: '20'  # Use Node.js 20
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Verify Node.js version
-        run: node -v  # Verify the Node.js version being used
-
-      - name: Build project
-        run: npm run build
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@v3  # Updated to the latest version
-        with:
-          name: github-pages-${{ github.run_id }}
-          path: ./build
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v3  # Updated to the latest version
-        with:
-          name: github-pages-${{ github.run_id }}
-          path: ./build
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy to GitHub Pages
-        uses: peace
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .  # Assuming your site files are in the root directory
