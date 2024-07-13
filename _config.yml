@@ -1,38 +1,5 @@
-# Site settings
 title: Your Site Title
-description: "This is a sample description of your site."
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://yourusername.github.io" # the base hostname & protocol for your site
-
-# Build settings
-markdown: kramdown
-theme: minima
-
-# Plugins
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-seo-tag
-
-# Pagination settings
-paginate: 5 # number of posts per page
-paginate_path: "/page:num/"
-
-# Exclusions
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-
-# Include
-include:
-  - _pages
-
-# Markdown settings
-kramdown:
-  input: GFM
-  hard_wrap: false
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head
