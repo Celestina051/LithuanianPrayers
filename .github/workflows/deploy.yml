@@ -18,14 +18,17 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Install Bundler
-        run: gem install bundler
+      - name: Install Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0'
+          bundler-cache: true
 
       - name: Install Jekyll dependencies
         run: bundle install
+
+      - name: Install Node.js dependencies
+        run: npm install
 
       - name: Build project
         run: npm run build
