@@ -13,28 +13,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
-
-      - name: Install Ruby
+      - name: Setup Ruby environment
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.0'
-          bundler-cache: true
 
-      - name: Install Jekyll dependencies
+      - name: Install dependencies
         run: bundle install
 
-      - name: Install Node.js dependencies
-        run: npm install
-
       - name: Build project
-        run: npm run build
-
-      - name: List files in the repository (for debugging)
-        run: ls -la
+        run: bundle exec jekyll build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
