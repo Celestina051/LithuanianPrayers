@@ -24,12 +24,13 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: List files in the repository (for debugging)
+        run: ls -la
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          # Add the following lines to ensure clean deployment
-          # and remove existing contents in the gh-pages branch
           keep_files: false
           force_orphan: true
