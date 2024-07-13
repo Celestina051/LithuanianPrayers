@@ -6,7 +6,6 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "jekyll": "^4.2.0",
-    "bundler": "^2.1.0"
+    "jekyll": "^4.2.0"
   }
 }
