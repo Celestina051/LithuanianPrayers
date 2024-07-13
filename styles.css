@@ -7,30 +7,30 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #1E90FF; /* Blue color */
     color: white;
     padding: 1em 0;
     text-align: center;
-    border-bottom: 5px solid #0000FF; /* Blue bottom border */
+    font-size: 1.5em; /* Increased font size for better readability */
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    text-align: center;
-    border-top: 5px solid #0000FF; /* Blue top border */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center the navigation items */
+    background-color: #1E90FF; /* Blue color */
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+    margin: 0 10px; /* Margin between navigation items */
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px; /* Added padding for better clickability */
+    padding: 10px 15px;
 }
 
 nav ul li a:hover {
@@ -42,15 +42,14 @@ section {
 }
 
 h1, h2 {
-    color: #4CAF50;
+    color: #1E90FF; /* Blue color */
 }
 
 footer {
-    background-color: #4CAF50;
+    background-color: #1E90FF; /* Blue color */
     color: white;
     text-align: center;
     padding: 10px 0;
-    border-top: 5px solid #0000FF; /* Blue top border for footer */
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -58,10 +57,30 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Stack the links vertically on small screens */
+    }
+
     nav ul li {
-        display: block; /* Stack the links vertically */
-        text-align: center; /* Center align links */
+        margin-bottom: 10px; /* Margin between navigation items on small screens */
     }
 }
 
-  
+/* Prayer list styles */
+.prayers-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.prayers-list li {
+    margin: 10px 0;
+}
+
+.prayers-list li a {
+    text-decoration: none;
+    color: #1E90FF; /* Blue color */
+}
+
+.prayers-list li a:hover {
+    text-decoration: underline;
+}
