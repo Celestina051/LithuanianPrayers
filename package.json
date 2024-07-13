@@ -2,8 +2,10 @@
   "name": "your-project-name",
   "version": "1.0.0",
   "scripts": {
-    "build": "echo 'No build script defined. Add your build steps here.'"
+    "build": "jekyll build"
   },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "jekyll": "^4.2.0"
+  }
 }
