@@ -1,21 +1,3 @@
-# Logs
-logs/
-*.log
-
-# Dependency directories
 node_modules/
-bower_components/
-
-# Build directories
-/dist
-/build
-
-# dotenv environment variables file
+dist/
 .env
-
-# System files
-.DS_Store
-
-# Coverage directories
-coverage/
-.nyc_output/
