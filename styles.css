@@ -11,12 +11,15 @@ header {
     color: white;
     padding: 1em 0;
     text-align: center;
+    border-bottom: 5px solid #0000FF; /* Blue bottom border */
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    text-align: center;
+    border-top: 5px solid #0000FF; /* Blue top border */
 }
 
 nav ul li {
@@ -27,6 +30,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    padding: 10px 15px; /* Added padding for better clickability */
 }
 
 nav ul li a:hover {
@@ -46,7 +50,18 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+    border-top: 5px solid #0000FF; /* Blue top border for footer */
     position: fixed;
     width: 100%;
     bottom: 0;
 }
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Stack the links vertically */
+        text-align: center; /* Center align links */
+    }
+}
+
+  
