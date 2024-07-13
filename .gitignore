@@ -1,3 +1,22 @@
+# Jekyll build folder
+_site/
+
+# Common temporary files
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
 node_modules/
-dist/
+
+# Logs and database
+*.log
+*.sql
+*.sqlite
+
+# System files
+.DS_Store
+
+# Gem files
+Gemfile.lock
+
+# Environment variables
 .env
