@@ -1,5 +1,38 @@
+# Site settings
 title: Your Site Title
-description: >- # this means to ignore newlines until "baseurl:"
-  Your site description.
+description: "This is a sample description of your site."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://yourusername.github.io/your-repo-name" # the base hostname & protocol for your site
+url: "https://yourusername.github.io" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Pagination settings
+paginate: 5 # number of posts per page
+paginate_path: "/page:num/"
+
+# Exclusions
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Include
+include:
+  - _pages
+
+# Markdown settings
+kramdown:
+  input: GFM
+  hard_wrap: false
