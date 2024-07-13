@@ -1,24 +1,9 @@
 {
-  "name": "your-project-name",
+  "name": "lithuanian-prayers",
   "version": "1.0.0",
-  "description": "Lithuanian Prayers to the Mother of God",
-  "main": "index.js",
   "scripts": {
-    "build": "echo 'Building the project...' && exit 0",
-    "start": "echo 'Starting the project...' && exit 0",
-    "deploy": "echo 'Deploying the project...' && exit 0"
+    "build": "echo 'No build script specified'"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/username/repository.git"
-  },
-  "keywords": ["lithuanian", "prayers", "mother of god"],
-  "author": "Your Name",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/username/repository/issues"
-  },
-  "homepage": "https://github.com/username/repository#readme",
   "dependencies": {},
   "devDependencies": {}
 }
