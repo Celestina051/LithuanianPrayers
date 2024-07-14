@@ -35,7 +35,7 @@ nav ul li a:hover {
 
 section {
     padding: 20px;
-    padding-bottom: 50px; /* Added padding to prevent overlap with the footer */
+    margin-bottom: 60px; /* Added margin to ensure footer does not overlap */
 }
 
 h1, h2 {
@@ -47,7 +47,8 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    /* position: fixed; Removed this line */
+    position: relative; /* Change position to relative */
     width: 100%;
-    /* bottom: 0; Removed this line */
+    bottom: 0; /* Ensure it stays at the bottom */
+    margin-top: 20px; /* Optional: Add some margin to separate footer from content */
 }
