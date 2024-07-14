@@ -24,7 +24,14 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: List files in the project directory (for debugging)
+        run: ls -la
+
+      - name: List files in the dist directory (for debugging)
+        run: ls -la dist
+
       - name: Archive production artifacts
+        if: success()
         uses: actions/upload-artifact@v3
         with:
           name: github-pages
