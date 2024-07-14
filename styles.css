@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50; /* This will be overridden later */
+    background-color: #0000FF; /* Blue background */
     color: white;
     padding: 1em 0;
     text-align: center;
@@ -38,31 +38,22 @@ section {
 }
 
 h1, h2 {
-    color: #4CAF50; /* This will be overridden later */
+    color: #0000FF; /* Blue color for headers */
 }
 
 footer {
-    background-color: #4CAF50; /* This will be overridden later */
+    background-color: #0000FF; /* Blue background */
     color: white;
     text-align: center;
     padding: 10px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
-}
-
-/* Force blue color for all relevant elements */
-header, h1, h2, footer {
-    background-color: #0000FF !important; /* Blue background */
-    color: white !important;
-}
-
-nav ul li a {
-    color: white !important;
-}
-
-/* Additional styles for footer to avoid overlapping content */
-footer {
     height: 40px; /* Adjust this height as needed */
     line-height: 40px; /* Center text vertically */
+}
+
+/* Ensure footer does not overlap content */
+section {
+    margin-bottom: 50px; /* Adjust to ensure content is not hidden behind the footer */
 }
