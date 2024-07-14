@@ -2,7 +2,7 @@
   "name": "your-project-name",
   "version": "1.0.0",
   "scripts": {
-    "build": "echo 'No build script defined. Add your build steps here.'"
+    "build": "mkdir -p dist && cp -r * dist" // Example build command
   },
   "dependencies": {},
   "devDependencies": {}
