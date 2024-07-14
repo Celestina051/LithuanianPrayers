@@ -13,21 +13,38 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup Ruby environment
-        uses: ruby/setup-ruby@v1
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
         with:
-          ruby-version: '3.0'
+          node-version: '20'
 
       - name: Install dependencies
-        run: bundle install
+        run: npm install
 
       - name: Build project
-        run: bundle exec jekyll build
+        run: npm run build
+
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: github-pages
+          path: ./dist
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: github-pages
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.GH_PAGES_TOKEN }}
-          publish_dir: ./_site
-          keep_files: false
-          force_orphan: true
+          publish_dir: ./dist
