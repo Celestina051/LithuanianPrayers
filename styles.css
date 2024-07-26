@@ -77,10 +77,24 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
+    padding: 20px 0;
+    position: relative;
     width: 100%;
+}
+
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social-media a:hover {
+    color: #007BFF;
 }
 
 /* Responsive Design */
