@@ -64,40 +64,40 @@ main {
     padding: 20px;
 }
 
-.prayer-content {
-    max-width: 800px;
-    margin: 0 auto;
+section {
+    margin-bottom: 50px; /* Ensure footer does not overlap content */
     text-align: center;
-    background-color: #ffffff; /* White background */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.prayer-content h2 {
+h1, h2 {
     color: #0000FF; /* Blue color for headers */
-    font-family: 'Georgia', serif;
-    margin-bottom: 20px;
 }
 
-.prayer-text {
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin-bottom: 20px;
+ul.maldų-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.prayer-navigation {
-    margin-top: 20px;
+ul.maldų-list li {
+    margin-bottom: 10px;
 }
 
-.prayer-navigation .back-to-prayers {
+ul.maldų-list li a {
     text-decoration: none;
-    color: #007BFF;
-    font-weight: bold;
+    color: #333;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
 }
 
-.prayer-navigation .back-to-prayers:hover {
-    text-decoration: underline;
+ul.maldų-list li a:hover {
+    color: #007BFF;
+}
+
+ul.maldų-list li a.highlight {
+    background-color: #ffff00; /* Highlight color */
 }
 
 footer {
@@ -109,6 +109,19 @@ footer {
     width: 100%;
 }
 
+/* Search bar styling */
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
@@ -117,10 +130,6 @@ footer {
 
     nav ul li {
         margin: 10px 0;
-    }
-
-    .prayer-content {
-        padding: 10px;
     }
 }
 
@@ -134,7 +143,11 @@ footer {
         font-size: 1.2em;
     }
 
-    .prayer-text {
-        font-size: 1em;
+    ul.maldų-list {
+        padding: 0 10px;
+    }
+
+    .search-bar input {
+        width: 100%;
     }
 }
