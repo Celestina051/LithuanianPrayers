@@ -96,6 +96,10 @@ ul.maldų-list li a:hover {
     color: #007BFF;
 }
 
+ul.maldų-list li a.highlight {
+    background-color: #ffff00; /* Highlight color */
+}
+
 footer {
     background-color: #333;
     color: white;
