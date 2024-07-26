@@ -21,13 +21,16 @@
                 <li><a href="litanies.html">Litanijos</a></li>
                 <li><a href="about.html">Apie mus</a></li>
                 <li><a href="contact.html">Susisiekite</a></li>
-            </ul>
+             </ul>
         </nav>
     </header>
     <main>
         <section>
             <h2>Maldos</h2>
-            <ul class="maldų-list">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Ieškoti maldų...">
+            </div>
+            <ul class="maldų-list" id="prayerList">
             <li><a href="vasaros_palaiminimas.html">Vasaros Palaiminimas</a></li>
             <li><a href="Malda_prieš_Abortus_Atgaila_už_sunaikintą_gyvybę.html">Malda prieš Abortus: Atgaila už sunaikintą gyvybę</a></li>
             <li><a href="Pasivėstinimo_Aktas_Šventajam_Juozapui.html">Pasišventinimo Aktas Šventajam Juozapui</a></li>
@@ -132,10 +135,42 @@
 
 
         </ul>
+            <button id="backToTop" onclick="scrollToTop()">Back to Top</button>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Lithuanian Prayers to the Mother of God. Visos teisės saugomos.</p>
     </footer>
+    <script>
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('keyup', function() {
+            let filter = this.value.toUpperCase();
+            let ul = document.getElementById("prayerList");
+            let li = ul.getElementsByTagName('li');
+            for (let i = 0; i < li.length; i++) {
+                let a = li[i].getElementsByTagName("a")[0];
+                if (a.textContent.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        });
+
+        // Back to top functionality
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        // Show the back-to-top button when scrolling down
+        window.onscroll = function() {
+            let button = document.getElementById("backToTop");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+    </script>
 </body>
 </html>
