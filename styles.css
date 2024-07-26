@@ -105,6 +105,40 @@ footer {
     width: 100%;
 }
 
+/* Search bar styling */
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Back to top button styling */
+#backToTop {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#backToTop:hover {
+    background-color: #555;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
@@ -129,5 +163,10 @@ footer {
     ul.maldų-list {
         padding: 0 10px;
     }
+
+    .search-bar input {
+        width: 100%;
+    }
 }
+
 
