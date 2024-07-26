@@ -73,28 +73,36 @@ h1, h2 {
     color: #0000FF; /* Blue color for headers */
 }
 
+ul.maldų-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+ul.maldų-list li {
+    margin-bottom: 10px;
+}
+
+ul.maldų-list li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+ul.maldų-list li a:hover {
+    color: #007BFF;
+}
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
     position: relative;
     width: 100%;
-}
-
-footer .social-media {
-    margin-top: 10px;
-}
-
-footer .social-media a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-footer .social-media a:hover {
-    color: #007BFF;
 }
 
 /* Responsive Design */
@@ -117,4 +125,9 @@ footer .social-media a:hover {
     .logo h1 {
         font-size: 1.2em;
     }
+
+    ul.maldų-list {
+        padding: 0 10px;
+    }
 }
+
