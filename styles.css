@@ -55,8 +55,9 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #007BFF; /* Hover color */
+nav ul li a:hover,
+nav ul li a.active {
+    color: #007BFF; /* Hover and active link color */
 }
 
 main {
