@@ -59,8 +59,11 @@ nav ul li a:hover {
     color: #007BFF; /* Hover color */
 }
 
-section {
+main {
     padding: 20px;
+}
+
+section {
     margin-bottom: 50px; /* Ensure footer does not overlap content */
     text-align: center;
 }
