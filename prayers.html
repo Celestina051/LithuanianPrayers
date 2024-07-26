@@ -15,12 +15,12 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Pradinis</a></li>
-                <li><a href="prayers.html">Maldos</a></li>
-                <li><a href="chaplets.html">Vainikėliai</a></li>
-                <li><a href="litanies.html">Litanijos</a></li>
-                <li><a href="about.html">Apie mus</a></li>
-                <li><a href="contact.html">Susisiekite</a></li>
+                <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                <li><a href="prayers.html" class="active" aria-label="Prayers">Maldos</a></li>
+                <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
              </ul>
         </nav>
     </header>
@@ -30,6 +30,7 @@
             <div class="search-bar">
                 <input type="text" id="searchInput" placeholder="Ieškoti maldų...">
             </div>
+            <ul class="maldų-list" id="prayerList">
             <ul class="maldų-list" id="prayerList">
             <li><a href="vasaros_palaiminimas.html">Vasaros Palaiminimas</a></li>
             <li><a href="Malda_prieš_Abortus_Atgaila_už_sunaikintą_gyvybę.html">Malda prieš Abortus: Atgaila už sunaikintą gyvybę</a></li>
@@ -131,9 +132,6 @@
             <li><a href="Popieziaus_Pijaus_XII_Malda_Poilsio_Dievo_Motinai.html">Popiežiaus Pijaus XII Malda Poilsio Dievo Motinai</a></li>
             <li><a href="Malda_studiju_Dievo_Motinai.html">Malda studijų Dievo Motinai</a></li>
             <li><a href="Maldavimas_Marijai_jog_Ji_Dalyvautų_Mūsų_Mirties_Akimirką.html">Maldavimas Marijai, jog Ji Dalyvautų Mūsų Mirties Akimirką</a></li>
-
-
-
         </ul>
             <button id="backToTop" onclick="scrollToTop()">Back to Top</button>
         </section>
@@ -151,8 +149,10 @@
                 let a = li[i].getElementsByTagName("a")[0];
                 if (a.textContent.toUpperCase().indexOf(filter) > -1) {
                     li[i].style.display = "";
+                    a.style.backgroundColor = "#ffff00"; // Highlight matching text
                 } else {
                     li[i].style.display = "none";
+                    a.style.backgroundColor = ""; // Remove highlight
                 }
             }
         });
