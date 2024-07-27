@@ -5,75 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vainikėliai</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Georgia&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="path_to_logo.png" alt="Lithuanian Prayers Logo">
-            <h1>Lithuanian Prayers to the Mother of God</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" aria-label="Home">Pradinis</a></li>
-                <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
-                <li><a href="chaplets.html" class="active" aria-label="Chaplets">Vainikėliai</a></li>
-                <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
-                <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
-                <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
-             </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Vainikėliai</h2>
-            <div class="search-bar">
-                <input type="text" id="searchInput" placeholder="Ieškoti vainikėlių...">
-            </div>
-            <ul class="maldų-list" id="prayerList">
-            <li><a href="mergeles_marijos_slovinimo_vainikelis.html">Mergelės Marijos šlovinimo vainikėlis</a></li>
-            <li><a href="gailestingumo_ir_atleidimo_vainikelis.html">Gailestingumo ir atleidimo vainikėlis</a></li>
-            <li><a href="marijos_asaru_vainikelis.html">Marijos ašarų vainikėlis</a></li>
-            <li><a href="nekaltosios_marijos_sirdies_vainikelis.html">Nekaltosios Marijos širdies vainikėlis</a></li>    
-        </ul>
-            <button id="backToTop" onclick="scrollToTop()" aria-label="Back to Top">Back to Top</button>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Lithuanian Prayers to the Mother of God. Visos teisės saugomos.</p>
-    </footer>
-    <script>
-        // Search functionality
-        document.getElementById('searchInput').addEventListener('keyup', function() {
-            let filter = this.value.toUpperCase();
-            let ul = document.getElementById("prayerList");
-            let li = ul.getElementsByTagName('li');
-            for (let i = 0; i < li.length; i++) {
-                let a = li[i].getElementsByTagName("a")[0];
-                if (a.textContent.toUpperCase().indexOf(filter) > -1) {
-                    li[i].style.display = "";
-                    a.classList.add("highlight"); // Highlight matching text
-                } else {
-                    li[i].style.display = "none";
-                    a.classList.remove("highlight"); // Remove highlight
-                }
-            }
-        });
-
-        // Back to top functionality
-        function scrollToTop() {
-            window.scrollTo({top: 0, behavior: 'smooth'});
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
         }
 
-        // Show the back-to-top button when scrolling down
-        window.onscroll = function() {
-            let button = document.getElementById("backToTop");
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                button.style.display = "block";
-            } else {
-                button.style.display = "none";
-            }
-        };
-    </script>
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="path_to_logo.png" alt="Lithuanian Prayers Logo">
+                <h1>Lithuanian Prayers to the Mother of God</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                    <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                    <li><a href="chaplets.html" aria-label="Chaplets" class="active">Vainikėliai</a></li>
+                    <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                    <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>Vainikėliai</h2>
+                <ul class="maldų-list">
+                    <li><a href="marijos_asaru_vainikelis.html">Marijos ašarų vainikėlis</a></li>
+                    <li><a href="gailestingumo_ir_atleidimo_vainikelis.html">Gailestingumo ir atleidimo vainikėlis</a></li>
+                    <li><a href="mergeles_marijos_slovinimo_vainikelis.html">Mergelės Marijos šlovinimo vainikėlis</a></li>
+                    <li><a href="nekaltosios_marijos_sirdies_vainikelis.html">Nekaltosios Marijos širdies vainikėlis</a></li>   
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Lithuanian Prayers to the Mother of God. Visos teisės saugomos.</p>
+        </footer>
+    </div>
 </body>
 </html>
