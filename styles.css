@@ -144,74 +144,6 @@ footer {
 }
 
 /* About Me Section Styling */
-.about-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    background-color: #ffffff; /* White background */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.about-content h2 {
-    color: #0000FF; /* Blue color for headers */
-    font-family: 'Georgia', serif;
-    margin-bottom: 20px;
-}
-
-.about-content p {
-    font-size: 1.2em;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-.about-content a {
-    color: #007BFF; /* Link color */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Bold text */
-    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
-}
-
-.about-content a:hover {
-    color: #0056b3; /* Darker blue on hover */
-    background-color: #e0f0ff; /* Light blue background on hover */
-    border-radius: 4px; /* Rounded corners */
-    padding: 2px 4px; /* Slight padding for background */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo img {
-        height: 30px;
-        margin-right: 5px;
-    }
-
-    .logo h1 {
-        font-size: 1.2em;
-    }
-
-    ul.maldų-list {
-        padding: 0 10px;
-    }
-
-    .search-bar input {
-        width: 100%;
-    }
-}
-
-/* Existing styles */
-
 .contact-content {
     max-width: 600px;
     margin: 0 auto;
@@ -263,3 +195,40 @@ footer {
     background-color: #0056b3;
 }
 
+.thank-you-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you-content h2 {
+    color: #0000FF; /* Blue color for headers */
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+}
+
+.thank-you-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.thank-you-content .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.thank-you-content .button:hover {
+    background-color: #0056b3;
+}
