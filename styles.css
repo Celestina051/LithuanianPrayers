@@ -209,3 +209,57 @@ footer {
         width: 100%;
     }
 }
+
+/* Existing styles */
+
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-content h2 {
+    color: #0000FF; /* Blue color for headers */
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+}
+
+.contact-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-content label {
+    font-size: 1.1em;
+    text-align: left;
+}
+
+.contact-content input,
+.contact-content textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.contact-content button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-content button:hover {
+    background-color: #0056b3;
+}
+
