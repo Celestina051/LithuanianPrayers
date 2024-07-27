@@ -8,7 +8,7 @@
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
         (function(){
-            emailjs.init("dRR1OBlN7YULzAuhb"); // Replace with your EmailJS user ID
+            emailjs.init("1vQyZ1CP2A-33jWRx"); // Replace with your actual EmailJS Public Key
         })();
     </script>
 </head>
@@ -52,7 +52,7 @@
     <script type="text/javascript">
         document.getElementById('contact-form').addEventListener('submit', function(event) {
             event.preventDefault();
-            emailjs.sendForm('service_d7ajahm', 'template_your_template_id', this)
+            emailjs.sendForm('service_d7ajahm', 'template_jegfwbn', this) // Replace 'YOUR_TEMPLATE_ID' with your EmailJS template ID
                 .then(function() {
                     window.location.href = "https://celestina051.github.io/LithuanianPrayers/thankyou.html";
                 }, function(error) {
