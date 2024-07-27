@@ -5,28 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Susisiekite - Lietuviškas Atsidavimas</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const form = document.querySelector("form");
-            form.addEventListener("submit", function(event) {
-                event.preventDefault();
-                const formData = new FormData(form);
-                fetch(form.action, {
-                    method: form.method,
-                    body: formData,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                }).then(response => {
-                    if (response.ok) {
-                        form.reset();
-                        window.location.href = "https://celestina051.github.io/LithuanianPrayers/thankyou.html";
-                    } else {
-                        alert("Atsiprašome, įvyko klaida. Bandykite dar kartą.");
-                    }
-                });
-            });
-        });
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("service_d7ajahm"); // Replace with your EmailJS user ID
+        })();
     </script>
 </head>
 <body>
@@ -49,12 +32,12 @@
     <main>
         <section class="contact-content">
             <h2>Susisiekite su manimi</h2>
-            <form action="https://formspree.io/f/mzzpedwa" method="POST">
+            <form id="contact-form">
                 <label for="name">Vardas:</label>
                 <input type="text" id="name" name="name" placeholder="Jūsų vardas" required>
 
                 <label for="email">El. paštas:</label>
-                <input type="email" id="email" name="_replyto" placeholder="Jūsų el. paštas" required>
+                <input type="email" id="email" name="email" placeholder="Jūsų el. paštas" required>
 
                 <label for="message">Žinutė:</label>
                 <textarea id="message" name="message" rows="5" placeholder="Jūsų žinutė" required></textarea>
@@ -66,5 +49,16 @@
     <footer>
         <p>&copy; 2024 Lietuviškas Atsidavimas. Visos teisės saugomos.</p>
     </footer>
+    <script type="text/javascript">
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            emailjs.sendForm('service_d7ajahm', 'YOUR_TEMPLATE_ID', this)
+                .then(function() {
+                    window.location.href = "https://celestina051.github.io/LithuanianPrayers/thankyou.html";
+                }, function(error) {
+                    alert('Atsiprašome, įvyko klaida. Bandykite dar kartą.', error);
+                });
+        });
+    </script>
 </body>
 </html>
