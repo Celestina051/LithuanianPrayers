@@ -3,28 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Susisiekite - Lietuviškas Atsidavimas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Lithuanian Prayers to the Mother of God</h1>
+        <div class="logo">
+            <img src="path_to_logo.png" alt="Lithuanian Prayers Logo">
+            <h1>Susisiekite - Lietuviškas Atsidavimas</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prayers.html">Prayers</a></li>
-                <li><a href="litanies.html">Litanies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                <li><a href="about.html" aria-label="About Us">Apie mane</a></li>
+                <li><a href="contact.html" class="active" aria-label="Contact Us">Susisiekite</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <h2>Contact</h2>
-        <p>Contact information goes here...</p>
-    </section>
+    <main>
+        <section class="contact-content">
+            <h2>Susisiekite su manimi</h2>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <label for="name">Vardas:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">El. paštas:</label>
+                <input type="email" id="email" name="_replyto" required>
+
+                <label for="message">Žinutė:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Siųsti</button>
+            </form>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Lithuanian Prayers to the Mother of God. Visos teisės saugomos.</p>
+        <p>&copy; 2024 Lietuviškas Atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
