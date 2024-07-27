@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Susisiekite - Lietuviškas Atsidavimas</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.querySelector("form");
+            form.addEventListener("submit", function(event) {
+                event.preventDefault();
+                const formData = new FormData(form);
+                fetch(form.action, {
+                    method: form.method,
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                }).then(response => {
+                    if (response.ok) {
+                        form.reset();
+                        alert("Ačiū! Jūsų žinutė buvo išsiųsta.");
+                    } else {
+                        alert("Atsiprašome, įvyko klaida. Bandykite dar kartą.");
+                    }
+                });
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -28,13 +51,13 @@
             <h2>Susisiekite su manimi</h2>
             <form action="https://formspree.io/f/mzzpedwa" method="POST">
                 <label for="name">Vardas:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" placeholder="Jūsų vardas" required>
 
                 <label for="email">El. paštas:</label>
-                <input type="email" id="email" name="_replyto" required>
+                <input type="email" id="email" name="_replyto" placeholder="Jūsų el. paštas" required>
 
                 <label for="message">Žinutė:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <textarea id="message" name="message" rows="5" placeholder="Jūsų žinutė" required></textarea>
 
                 <button type="submit">Siųsti</button>
             </form>
