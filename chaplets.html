@@ -5,30 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vainikėliai</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Georgia&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Vainikėliai</h1>
+        <div class="logo">
+            <img src="path_to_logo.png" alt="Lithuanian Prayers Logo">
+            <h1>Lithuanian Prayers to the Mother of God</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="index.html">Pradinis</a></li>
-                <li><a href="prayers.html">Maldos</a></li>
-                <li><a href="chaplets.html">Vainikėliai</a></li>
-                <li><a href="litanies.html">Litanijos</a></li>
-                <li><a href="about.html">Apie mus</a></li>
-                <li><a href="contact.html">Susisiekite</a></li>
-            </ul>
+                <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                <li><a href="chaplets.html" class="active" aria-label="Chaplets">Vainikėliai</a></li>
+                <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+             </ul>
         </nav>
     </header>
-    <section>
-        <h2>List of Chaplets</h2>
-        <ul> 
+    <main>
+        <section>
+            <h2>Vainikėliaia</h2>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Ieškoti vainikėlių...">
+            </div>
+            <ul class="maldų-list" id="prayerList">
             <li><a href="mergeles_marijos_slovinimo_vainikelis.html">Mergelės Marijos šlovinimo vainikėlis</a></li>
             <li><a href="gailestingumo_ir_atleidimo_vainikelis.html">Gailestingumo ir atleidimo vainikėlis</a></li>
             <li><a href="marijos_asaru_vainikelis.html">Marijos ašarų vainikėlis</a></li>
-            <li><a href="nekaltosios_marijos_sirdies_vainikelis.html">Nekaltosios Marijos širdies vainikėlis</a></li>
-            
+            <li><a href="nekaltosios_marijos_sirdies_vainikelis.html">Nekaltosios Marijos širdies vainikėlis</a></li>    
         </ul>
-    </section>
+            <button id="backToTop" onclick="scrollToTop()" aria-label="Back to Top">Back to Top</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Lithuanian Prayers to the Mother of God. Visos teisės saugomos.</p>
+    </footer>
+    <script>
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('keyup', function() {
+            let filter = this.value.toUpperCase();
+            let ul = document.getElementById("prayerList");
+            let li = ul.getElementsByTagName('li');
+            for (let i = 0; i < li.length; i++) {
+                let a = li[i].getElementsByTagName("a")[0];
+                if (a.textContent.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                    a.classList.add("highlight"); // Highlight matching text
+                } else {
+                    li[i].style.display = "none";
+                    a.classList.remove("highlight"); // Remove highlight
+                }
+            }
+        });
+
+        // Back to top functionality
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        // Show the back-to-top button when scrolling down
+        window.onscroll = function() {
+            let button = document.getElementById("backToTop");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+    </script>
 </body>
 </html>
