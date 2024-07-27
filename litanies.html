@@ -5,24 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Litanijos</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Georgia&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Lithuanian Prayers to the Mother of God</h1>
+        <div class="logo">
+            <img src="path_to_logo.png" alt="Lithuanian Prayers Logo">
+            <h1>Lithuanian Prayers to the Mother of God</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prayers.html">Prayers</a></li>
-                <li><a href="litanies.html">Litanies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                <li><a href="litanies.html" class="active" aria-label="Litanies">Litanijos</a></li>
+                <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <h2>Litanijos</h2>
-        <ul class="litany-list">
+    <main>
+        <section>
+            <h2>Litanijos</h2>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Ieškoti litanijų...">
+            </div>
+            <ul class="maldų-list" id="prayerList">
             <li><a href="litany_vilties.html">Vilties Dievo Motinos Litanija</a></li>
             <li><a href="litany_pergales.html">Pergalės Motinos Litanija</a></li>
             <li><a href="litany_nekaltaipradetos.html">Nekaltai Pradėtos Dievo Motinos Litanija</a></li>
@@ -72,15 +80,46 @@
             <li><a href="sventosios_kudikelio_jezaus_tereses_litanija.html">Šventosios Kūdikėlio Jėzaus Teresės litanija</a></li>
             <li><a href="sventojo_antano_paduviecio_litanija.html">Šventojo Antano Paduviečio litanija</a></li>
             <li><a href="sventojo_dominyko_litanija.html">Šventojo Dominyko litanija</a></li>
-            <li><a href="sventojo_pranciskaus_asyziecio_litanija.html">Šventojo Pranciškaus Asyžiečio litanija</a></li>
-
-
-
-            
+            <li><a href="sventojo_pranciskaus_asyziecio_litanija.html">Šventojo Pranciškaus Asyžiečio litanija</a></li>    
         </ul>
-    </section>
+            <button id="backToTop" onclick="scrollToTop()" aria-label="Back to Top">Back to Top</button>
+        </section>
+    </main>
     <footer>
         <p>&copy; 2024 Lithuanian Prayers to the Mother of God. Visos teisės saugomos.</p>
     </footer>
+    <script>
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('keyup', function() {
+            let filter = this.value.toUpperCase();
+            let ul = document.getElementById("prayerList");
+            let li = ul.getElementsByTagName('li');
+            for (let i = 0; i < li.length; i++) {
+                let a = li[i].getElementsByTagName("a")[0];
+                if (a.textContent.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                    a.classList.add("highlight"); // Highlight matching text
+                } else {
+                    li[i].style.display = "none";
+                    a.classList.remove("highlight"); // Remove highlight
+                }
+            }
+        });
+
+        // Back to top functionality
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        // Show the back-to-top button when scrolling down
+        window.onscroll = function() {
+            let button = document.getElementById("backToTop");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+    </script>
 </body>
 </html>
