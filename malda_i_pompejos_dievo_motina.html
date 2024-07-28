@@ -5,23 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malda į Pompėjos Dievo Motiną</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Lithuanian Prayers to the Mother of God</h1>
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+            <h1>Lietuviškas atsidavimas</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prayers.html">Prayers</a></li>
-                <li><a href="litanies.html">Litanies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                <li><a href="about.html" aria-label="About Us">Apie mane</a></li>
+                <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
             </ul>
         </nav>
     </header>
-    <section id="prayer">
-        <h2>Malda į Pompėjos Dievo Motiną</h2>
-        <p>
+    <main>
+        <section class="prayer-content">
+            <h2>Malda į Pompėjos Dievo Motiną</h2>
+            <p class="prayer-text">
             (Meldžiamasi gegužės 8 d. ir pirmąjį spalio sekmadienį.)<br><br>
             Vardan Tėvo ir Sūnaus ir Šventosios Dvasios.<br><br>
             Amen.<br><br>
@@ -73,7 +98,7 @@
             Suteik, kad galėčiau Tave šlovinti, o šventoji Mergele.<br>
             Suteik man stiprybės prieš Tavo priešus.<br>
             Melskis už mus, švenčiausiojo Rožančiaus Karaliene,<br>
-            kad taptume verti Kristaus pažadų.<br><br>
+            kad taptume verti Kristaus žadėjimų.<br><br>
 
             <strong>II.</strong><br><br>
 
@@ -104,7 +129,7 @@
             mūsų artimųjų,<br>
             mūsų draugų,<br>
             mūsų mirusių brolių,<br>
-            visų pirma už mūsų priešų,<br>
+            visų pirma mūsų priešų,<br>
             ir daugelio, kurie pretenduoja į krikščionių vardą,<br>
             tačiau sužeidžia mylinčią Tavo Sūnaus širdį.<br>
             Pasigailėk, o Motina,<br>
@@ -118,7 +143,7 @@
             Suteik, kad galėčiau Tave šlovinti, o šventoji Mergele.<br>
             Suteik man stiprybės prieš Tavo priešus.<br>
             Melskis už mus, švenčiausiojo Rožančiaus Karaliene,<br>
-            kad taptume verti Kristaus pažadų.<br><br>
+            kad taptume verti Kristaus žadėjimų.<br><br>
 
             <strong>III.</strong><br><br>
 
@@ -130,14 +155,14 @@
             savo Sūnaus dešinėje,<br>
             vainikuota nemirtinga šlove,<br>
             virš visų angelų chorų.<br>
-            Tu išpletei savo valdžią<br>
+            Tu išplėtei savo valdžią<br>
             iki pat dangaus,<br>
             žemė ir visi kūriniai<br>
             kurie ją apgyvendina, yra Tau pavaldūs.<br>
             Tavo galia siekia net pragarą;<br>
             ir tik Tu viena, o Marija,<br>
             gali išgelbėti mus iš velnio gniaužtų.<br>
-            Tu esi visagalė iš malonės,<br>
+            Tu esi visagalė malonėje,<br>
             todėl Tu gali mus išgelbėti.<br>
             Dabar, jei sakai, kad mums nepadėsi<br>
             nes esame nedėkingi vaikai<br>
@@ -152,15 +177,15 @@
             abu įkvepia mums viltį, kad būsime išklausyti.<br>
             Ir kupini pasitikėjimo Tavimi,<br>
             mes puolame prie Tavo kojų, kaip silpni vaikai<br>
-            į švelniausio žmogaus rankas<br>
-            tarp motinų ir šiandien, šią pačią dieną,<br>
+            į švelniausios motinos rankas<br>
+            ir šiandien, šią pačią dieną,<br>
             laukiame iš Tavęs malonių, kurių taip trokštame.<br><br>
 
             Sveika, Karaliene, gailestingumo Motina,<br>
             Suteik, kad galėčiau Tave šlovinti, o šventoji Mergele.<br>
             Suteik man stiprybės prieš Tavo priešus.<br>
             Melskis už mus, švenčiausiojo Rožančiaus Karaliene,<br>
-            kad taptume verti Kristaus pažadų.<br><br>
+            kad taptume verti Kristaus žadėjimų.<br><br>
 
             Prašykime Marijos palaiminimo.<br><br>
 
@@ -176,7 +201,7 @@
             prie pirmųjų Tavo karūnos laurų,<br>
             prie senovinių Rožančiaus trofėjų,<br>
             iš kurių Tu vadinama pergalių Karaliene,<br>
-            pridėk ir šį, o Motina,<br>
+            pridėk ir šią, o Motina,<br>
             suteik triumfą religijai<br>
             ir taiką žmonijai.<br>
             Palaimink mūsų vyskupą,<br>
@@ -213,11 +238,14 @@
             Suteik, kad galėčiau tave, šventoji Mergele, šlovinti.<br>
             Suteik man stiprybės prieš Tavo priešus.<br>
             Melski už mus, švenčiausiojo Rožančiaus Karaliene,<br>
-            kad taptume verti Kristaus pažadų.<br><br>
-          </p>
-    </section>
+            kad taptume verti Kristaus žadėjimų.<br><br>
+          <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Maldos</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Lithuanian Prayers. Visos teisės saugomos.</p>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
