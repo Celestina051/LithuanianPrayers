@@ -3,25 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Malda prieš abortus</title>
+    <title>Malda prieš Abortus: Atgaila už sunaikintą gyvybę</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Lithuanian Prayers to the Mother of God</h1>
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+            <h1>Lietuviškas atsidavimas</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prayers.html">Prayers</a></li>
-                <li><a href="litanies.html">Litanies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                <li><a href="about.html" aria-label="About Us">Apie mane</a></li>
+                <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <h2>Malda prieš abortus: Atgaila už sunaikintą gyvybę</h2>
-        <p>
+    <main>
+        <section class="prayer-content">
+            <h2>Malda prieš Abortus: Atgaila už sunaikintą gyvybę</h2>
+            <p class="prayer-text">
             Dangaus Tėve, Visagali Dieve.<br>
             Aš nusižeminu Tavo akivaizdoje.<br><br>
 
@@ -31,7 +56,7 @@
             sulaužiau Tavo įsakymą: "Nežudyk".<br><br>
 
             Atgailauju dėl savo nusikaltimo,<br>
-            Pripažįstu savo kaltę<br>
+            pripažįstu savo kaltę<br>
             ir prašau Tave man atleisti.<br>
             Tu pasakei: akis už akį,<br>
             dantis už dantį<br>
@@ -50,15 +75,15 @@
             Viešpatie, išgydyk mane,<br>
             apvalyk mane nuo visų mano kalčių.<br>
             Brangiausiasis Jėzaus Kraujau apgaubk mane,<br>
-            Aš praliejau žmogaus kraują,<br>
-            Aš sunaikinau gyvybę<br>
+            aš praliejau žmogaus kraują,<br>
+            aš sunaikinau gyvybę,<br>
             o Tu esi gyvybė,<br>
-            dabar prašau Tave, Viešpatie, Tavo Brangiausiojo Kraujo galia<br>
+            dabar prašau Tave, Viešpatie, Tavo Brangiausiojo Kraujo galia,<br>
             kad Tu man atleistum<br>
             ir išvaduotum mane iš mano kaltės.<br><br>
 
             Švenčiausioji Motina Marija,<br>
-            visų gyvųjų Mergelė Motina,<br>
+            visų gyvųjų Mergele Motina,<br>
             gyvybės motina,<br>
             aš esu Tavo vaikas,<br>
             atleisk man mano nuodėmes<br>
@@ -66,17 +91,20 @@
             priimk mane į savo Nekaltosios Širdies prieglobstį<br>
             ir padėk man gyventi pagal Dievo įsakymus.<br><br>
 
-            Motina Marija, Tu esi motina to žmogaus, kurį aš atmečiau.<br>
+            Motina Marija, Tu esi motina to žmogaus, kurį aš sunaikinau.<br>
             Patikiu jį Tau<br>
             ir Tavo Sūnui, mano Viešpačiui Jėzui Kristui.<br>
             Melskis už mus, Šventoji Dievo Motina,<br>
-            kad būtume verti Kristaus pažadų.<br><br>
+            kad būtume verti Kristaus žadėjimų.<br><br>
 
             Amen.
-        </p>
-    </section>
+        <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Maldos</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Litanijos. Visos teisės saugomos.</p>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
