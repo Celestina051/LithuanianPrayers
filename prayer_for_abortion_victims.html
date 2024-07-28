@@ -5,11 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malda už Abortų Aukas</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Malda už Abortų Aukas</h1>
-        <p> 
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+            <h1>Lietuviškas atsidavimas</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                <li><a href="about.html" aria-label="About Us">Apie mane</a></li>
+                <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="prayer-content">
+            <h2>Malda už Abortų Aukas</h2>
+            <p class="prayer-text">
             
         Švenčiausioji Dievo ir Bažnyčios Motina,<br>  
         Gvadalupės Dievo Motina,<br>
@@ -25,7 +62,7 @@
         ir nužudė daug nekaltų vaikų.</p>
 
         <p>Taip ir šiandien abortai žudo daug nekaltų negimusių vaikų<br>
-        ir išnaudoja daugybę motinų<br>
+        ir išnaudoja daugybę motinų,<br>
         kėsinasi į žmogaus gyvybę ir Bažnyčią,<br>
         Kristaus Kūną.</p>
 
@@ -50,13 +87,13 @@
         ir brangiausiu Tavo Sūnaus pralietu Krauju<br>
         kad jie turėtų amžinąjį gyvenimą su Juo danguje.<br>
         Taip pat meldžiame Tavo Skausmingąją ir Nekaltąją Širdį<br>
-        už visus abortus darančius žmones ir visus abortų šalininkus<br>
+        už visus abortus darančius žmones ir visus abortų šalininkus,<br>
         kad jie atsiverstų ir priimtų Tavo Sūnų Jėzų Kristų,<br>
         kaip savo Viešpatį ir Gelbėtoją.<br>
         Gink visus savo vaikus kovoje su šėtonu<br>
         ir visas piktąsias dvasias šioje dabartinėje tamsoje.</p>
 
-        <p>Trokštame, kad nekalti negimę vaikai<br>
+        <p>Trokštame, kad nekalti negimę vaikai,<br>
         kurie miršta be Krikšto, būtų pakrikštyti ir išgelbėti.<br>
         Prašome, kad gautum jiems šią malonę ir atgailą,<br>
         susitaikymą ir Dievo atleidimą jų tėvams ir žudikams.</p>
@@ -71,7 +108,7 @@
         mūsų šeimose, miestuose, valstybėse,<br>
         tautose ir visoje žmonijoje.</p>
 
-        <p>O skaisti, o mylinti, o miela Mergele Marija,<br>
+        <p>O skaisti, o mylinti, o mieloji Mergele Marija,<br>
         išgirsk mūsų maldavimus ir priimk šį mūsų širdžių šauksmą!</p>
 
         <p>Gvadalupės Dievo Motina,<br>
@@ -79,6 +116,13 @@
         Melski už mus!</p>
 
     <p>Amen.</p>
-    </section>
+    <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Maldos</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
+    </footer>
 </body>
 </html>
