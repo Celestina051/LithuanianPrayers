@@ -5,23 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visuotinė Malda Už Visus Dalykus Reikalingus Išganymui</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Lithuanian Prayers to the Mother of God</h1>
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+            <h1>Lietuviškas atsidavimas</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prayers.html">Prayers</a></li>
-                <li><a href="litanies.html">Litanies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                <li><a href="about.html" aria-label="About Us">Apie mane</a></li>
+                <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
             </ul>
         </nav>
     </header>
-    <section id="prayer">
-        <h2>Visuotinė Malda Už Visus Dalykus Reikalingus Išganymui</h2>
-        <p>
+    <main>
+        <section class="prayer-content">
+            <h2>Visuotinė Malda Už Visus Dalykus Reikalingus Išganymui</h2>
+            <p class="prayer-text">
             Mano Dieve, aš tikiu Tavimi;<br>
             stiprink mano tikėjimą.<br>
             Visos mano viltys sudėtos į Tave;<br>
@@ -29,12 +54,12 @@
             Aš myliu Tave visa širdimi;<br>
             išmokyk mane kasdien vis labiau Tave mylėti.<br>
             Apgailestauju, kad įžeidžiau Tave;<br>
-            Padaryk, kad mano sielvartas dar labiau sustiprėtų.<br><br>
+            padaryk, kad mano sielvartas dar labiau sustiprėtų.<br><br>
 
             Aš garbinu Tave kaip savo pirmąjį pradą;<br>
             siekiu Tavęs kaip savo paskutinio tikslo.<br>
             Dėkoju Tau kaip savo nuolatiniam geradariui;<br>
-            Šaukiuosi Tavęs kaip savo valdovo Globėjo.<br><br>
+            šaukiuosi Tavęs kaip savo Valdovo ir Globėjo.<br><br>
 
             Suteik man, mano Dieve, vadovautis Tavo išmintimi,<br>
             sulaikyk mane savo teisingumu,<br>
@@ -65,11 +90,11 @@
 
             Suteik man malonę apvalyti savo atmintį,<br>
             suvaldyti savo liežuvį,<br>
-            sulaikyti savo akis,<br>
+            nuleisti savo žvilgsnį,<br>
             ir nuraminti savo jausmus.<br><br>
 
             Suteik man jėgų, mano Dieve,<br>
-            išpirkti mano nusikaltimus,<br>
+            išpirkti savo nusikaltimus,<br>
             įveikti pagundas,<br>
             sutramdyti savo aistras,<br>
             ir įgyti mano būsenai tinkamų dorybių.<br><br>
@@ -79,7 +104,7 @@
             meile mano artimui,<br>
             ir panieka pasauliui.<br><br>
 
-            Leisk man visada atsiminti, kad turiu būti paklusnus savo vyresniesiems.<br>
+            Leisk man visada atsiminti, kad turiu būti paklusnus savo vyresniesiems,<br>
             nuolaidus savo žemesniems,<br>
             ištikimas savo draugams,<br>
             ir geranoriškas savo priešams.<br><br>
@@ -133,10 +158,13 @@
             dėl mūsų Viešpaties Jėzaus Kristaus nuopelnų.<br><br>
 
             Amen.<br>
-        </p>
-    </section>
+       <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Maldos</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Lithuanian Prayers. All rights reserved.</p>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
