@@ -5,42 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malda Už Negimusį Vaiką</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Lithuanian Prayers to the Mother of God</h1>
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+            <h1>Lietuviškas atsidavimas</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prayers.html">Prayers</a></li>
-                <li><a href="litanies.html">Litanies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                <li><a href="about.html" aria-label="About Us">Apie mane</a></li>
+                <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
             </ul>
         </nav>
     </header>
-    <section id="prayer">
-        <h2>Malda Už Negimusį Vaiką</h2>
-        <p>
+    <main>
+        <section class="prayer-content">
+            <h2>Malda Už Negimusį Vaiką</h2>
+            <p class="prayer-text">
             Visagali Dieve, mūsų Tėve,<br>
             Tu, kuris davei mums gyvybę<br>
             ir norėjai, kad mes ją turėtume amžinai,<br>
             suteik mums savo palaiminimus.<br>
             Apšviesk mūsų protus, kad suvoktume<br>
-            ir iš naujo įsitikinti.<br>
+            ir iš naujo įsitikintume,<br>
             kad visa žmogaus gyvybė yra šventa,<br>
             nes ji yra sukurta<br>
             pagal Tavo paveikslą ir panašumą.<br>
             Padėk mums mokyti žodžiu<br>
-            ir savo gyvenimo pavyzdžiu<br>
+            ir savo gyvenimo pavyzdžiu,<br>
             kad gyvybė yra pirmoje vietoje,<br>
-            kad žmogaus gyvybė yra brangi<br>
-            nes ji yra Dievo dovana<br>
+            kad žmogaus gyvybė yra brangi,<br>
+            nes ji yra Dievo dovana,<br>
             kurio meilė begalinė.<br>
             Suteik mums jėgų ginti žmogaus gyvybę<br>
             nuo bet kokios įtakos<br>
             ar veiksmų, kurie jai kelia grėsmę ar ją silpnina,<br>
-            taip pat stiprybės<br>
+            taip pat stiprybės,<br>
             kad kiekviena gyvybė taptų žmogiškesnė<br>
             visais aspektais.<br><br>
 
@@ -48,7 +73,7 @@
 
             Kai gyvybės šventumas<br>
             prieš gimimą yra puolamas,<br>
-            atsistoti ir skelbti<br>
+            atsistoti ir skelbti,<br>
             kad niekas niekada neturi teisės<br>
             sunaikinti negimusią gyvybę.<br><br>
 
@@ -58,20 +83,19 @@
             atsistoti<br>
             ir reikalauti, kad kiekvienas vaikas yra unikalus<br>
             ir nepakartojama Dievo dovana,<br>
-            Dievo dovana<br>
             turinti teisę į mylinčią<br>
             ir vieningą šeimą.<br><br>
 
             Kai santuokos institucija<br>
             apleidžiama dėl žmogiškojo egoizmo<br>
-            arba sumažinama iki laikino sąlyginio susitarimo<br>
+            arba sumažinama iki laikino sąlyginio susitarimo,<br>
             kuris gali būti lengvai nutrauktas,<br>
             atsistoti ir patvirtinti<br>
             santuokinio ryšio neišardomumą.<br><br>
 
             Kai kyla grėsmė šeimos vertei<br>
             dėl socialinio ir ekonominio spaudimo,<br>
-            atsistoti ir dar kartą patvirtinti<br>
+            atsistoti ir dar kartą patvirtinti,<br>
             kad šeima yra būtina<br>
             ne tik kiekvieno žmogaus asmeninei gerovei,<br>
             bet ir bendram kiekvienos visuomenės labui,<br>
@@ -85,17 +109,20 @@
 
             Visagalis Tėve,<br>
             suteik mums drąsos skelbti aukščiausią<br>
-            visos žmogaus gyvybės orumą ir reikalauti<br>
+            visos žmogaus gyvybės orumą ir reikalauti,<br>
             kad pati visuomenė ją gintų.<br>
             To prašome Tavo vardu,<br>
             per atperkamąjį aktą<br>
             Tavo Sūnaus ir Šventosios Dvasios.<br><br>
 
             Amen.<br>
-        </p>
-    </section>
+        <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Maldos</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Lithuanian Prayers. All rights reserved.</p>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
