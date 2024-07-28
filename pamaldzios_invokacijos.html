@@ -5,26 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pamaldžios Invokacijos</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Lithuanian Prayers to the Mother of God</h1>
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+            <h1>Lietuviškas atsidavimas</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prayers.html">Prayers</a></li>
-                <li><a href="litanies.html">Litanies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                <li><a href="about.html" aria-label="About Us">Apie mane</a></li>
+                <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
             </ul>
         </nav>
     </header>
-    <section id="prayer">
-        <h2>Pamaldžios Invokacijos</h2>
-        <p>
+    <main>
+        <section class="prayer-content">
+            <h2>Pamaldžios Invokacijos</h2>
+            <p class="prayer-text">
             Garbiname Tave, Kristau,<br>
             ir laiminame tave;<br>
-            nes prie Tavo kryžiaus<br>
+            nes ant Savo kryžiaus<br>
             tu atpirkai pasaulį.<br><br>
 
             Jėzaus Širdie,<br>
@@ -39,14 +64,17 @@
             atiduodu jums savo širdį ir sielą.<br><br>
 
             Jėzau, Marija, Juozapai,<br>
-            padėk man paskutinėje agonijoje.<br><br>
+            padėkite man paskutinėje agonijoje.<br><br>
 
             Jėzau, Marija, Juozapai,<br>
-            leisk man su Tavimi ramiai iškvėpti savo sielą.<br>
-        </p>
-    </section>
+            leiskite man su Jumis ramiai atiduoti savo sielą.<br>
+        <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Maldos</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Lithuanian Prayers. All rights reserved.</p>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
