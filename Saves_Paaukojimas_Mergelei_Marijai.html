@@ -5,22 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Savęs Paaukojimas Mergelei Marijai</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Maldos</h1>
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+            <h1>Lietuviškas atsidavimas</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="prayers.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                <li><a href="about.html" aria-label="About Us">Apie mane</a></li>
+                <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <h2>Savęs Paaukojimas Mergelei Marijai</h2>
-        <p>
+    <main>
+        <section class="prayer-content">
+            <h2>Savęs Paaukojimas Mergelei Marijai</h2>
+            <p class="prayer-text">
             Švenčiausioji Mergele Marija, Dievo Motina,<br>
-            Nesu vertas būti Tavo tarnu.<br>
+            nesu vertas būti Tavo tarnu.<br>
             Bet Tavo nuostabios užuojautos sujaudintas<br>
             ir mano paties troškimo tarnauti Tau čia ir dabar,<br>
             savo angelo sargo akivaizdoje<br>
@@ -31,10 +59,10 @@
             ir daryti viską, ką galiu, kad įkvėpčiau kitus mylėti Tave ir Tau tarnauti.<br><br>
 
             O Dievo Motina ir mano paties gailestingiausioji Motina,<br>
-            maldauju Tave, Tavo Sūnaus už mane praliejo Savo Kraują,<br>
+            maldauju Tave, Tavo Sūnaus už mane pralietu Krauju,<br>
             priimk mane į savo tarnų gretas<br>
             kaip savo vaiką ir tarną amžinai.<br>
-            Padėk man visose mano mintyse, žodžiuose ir veiksmuose<br>
+            Padėk man visose mano mintyse, žodžiuose ir veiksmuose,<br>
             kiekvieną mano gyvenimo akimirką,<br>
             kad kiekvienas mano žingsnis,<br>
             kiekvienas mano įkvėpimas,<br>
@@ -52,10 +80,13 @@
             o ypač mirties akimirką.<br><br>
 
             Amen.
-        </p>
-    </section>
+        <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Maldos</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Maldos</p>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
