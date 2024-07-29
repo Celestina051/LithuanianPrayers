@@ -5,29 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malda į Mariją, Žvaigždėmis Vainikuota</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Maldos</h1>
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+            <h1>Lietuviškas atsidavimas</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="prayers.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                <li><a href="about.html" aria-label="About Us">Apie mane</a></li>
+                <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <h2>Malda į Mariją, Žvaigždėmis Vainikuota</h2>
-        <p>
+    <main>
+        <section class="prayer-content">
+            <h2>Malda į Mariją, Žvaigždėmis Vainikuota</h2>
+            <p class="prayer-text">
             O Marija, žvaigždėmis vainikuota,<br>
-            kuri turi mėnulį kaip savo kojų papėdę<br>
+            kuri turi mėnulį kaip savo kojų papėdę,<br>
             kuri sėdi virš visų angelų chorų,<br>
             pakreipk savo akis į šį ašarų slėnį,<br>
             ir išgirsk balsą to,<br>
             kuris deda į Tave visą savo viltį ir pasitikėjimą.<br><br>
 
             Dabar tu džiaugiesi begaline rojaus palaima;<br>
-            bet kadaise patyrei šios mūsų tremties kančias.<br>
+            bet kadaise patyrei šios mūsų tremties kančias,<br>
             ir žinai, kokios karčios yra dienos to, kuris valgo sielvarto duoną.<br><br>
 
             Kalvarijoje tu išgirdai balsą,<br>
@@ -39,7 +67,7 @@
             Ir koks gi be Tavęs būtų mūsų gyvenimas,<br>
             kurie esame nelaimingi Adomo vaikai?<br>
             Kiekvieną iš mūsų ištinka jį bandantis sielvartas,<br>
-            sielvartą, kuris slegia, žaizda, kuri žeidžia.<br>
+            sielvartas, kuris slegia, žaizda, kuri žeidžia.<br>
             Visi žmonės bėga į tavo globą,<br>
             kaip į saugumo prieglobstį ir gydymo šaltinį.<br>
             Kai audros bangos aukštai pakyla,<br>
@@ -47,21 +75,24 @@
             Pas tave ateina našlaitis,<br>
             nes mato save kaip augalą ištroškusioje žemėje,<br>
             bejėgis prieš visus gyvenimo sūkurius.<br>
-            Į tave kreipiasi vargšai<br>
+            Į tave kreipiasi vargšai,<br>
             kai jiems trūksta kasdienės duonos.<br>
             Ir nė vienas nelieka be Tavo pagalbos ir paguodos.<br><br>
 
             O Marija, brangioji Motina, apšviesk mūsų protus ir sušildyk mūsų širdis;<br>
             tegul ta tyra meilė, kuri trykšta iš Tavo akių,<br>
-            skleistųsi ir neštų tuos nuostabius vaisius<br>
+            skleistųsi ir neštų tuos nuostabius vaisius,<br>
             kuriuos Tavo Sūnus mums atnešė praliedamas savo kraują,<br>
             o Tu kentėjai karščiausias kančias Jo kryžiaus papėdėje.<br><br>
 
             Amen.
-        </p>
-    </section>
+       <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Maldos</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Maldos</p>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
