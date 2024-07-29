@@ -5,20 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marija, Mūsų Stiprybe</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Maldos</h1>
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+            <h1>Lietuviškas atsidavimas</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="prayers.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                <li><a href="about.html" aria-label="About Us">Apie mane</a></li>
+                <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <h2>Marija, Mūsų Stiprybe</h2>
-        <p>
+    <main>
+        <section class="prayer-content">
+            <h2>Marija, Mūsų Stiprybe</h2>
+            <p class="prayer-text">
             Mergele, graži kaip mėnulis,<br>
             dangaus angelų ir šventųjų džiaugsme,<br>
             suteik, kad taptume panašūs į Tave<br>
@@ -34,7 +62,7 @@
 
             O Marija, galinga kaip kariuomenė,<br>
             suteik pergalę mūsų gretoms.<br>
-            Mes esame labai silpni<br>
+            Mes esame labai silpni,<br>
             o mūsų priešas siautėja su didžiausiu pasipūtimu.<br>
             Bet po Tavo vėliava<br>
             esame tikri, kad jį nugalėsime.<br><br>
@@ -47,10 +75,13 @@
             bet meilės liepsna.<br><br>
 
             Amen.
-        </p>
-    </section>
+        <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Maldos</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Maldos</p>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
