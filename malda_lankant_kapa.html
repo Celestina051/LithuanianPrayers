@@ -10,6 +10,7 @@
         html, body {
             height: 100%;
             margin: 0;
+            font-family: 'Roboto', sans-serif; /* Ensure consistent font */
         }
 
         /* Flexbox container to push footer to the bottom */
@@ -22,6 +23,41 @@
         /* Main content should take remaining space */
         .flex-wrapper main {
             flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prayer-content {
+            max-width: 600px; /* Set a maximum width for the prayer content */
+            width: 100%; /* Ensure the content is responsive */
+            margin: 20px; /* Margin for spacing around the content */
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+        }
+
+        .prayer-text {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left; /* Keep the text left-aligned */
+        }
+
+        .prayer-navigation {
+            margin-top: 20px;
+            text-align: center; /* Center align the navigation */
+        }
+
+        .back-to-prayers {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .back-to-prayers:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -30,29 +66,31 @@
         <header>
             <div class="logo">
                 <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
-            <h1>Lietuviškas atsidavimas</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" aria-label="Home">Pradinis</a></li>
-                <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
-                <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
-                <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
-                <li><a href="about.html" aria-label="About Us">Apie mane</a></li>
-                <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="prayer-content">
-            <h2>Malda Lankant Kapą</h2>
-            <p class="prayer-text">
-            [Lankant šeimos nario ar draugo kapą, galima pasinaudoti šia malda. Lapkričio mėnuo, ypač "Visų šventųjų" ir "Visų sielų" diena, yra tradicinis kapų lankymo laikas, kaip ir mirties metinės].
+                <h1>Lietuviškas atsidavimas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                    <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                    <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                    <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                    <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="prayer-content">
+                <h2>Malda Lankant Kapą</h2>
+                <p class="prayer-text">
+            [Lankant šeimos nario ar draugo kapą, galima pasinaudoti šia malda. Lapkričio mėnuo, ypač "Visų šventųjų" ir "Visų sielų" diena, 
+            yra tradicinis kapų lankymo laikas, kaip ir mirties metinės].
         </p>
         <p>Visi persižegnoja.</p>
         <p>Vadovas pradeda:</p>
         <p>
-            Garbė Dievui, mūsų Tėvui, prikėlusiam Jėzų Kristų iš numirusių. Tebūna palaimintas Dievas per amžius.
+            Garbė Dievui, mūsų Tėvui, prikėlusiam Jėzų Kristų iš numirusių. 
+            Tebūna palaimintas Dievas per amžius.
         </p>
         <p>Visi atsako:</p>
         <p>
@@ -60,37 +98,45 @@
         </p>
         <p>Gali būti skaitomas šis Šventojo Rašto tekstas:</p>
         <p>
-            Mes juk žinome, kad, mūsų žemiškosios padangtės būstui suirus, mūsų laukia Dievo pastatas, ne rankomis statyti amžinieji namai danguje. [2 Korintiečiams 5, 1].
+            Mes juk žinome, kad, mūsų žemiškosios padangtės būstui suirus,
+            mūsų laukia Dievo pastatas, ne rankomis statyti amžinieji namai danguje. [2 Korintiečiams 5, 1].
         </p>
         <p>
-            Ir aš esu tikras, kad nei mirtis, nei gyvenimas, nei angelai, nei kunigaikštystės, nei dabartis, nei ateitis, nei galybės, 39 nei aukštumos, nei gelmės, nei jokie kiti kūriniai negalės mūsų atskirti nuo Dievo meilės, kuri yra mūsų Viešpatyje Kristuje Jėzuje. [Romiečiams 8,38-39].
+            Ir aš esu tikras, kad nei mirtis, nei gyvenimas, nei angelai, nei kunigaikštystės, nei dabartis, nei ateitis, nei galybės, 
+            nei aukštumos, nei gelmės, nei jokie kiti kūriniai negalės mūsų atskirti nuo Dievo meilės, 
+            kuri yra mūsų Viešpatyje Kristuje Jėzuje. [Romiečiams 8,38-39].
         </p>
         <p>Po tylos minutės visi prisijungia prie užtarimo maldų.</p>
-        <p><b>Užtarimo malda</b></p>
+        <p><b>Užtarimo malda:</b></p>
         <p>Jėzus pažadėjo būti su tais, kurie šaukiasi Jo vardo.</p>
         <p>Pasitikėdami Jo pažadu, sakome:</p>
-        <p>R. Būk su mumis, Viešpatie.</p>
+        <p>Būk su mumis, Viešpatie.</p>
         <ul>
-            <li>Tikra ir neabejotina Tavo ištikimųjų numirėlių viltie: <br> R. Būk su mumis, Viešpatie.</li>
-            <li>Ištikimas drauge liūdesio ir abejonių metu: <br> R. Būk su mumis, Viešpatie.</li>
-            <li>Balse, skelbiantis ramybę neramioms širdims: <br> R. Būk su mumis, Viešpatie.</li>
-            <li>Šviesos švytury tamsos akimirkomis: <br> R. Būk su mumis, Viešpatie.</li>
-            <li>Gailestingasis Atpirkėjau ir atleidimo šaltini: <br> R. Būk su mumis, Viešpatie.</li>
-            <li>Neblėstanti stiprybe visiems liūdintiems: <br> R. Būk su mumis, Viešpatie.</li>
-            <li>Švelnus poilsi Tavo piligrimų tautai: <br> R. Būk su mumis, Viešpatie.</li>
+            <li>Tikra ir neabejotina Tavo ištikimųjų numirėlių viltie: <br>  Būk su mumis, Viešpatie.</li>
+            <li>Ištikimas drauge liūdesio ir abejonių metu: <br> Būk su mumis, Viešpatie.</li>
+            <li>Balse, skelbiantis ramybę neramioms širdims: <br> Būk su mumis, Viešpatie.</li>
+            <li>Šviesos švytury tamsos akimirkomis: <br> Būk su mumis, Viešpatie.</li>
+            <li>Gailestingasis Atpirkėjau ir atleidimo šaltini: <br> Būk su mumis, Viešpatie.</li>
+            <li>Neblėstanti stiprybe visiems liūdintiems: <br> Būk su mumis, Viešpatie.</li>
+            <li>Švelnus poilsi Savo piligrimų tautai: <br> Būk su mumis, Viešpatie.</li>
         </ul>
         <p>Melskimės taip, kaip mus mokė Jėzus:</p>
-        <p><b>Tėve mūsų...</b></p>
+        <p><b>Tėve mūsų.</b></p>
         <p><b>Vadovas:</b></p>
         <p>
-            Viešpatie Dieve, kurio dienos nesibaigiančios ir kurio gailestingumo neįmanoma suskaičiuoti, saugok mus savo atmintyje kad gyvenimas trumpas, o mirties valanda nežinoma. Tegul Tavo Dvasia vadovauja mūsų dienoms žemėje šventumo ir teisingumo keliais, kad galėtume Tau tarnauti vienybėje su visa Bažnyčia, tvirti tikėjimu, stiprūs viltimi, tobuli meilėje. Ir kai mūsų žemiškoji kelionė baigsis, vesk mus džiūgaujančius į savo karalystę, kur gyveni per amžių amžius.
+            Viešpatie Dieve, kurio dienos nesibaigiančios ir kurio gailestingumo neįmanoma suskaičiuoti,
+            saugok mus savo atmintyje kad gyvenimas trumpas, o mirties valanda nežinoma. 
+            Tegul Tavo Dvasia vadovauja mūsų dienoms žemėje šventumo ir teisingumo keliais, 
+            kad galėtume Tau tarnauti vienybėje su visa Bažnyčia, tvirti tikėjimu, stiprūs viltimi, tobuli meilėje.
+            Ir kai mūsų žemiškoji kelionė baigsis, vesk mus džiūgaujančius į savo karalystę, kur gyveni per amžių amžius.
         </p>
         <p>R. Amen.</p>
-        <p>V. Amžinąjį atilsį suteik jiems, Viešpatie, <br> R. ir tegul jiems šviečia amžinoji šviesa.</p>
-        <p>V. Tegul jie ilsisi ramybėje. <br> R. Amen.</p>
-        <p>V. Tegul ilsisi jų ir visų tikinčiųjų mirusiųjų sielos, <br> R. dėl Dievo gailestingumo ilsėkitės ramybėje. <br> R. Amen.</p>
+        <p>V. Amžinąjį atilsį suteik jiems, Viešpatie, <br> ir tegul jiems šviečia amžinoji šviesa.</p>
+        <p>V. Tegul jie ilsisi ramybėje. <br> Amen.</p>
+        <p>V. Tegul ilsisi jų ir visų tikinčiųjų mirusiųjų sielos, <br> dėl Dievo gailestingumo ilsėkitės ramybėje. <br> Amen.</p>
         <p>
-            Tegul Dievo meilė ir Viešpaties Jėzaus Kristaus ramybė laimina ir guodžia mus ir švelniai nušluosto kiekvieną ašarą nuo mūsų akių: Vardan Tėvo, ir Sūnaus ir Šventosios Dvasios.
+            Tegul Dievo meilė ir Viešpaties Jėzaus Kristaus ramybė laimina ir guodžia mus ir švelniai nušluosto kiekvieną ašarą nuo mūsų akių:
+            Vardan Tėvo, ir Sūnaus ir Šventosios Dvasios.
         </p>
         <p>R. Amen.</p>
     <div class="prayer-navigation">
