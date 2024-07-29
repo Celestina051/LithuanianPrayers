@@ -5,27 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pasilenk švelniai virš mūsų žaizdų</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Maldos</h1>
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+            <h1>Lietuviškas atsidavimas</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="prayers.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                <li><a href="about.html" aria-label="About Us">Apie mane</a></li>
+                <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <h2>Pasilenk švelniai virš mūsų žaizdų</h2>
-        <p>
+    <main>
+        <section class="prayer-content">
+            <h2>Pasilenk švelniai virš mūsų žaizdų</h2>
+            <p class="prayer-text">
             Sužavėti Tavo dangiškojo grožio spindesio,<br>
             ir skatinami pasaulio rūpesčių,<br>
             mes atsiduodame į Tavo rankas,<br>
             Nekaltai Pradėtoji Jėzaus Motina ir mūsų Motina Marija,<br>
             įsitikinę, kad Tavo mylinčioje širdyje rasime<br>
             nusiraminimą,<br>
-            ir saugų uostą nuo audrų<br>
+            ir saugų uostą nuo audrų,<br>
             kurios mus supa iš visų pusių.<br>
         </p>
         <p>
@@ -46,13 +74,13 @@
             pavergk mūsų širdis savo dangiškaisiais kvepalais!<br>
             O blogio ir mirties nugalėtoja,<br>
             įkvėpk mums gilų nuodėmės siaubą,<br>
-            kuri daro sielą bjaurią Dievui ir pragaro vergu!<br>
+            kuri daro sielą bjaurią Dievui ir pragaro verge!<br>
         </p>
         <p>
             O Dievo mylimoji,<br>
-            išgirsk karštą šauksmą<br>
+            išgirsk karštą šauksmą,<br>
             kuris kyla iš kiekvienos širdies.<br>
-            švelniai pasilenk prie mūsų skaudančių žaizdų.<br>
+            Švelniai pasilenk prie mūsų skaudančių žaizdų.<br>
             Atgaivink nedorėlius,<br>
             nušluostyk kenčiančiųjų ir prispaustųjų ašaras,<br>
             paguosk vargšus ir nuolankiuosius,<br>
@@ -72,7 +100,7 @@
             mūsų nuolankias maldas,<br>
             ir visų pirma padaryk mums tai,<br>
             kad vieną dieną būtume laimingi kartu su Tavimi,<br>
-            galėtume kartoti Tavo sosto akivaizdoje tą giesmę<br>
+            galėtume kartoti Tavo sosto akivaizdoje tą giesmę,<br>
             kuri šiandien giedama žemėje prie Tavo altorių:<br>
             Tu esi visagalė, o Marija!<br>
             Tu esi šlovė,<br>
@@ -81,10 +109,13 @@
         </p>
         <p>
             Amen.<br>
-        </p>
-    </section>
+         <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Maldos</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Maldos</p>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
