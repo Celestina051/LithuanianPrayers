@@ -5,58 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maldavimai į Mariją Pagundų Metu</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Maldos</h1>
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+            <h1>Lietuviškas atsidavimas</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="prayers.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                <li><a href="about.html" aria-label="About Us">Apie mane</a></li>
+                <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <h2>Maldavimai į Mariją Pagundų Metu</h2>
-        <p>
+    <main>
+        <section class="prayer-content">
+            <h2>Maldavimai į Mariją Pagundų Metu</h2>
+            <p class="prayer-text">
             Skubėk, mano Motina, bėk man padėti;<br>
             Motina, skubėk, neatidėliok;<br>
-            Žiūrėk iš pragaro į pavydžiąją gyvatę,<br>
+            žiūrėk iš pragaro į pavydžiąją gyvatę,<br>
             kuri ateina mano drebančios sielos nužudyti.<br><br>
           
             Ak, vien jo žvilgsnis mane gąsdina,<br>
-            Ir jo žiauraus įniršio aš bijau;<br>
-            Kur bėgti, jei jis mane užpuls?<br>
+            ir jo žiauraus įniršio aš bijau;<br>
+            kur bėgti, jei jis mane užpuls?<br>
             Matai jį, matai jį artėjantį!<br><br>
           
             Štai aš alpstu iš siaubo,<br>
-            Jei dar delsi,<br>
+            jei dar delsi,<br>
             jis paleis į mane savo nuodus;<br>
-            Tada, deja, aš būsiu jo grobis.<br><br>
+            tada, deja, aš būsiu jo grobis.<br><br>
           
             Šauksmai ir ašaros man nepadėjo,<br>
-            Nepaisant visko, aš matau jį ten;<br>
-            Šventuosius šaukiuosi iki nuovargio.<br>
+            nepaisant visko, aš matau jį ten;<br>
+            šventuosius šaukiuosi iki nuovargio.<br>
             Jis vis dar stovi grėsmingai nusiteikęs.<br><br>
           
             Dabar jo galingi žandikauliai atsivėrę,<br>
-            Ir jo šakotą liežuvį matau;<br>
+            ir jo šakotą liežuvį matau;<br>
             Ak! jis ruošiasi užšokti ant manęs,<br>
             Motina, paskubėk, priversk jį bėgti.<br><br>
           
             Marija! taip, Marijos vardas<br>
             mano žiaurų priešą baugina;<br>
-            Jis bėga tiesiai, kaip nuo saulės spindulio<br>
-            Greitai tirpsta žiemos sniegas.<br><br>
+            jis bėga tiesiai, kaip nuo saulės spindulio<br>
+            greitai tirpsta žiemos sniegas.<br><br>
           
             Dabar jis išėjo, bet tu visada<br>
             būk šalia manęs, brangioji motina;<br>
-            Tada pragaro velnias, kuris mane gundys<br>
+            tada pragaro velnias, kuris mane gundys<br>
             daugiau niekada nedrįs prisiartinti.<br>
-        </p>
-    </section>
+        <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Maldos</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Maldos</p>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
