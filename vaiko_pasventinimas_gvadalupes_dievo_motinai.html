@@ -10,6 +10,7 @@
         html, body {
             height: 100%;
             margin: 0;
+            font-family: 'Roboto', sans-serif; /* Ensure consistent font */
         }
 
         /* Flexbox container to push footer to the bottom */
@@ -22,6 +23,41 @@
         /* Main content should take remaining space */
         .flex-wrapper main {
             flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prayer-content {
+            max-width: 600px; /* Set a maximum width for the prayer content */
+            width: 100%; /* Ensure the content is responsive */
+            margin: 20px; /* Margin for spacing around the content */
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+        }
+
+        .prayer-text {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left; /* Keep the text left-aligned */
+        }
+
+        .prayer-navigation {
+            margin-top: 20px;
+            text-align: center; /* Center align the navigation */
+        }
+
+        .back-to-prayers {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .back-to-prayers:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -30,35 +66,35 @@
         <header>
             <div class="logo">
                 <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
-            <h1>Lietuviškas atsidavimas</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" aria-label="Home">Pradinis</a></li>
-                <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
-                <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
-                <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
-                <li><a href="about.html" aria-label="About Us">Apie mane</a></li>
-                <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="prayer-content">
-            <h2>Vaiko pašventinimas Gvadalupės Dievo Motinai</h2>
-            <p class="prayer-text">
+                <h1>Lietuviškas atsidavimas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                    <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                    <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                    <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                    <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="prayer-content">
+                <h2>Vaiko pašventinimas Gvadalupės Dievo Motinai</h2>
+                <p class="prayer-text">
             Brangioji Marija,<br>
             Tavo meilės ir rūpesčio žinia ant Tepeiako kalvos<br>
             skambėjo kaip daininga lopšinė<br>
             į gaivią auksinę aušrą.<br>
             Švelniai Tu kreipeisi į Chuaną Diegą,<br>
-            "mažiausias iš Tavo sūnų".<br>
+            "mažiausias iš Tavo sūnų",<br>
             vidutinio amžiaus vyrą,<br>
             bet nekaltą ir vaikiškos dvasios.<br><br>
             
             Per jį Tu pakvietei visus savo vaikus ateiti pas Tave,<br>
-            amžinai mergelės Dievo Motinos,<br>
-            žvelgti į Tave kaip į motiną<br>
+            amžinai mergelę Dievo Motiną,<br>
+            žvelgti į Tave kaip į motiną,<br>
             kuri norėjo tik parodyti motinišką meilę.<br>
             Tu duotum jiems viską, ko jiems reikėtų,<br>
             pagalbą ir apsaugą,<br>
@@ -71,7 +107,7 @@
             mūsų vaikelį ( __________ )<br>
             Tegul šis mažylis visada žino<br>
             ir myli Tave kaip šventąją Mariją,<br>
-            tikrojo Dievo Motina<br>
+            tikrojo Dievo Motina,<br>
             kurioje mes gyvename ir turime savo gyvybę.<br>
             Tegul ši nauja siela,<br>
             šviežiai įkvėpta Kūrėjo,<br>
