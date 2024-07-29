@@ -22,11 +22,15 @@
         /* Main content should take remaining space */
         .flex-wrapper main {
             flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .prayer-content {
             max-width: 800px; /* Set a maximum width for the prayer content */
-            margin: 0 auto; /* Center the content */
+            width: 100%; /* Ensure the content is responsive */
+            margin: 20px; /* Margin for spacing around the content */
             text-align: left; /* Align text to the left */
             padding: 20px;
             background-color: #ffffff; /* White background */
