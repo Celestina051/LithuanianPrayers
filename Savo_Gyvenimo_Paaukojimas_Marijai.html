@@ -10,6 +10,7 @@
         html, body {
             height: 100%;
             margin: 0;
+            font-family: 'Roboto', sans-serif; /* Ensure consistent font */
         }
 
         /* Flexbox container to push footer to the bottom */
@@ -22,6 +23,41 @@
         /* Main content should take remaining space */
         .flex-wrapper main {
             flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prayer-content {
+            max-width: 600px; /* Set a maximum width for the prayer content */
+            width: 100%; /* Ensure the content is responsive */
+            margin: 20px; /* Margin for spacing around the content */
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+        }
+
+        .prayer-text {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left; /* Keep the text left-aligned */
+        }
+
+        .prayer-navigation {
+            margin-top: 20px;
+            text-align: center; /* Center align the navigation */
+        }
+
+        .back-to-prayers {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .back-to-prayers:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -30,28 +66,28 @@
         <header>
             <div class="logo">
                 <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
-            <h1>Lietuviškas atsidavimas</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" aria-label="Home">Pradinis</a></li>
-                <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
-                <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
-                <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
-                <li><a href="about.html" aria-label="About Us">Apie mane</a></li>
-                <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="prayer-content">
-            <h2>Savo Gyvenimo Paaukojimas Marijai</h2>
-            <p class="prayer-text">
+                <h1>Lietuviškas atsidavimas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                    <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                    <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                    <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                    <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="prayer-content">
+                <h2>Savo Gyvenimo Paaukojimas Marijai</h2>
+                <p class="prayer-text">
             Marija, Jėzaus Kristaus Motina ir mano Motina,<br>
             aukoju Tau viską, ką turiu:<br>
             savo kūną, savo protą, savo širdį, savo valią,<br>
             kad Tu padėtum paversti mano gyvenimą verta auka Kristui.<br><br>
-
+            <p class="prayer-text">
             Tu, kuri matei, kaip Jėzus ruošėsi savo misijai<br>
             ir nukreipė visas savo jėgas Tėvo valiai vykdyti,<br>
             suteik, kad turėčiau Jo kūno gyvybingumą,<br>
@@ -59,7 +95,7 @@
             Jo intelekto spindesį,<br>
             ir Jo valios ryžtą, kad mano gyvenimas,<br>
             kaip ir Jo, būtų skirtas tarnauti kitiems.<br><br>
-
+            <p class="prayer-text">
             Tegu niekas, kas liečia kitus žmones, nepalieka manęs abejingo.<br>
             Tegul visose situacijose ir visose pastangose,<br>
             stengčiausi maksimaliai išvystyti savo potencialą,<br>
@@ -68,7 +104,7 @@
             kuris vienintelis gali suteikti prasmę mano gyvenimui,<br>
             kaip Jis suteikė prasmę tavo gyvenimui,<br>
             Jėzus Kristus, tavo sūnus ir mano brolis.<br><br>
-
+            <p class="prayer-text">
             Amen.
          <div class="prayer-navigation">
                 <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Maldos</a>
