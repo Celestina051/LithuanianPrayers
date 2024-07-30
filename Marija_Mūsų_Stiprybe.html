@@ -10,6 +10,7 @@
         html, body {
             height: 100%;
             margin: 0;
+            font-family: 'Roboto', sans-serif; /* Ensure consistent font */
         }
 
         /* Flexbox container to push footer to the bottom */
@@ -22,6 +23,41 @@
         /* Main content should take remaining space */
         .flex-wrapper main {
             flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prayer-content {
+            max-width: 600px; /* Set a maximum width for the prayer content */
+            width: 100%; /* Ensure the content is responsive */
+            margin: 20px; /* Margin for spacing around the content */
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+        }
+
+        .prayer-text {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left; /* Keep the text left-aligned */
+        }
+
+        .prayer-navigation {
+            margin-top: 20px;
+            text-align: center; /* Center align the navigation */
+        }
+
+        .back-to-prayers {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .back-to-prayers:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -30,43 +66,43 @@
         <header>
             <div class="logo">
                 <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
-            <h1>Lietuviškas atsidavimas</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" aria-label="Home">Pradinis</a></li>
-                <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
-                <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
-                <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
-                <li><a href="about.html" aria-label="About Us">Apie mane</a></li>
-                <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="prayer-content">
-            <h2>Marija, Mūsų Stiprybe</h2>
-            <p class="prayer-text">
+                <h1>Lietuviškas atsidavimas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                    <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                    <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                    <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                    <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="prayer-content">
+                <h2>Marija, Mūsų Stiprybe</h2>
+                <p class="prayer-text">
             Mergele, graži kaip mėnulis,<br>
             dangaus angelų ir šventųjų džiaugsme,<br>
             suteik, kad taptume panašūs į Tave<br>
             ir kad mūsų sielos gautų Tavo grožio spindulį,<br>
             kuris su metais nesumažėja,<br>
             bet spindi amžinybėje.<br><br>
-
+            <p class="prayer-text">
             O Marija, dangaus saule,<br>
             sugrąžink gyvybę ten, kur yra mirtis<br>
             ir nušviesk dvasią ten, kur tvyro tamsa.<br>
             Atsigręžk į savo vaikus<br>
             ir skleisk mums savo šviesą ir savo užsidegimą.<br><br>
-
+            <p class="prayer-text">
             O Marija, galinga kaip kariuomenė,<br>
             suteik pergalę mūsų gretoms.<br>
             Mes esame labai silpni,<br>
             o mūsų priešas siautėja su didžiausiu pasipūtimu.<br>
             Bet po Tavo vėliava<br>
             esame tikri, kad jį nugalėsime.<br><br>
-
+            <p class="prayer-text">
             Gelbėk mus, o Marija,<br>
             graži kaip mėnulis,<br>
             šviesi kaip saulė,<br>
@@ -74,7 +110,7 @@
             ir palaikoma ne neapykantos<br>
             bet meilės liepsna.<br><br>
 
-            Amen.
+            <p class="prayer-text">Amen.
         <div class="prayer-navigation">
                 <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Maldos</a>
             </div>
