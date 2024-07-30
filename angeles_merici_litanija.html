@@ -1,161 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Šventosios Angelės Merici litanija.  - Lithuanian Prayers</title>
+    <title>Šventosios Angelės Merici Litanija.</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif; /* Ensure consistent font */
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prayer-content {
+            max-width: 600px; /* Set a maximum width for the prayer content */
+            width: 100%; /* Ensure the content is responsive */
+            margin: 20px; /* Margin for spacing around the content */
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+        }
+
+        .prayer-text {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left; /* Keep the text left-aligned */
+        }
+
+        .prayer-navigation {
+            margin-top: 20px;
+            text-align: center; /* Center align the navigation */
+        }
+
+        .back-to-prayers {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .back-to-prayers:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Šventosios Angelės Merici litanija.</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prayers.html">Prayers</a></li>
-                <li><a href="litanies.html">Litanies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="angeles_merici_litanija">
-        <h2>Šventosios Angelės Merici litanija.</h2>
-        <p>
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+                <h1>Lietuviškas atsidavimas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                    <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                    <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                    <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                    <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="prayer-content">
+                <h2>Šventosios Angelės Merici Litanija.</h2>
+                <p class="prayer-text">
           Kyrie, eleison! Christe, eleison! Kyrie, eleison!<br>
           Kristau, išgirsk mus! Kristau, išklausyk mus!<br><br>
-
+ <p class="prayer-text">
           Tėve, dangaus Dieve, pasigailėk mūsų!<br>
           Sūnau, pasaulio Atpirkėjau, Dieve, pasigailėk mūsų!<br>
           Šventoji Dvasia, Dieve, pasigailėk mūsų!<br>
           Šventoji Trejybe, vienas Dieve, pasigailėk mūsų!<br><br>
-
+ <p class="prayer-text">
           Šventoji Marija, Dievo Motina,<br>
           ir ištikima mūsų motinos šventosios Angelės globėja,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Angela Merici,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Angela,<br>
           nuo pat kūdikystės apdovanota geriausiomis Dievo dovanomis,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Angela,<br>
           kuri pasiaukojai praktikuoti<br>
           visas dorybes nuo pat savo švelniausių metų,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Angela,<br>
           kuri visada išsaugojai nepriekaištingą tyrumą,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Angela,<br>
           kuri savo meile šventam tyrumui nusipelnei gauti Savo vardą,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Angela,<br>
           kuri nuo pat vaikystės radai malonumą vienatvėje,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Angela,<br>
           kuri gyvenai angelišką gyvenimą savo tėvų namuose,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Angela,<br>
           kuri kasdien ant savo kūno nešiojai Jėzaus kančią,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Angela,<br>
           kurios dovana buvo sutaikyti pikčiausius priešus,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Angela,<br>
           kuri būdama trylikos metų tapai šventojo Pranciškaus tretininke<br>
           ir visada likai ištikima,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Angela,<br>
           apdovanota maldos ir kontempliacijos malonėmis,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Angela,<br>
           kuri aplankei Šventąją Žemę,<br>
           ir ten sekei kruvinais Jėzaus pėdsakais,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Angela,<br>
           kuri nugalėjai velnio iliuzijas,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Angela,<br>
           kuri nesikankinai dėl<br>
           regėjimo praradimo lankant šventąsias vietas,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Angela,<br>
           kurios regėjimas buvo stebuklingai sugrąžintas Kandijos saloje,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Angela,<br>
           kurią Dievo meilė sužeidė ir kurią ta pati meilė išgydė,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Angela,<br>
           tobulo savęs išsižadėjimo ir tikro nuolankumo pavyzdy,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Angela,<br>
           kuriai, kaip ir Jokūbui, buvo leista pamatyti paslaptingąsias kopėčias,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Angela,<br>
           Dievo išrinkta būti daugelio šventų mergelių motina,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Angela,<br>
           šlovingojo uršuliečių ordino įkūrėja,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Angela,<br>
           kuriai Dievas pažadėjo, kad šis ordinas visada gyvuos,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Angela,<br>
           kuri, kupina džiaugsmo,<br>
           atidavei savo sielą Viešpaties glėbyje,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Šventoji Angela,<br>
           kurios kūnas po mirties išliko nesuteptas,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Angela,<br>
           krikščionių motinų globėja,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Angela,<br>
           jaunų mergaičių globėja,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Angela,<br>
           mūsų motina ir gynėja,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
           atleisk mums, Viešpatie.<br><br>
-
+ <p class="prayer-text">
           Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
           Išklausyk mus, Viešpatie.<br><br>
-
+ <p class="prayer-text">
           Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
           Pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
           Melskis už mus, šlovingoji motina šventoji Angela,<br>
-          Kad taptume verti Kristaus pažadų.<br><br>
-
+          Kad taptume verti Kristaus žadėjimų.<br><br>
+ <p class="prayer-text">
           Melskimės.<br><br>
-
+ <p class="prayer-text">
           Dieve, kuris per mūsų palaimintąją motiną šventąją Angelą<br>
           sukūrei naują šventųjų mergelių ordiną<br>
           klestėti Tavo Bažnyčioje,<br>
@@ -164,12 +225,15 @@
           ir apleisdami visus žemiškus dalykus,<br>
           būtume verti amžinosios palaimos,<br>
           per Jėzų Kristų, mūsų Viešpatį.<br><br>
-
+ <p class="prayer-text">
           Amen.
-            </p>
-    </section>
+           <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Litanijos</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Lithuanian Prayers to the Mother of God</p>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
