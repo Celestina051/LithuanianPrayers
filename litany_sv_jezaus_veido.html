@@ -1,297 +1,355 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Šventojo Jėzaus Veido litanija - Lithuanian Prayers</title>
+    <title>Šventojo Jėzaus Veido Litanija</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif; /* Ensure consistent font */
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prayer-content {
+            max-width: 600px; /* Set a maximum width for the prayer content */
+            width: 100%; /* Ensure the content is responsive */
+            margin: 20px; /* Margin for spacing around the content */
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+        }
+
+        .prayer-text {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left; /* Keep the text left-aligned */
+        }
+
+        .prayer-navigation {
+            margin-top: 20px;
+            text-align: center; /* Center align the navigation */
+        }
+
+        .back-to-prayers {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .back-to-prayers:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Šventojo Jėzaus Veido litanija</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prayers.html">Prayers</a></li>
-                <li><a href="litanies.html">Litanies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="litany_sv_jezaus_veido">
-        <h2>Šventojo Jėzaus Veido litanija</h2>
-        <p>
-            Viešpatie, pasigailėk mūsų.<br>
-            Jėzau Kristau, pasigailėk mūsų.<br><br>
-
-            Viešpatie, pasigailėk mūsų. Jėzaus Kristau,<br>
-            pasigailėk mūsų.<br><br>
-
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+                <h1>Lietuviškas atsidavimas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                    <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                    <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                    <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                    <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="prayer-content">
+                <h2>Šventojo Jėzaus Veido Litanija</h2>
+                <p class="prayer-text">
+            Kyrie, eleison! Christe, eleison! Kyrie, eleison!<br>
+            Kristau, išgirsk mus! Kristau, išklausyk mus!<br><br>
+ <p class="prayer-text">
             Švenčiausioji Mergele Marija,<br>
             melski už mus.<br><br>
-
+ <p class="prayer-text">
             O Jėzau, kurio žavųjį Veidą<br>
             Marija ir Juozapas garbino su giliausia pagarba,<br>
             pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
             O Jėzau, kurio žavusis Veidas<br>
             yra Šventosios Dvasios šedevras,<br>
             kuriuo Tėvas buvo labai patenkintas,<br>
             pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
             O Jėzau, kurio žavusis Veidas<br>
             iš džiaugsmo pakerėjo angelus, piemenis ir išminčius<br>
             Betliejaus tvartelyje,<br>
             pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
             O Jėzau, kurio žavusis veidas<br>
             meilės strėle sužeidė senąjį Simeoną<br>
             ir pranašę Aną šventykloje,<br>
             pasigailėk mūsų,<br><br>
-
+ <p class="prayer-text">
             O Jėzau, kurio žavusis Veidas<br>
             Savo šventojoje Kūdikystėje buvo maudomas ašarose,<br>
             pasigailėk mūsų,<br><br>
-
+ <p class="prayer-text">
             O Jėzau, kurio žavusis veidas<br>
             būdamas dvylikos metų amžiaus, stebino šventyklos mokytojus,<br>
             pasigailėk mūsų,<br><br>
-
+ <p class="prayer-text">
             O Jėzau, kurio žavusis Veidas<br>
             baltas tyrumu ir skaistus meile,<br>
             pasigailėk mūsų,<br><br>
-
+ <p class="prayer-text">
             O Jėzau, kurio žavusis Veidas<br>
             gražesnis už saulę,<br>
             šviesesnis už mėnulį ir ryškesnis už žvaigždes,<br>
             pasigailėk mūsų,<br><br>
-
+ <p class="prayer-text">
             O Jėzau, kurio žavusis veidas<br>
             gražesnis už pavasario rožes,<br>
             pasigailėk mūsų,<br><br>
-
+ <p class="prayer-text">
             O Jėzau, kurio žavusis veidas<br>
             brangesnis už auksą, sidabrą ir brangakmenius,<br>
             pasigailėk mūsų,<br><br>
-
+ <p class="prayer-text">
             O Jėzau, kurio žavusis Veidas<br>
             savo žavesiu ir malone užkariauja visas širdis,<br>
             pasigailėk mūsų,<br><br>
-
+ <p class="prayer-text">
             O Jėzau, kurio žavusis veidas<br>
             yra kilniausias savo dangiškais bruožais,<br>
             pasigailėk mūsų,<br><br>
-
+ <p class="prayer-text">
             O Jėzau, kurio žavųjį veidą<br>
             kontempliuoja angelai,<br>
             pasigailėk mūsų,<br><br>
-
+ <p class="prayer-text">
             O Jėzau, kurio žavusis veidas<br>
             yra saldus šventųjų džiaugsmas,<br>
             pasigailėk mūsų,<br><br>
-
+ <p class="prayer-text">
             O Jėzau, kurio žavusis Veidas<br>
             buvo Tavo Mergelės Motinos ir Tavo globėjo džiaugsmas,<br>
             pasigailėk mūsų,<br><br>
-
+ <p class="prayer-text">
             O Jėzau, kurio žavusis Veidas<br>
             yra neapsakomas dieviškųjų tobulybių veidrodis,<br>
             pasigailėk mūsų,<br><br>
-
+ <p class="prayer-text">
             O Jėzau, kurio žavingo Veido grožis<br>
             yra amžinai vis naujas,<br>
             pasigailėk mūsų,<br><br>
-
+ <p class="prayer-text">
             O Jėzau, kurio kuklumas ir švelnumas Tavo žavingojo Veido<br>
             traukia ir teisiuosius, ir nusidėjėlius,<br>
             pasigailėk mūsų,<br><br>
-
+ <p class="prayer-text">
             O Jėzau, kurio žavusis Veidas<br>
             nuramina dieviškąją rūstybę,<br>
             pasigailėk mūsų,<br><br>
-
+ <p class="prayer-text">
             O Jėzau, kurio žavusis veidas<br>
             yra piktųjų dvasių siaubas,<br>
             pasigailėk mūsų,<br><br>
-
+ <p class="prayer-text">
            O Jėzau, kurio žavusis Veidas<br>
            yra malonės ir palaiminimų lobis,<br>
            pasigailėk mūsų,<br><br>
-
+ <p class="prayer-text">
            O Jėzau, kurio žavusis veidas<br>
            dykumoje buvo neapsaugotas nuo nepalankių oro sąlygų,<br>
            pasigailėk mūsų,<br><br>
-
+ <p class="prayer-text">
            O Jėzau, kurio žavusis Veidas<br>
            Savo kelionėse buvo išmuštas prakaitu.<br>
            ir išdegintas saulės kaitros,<br>
            pasigailėk mūsų,<br><br>
-
+ <p class="prayer-text">
            O Jėzau, kurio žavingojo Veido išraiška yra visiškai dieviška,<br>
            pasigailėk mūsų,<br><br>
-
+ <p class="prayer-text">
            O Jėzau, kurio žavusis Veidas<br>
            šventai pabučiavo ir palaimino mažuosius vaikus,<br>
            pasigailėk mūsų,<br><br>
-
+ <p class="prayer-text">
            O Jėzau, kurio žavusis Veidas<br>
            liūdėjo ir verkė prie Lozoriaus kapo,<br>
            pasigailėk mūsų,<br><br>
-
+ <p class="prayer-text">
            O Jėzau, kurio žavusis Veidas<br>
            spindėjo kaip saulė ir spindėjo šlove ant Taboro kalno,<br>
            pasigailėk mūsų,<br><br>
-
+ <p class="prayer-text">
            Tavo Veido šviesa buvo mums pašvaistė, Viešpatie.<br>
            Tu suteikei džiaugsmo mūsų širdims.<br><br>
-
+ <p class="prayer-text">
            O žavusis Veide,<br>
            vertas visos pagarbos,<br>
            garbinimo bei šlovės,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O Garbingasis Veide,<br>
            kuris buvai nuliūdęs dėl Jeruzalės<br>
            ir verkei dėl to nedėkingo miesto,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O Garbingasis Veide,<br>
            nuleidęs galvą Alyvų sode<br>
            ir apipiltas agonijos dėl mūsų nuodėmių,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O Garbingasis Veide,<br>
            kruvino prakaito išpiltas,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O Garbingasis Veide,<br>
            kurį pabučiavo išdavikas Judas,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O Žavusis Veide,<br>
            kurio šventumas ir didybė pribloškė kareivius<br>
            ir parbloškė juos ant žemės,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O Garbingasis Veide,<br>
            sužeistas gėdingo tarno,<br>
            užrištomis akimis ir išniekintas šventvagiškų Tavo priešų rankų,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O Garbingasis Veide,<br>
            išniekintas spjaudalais<br>
            ir tiek daugybės smūgių bei rygščių sužeistas,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O žavusis Veide,<br>
            kurio dieviškas žvilgsnis sužeidė Petro širdį<br>
            atgaila, liūdesiu ir meile,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O Garbingasis Veide,<br>
            nusižeminęs dėl mūsų Jeruzalės tribunoluose,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O Garbingasis Veide,<br>
            kuris išsaugojai savo ramybę<br>
            kai Pilotas paskelbė mirtiną nuosprendį,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O Garbingasis Veide,<br>
            išpiltas prakaito ir kraujo<br>
            ir priverstas kryžiaus svorio grimzti į purvą,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O Dieviškasis Veide,<br>
            kakta vainikuota giliais<br>
            ir perveriančiais erškėčiais,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O Garbingasis Veide,<br>
            pamaldžios moters nušluostytas šydu<br>
            pakeliui į Kalvariją,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O Dieviškasis Veide,<br>
            iškeltas ant gėdingiausios bausmės įrankio,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O Garbingasis Veide,<br>
            kurio akys liejo kraujo ašaras,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O Garbingasis Veide,<br>
            kurio burna buvo kankinama actu ir tulžimi,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O Garbingasis Veide,<br>
            kurio plaukus ir barzdą nuplėšė katorgininkai,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O žavusis Veide,<br>
            iškankintas kaip raupsuotojo veidas,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O žavusis Veide,<br>
            kurio nepakartojamas grožis buvo užgožtas<br>
            po baisiu pasaulio nuodėmių debesiu,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O Žavusis Veide,<br>
            apgaubtas liūdnų mirties šešėlių,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O Garbingasis Veide,<br>
            nuplautas ir pateptas<br>
            Marijos ir šventųjų moterų,<br>
            ir uždengtas gaubtu,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O Dieviškasis Veide,<br>
            uždarytas kape,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O Garbingasis Veide,<br>
            visas spindintis šlove<br>
            ir grožiu Savo Prisikėlimo dieną,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O Garbingasis Veide,<br>
            Savo žengimo į dangų akimirką visas nušvitęs šviesa,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O Garbingasis Veide,<br>
            paslėptas Švenčiausiajame altoriaus Sakramente,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O Garbingasis Veide,<br>
            kuris laikų pabaigoje pasirodys debesyse,<br>
            su didele galia ir didybe,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O Garbingasis Veide,<br>
            kuris privers nusidėjėlius drebėti iš siaubo,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            O Garbingasis Veide,<br>
            kuris pripildys teisiuosius džiaugsmo per visą amžinybę,<br>
            pasigailėk mūsų.<br><br>
-
+ <p class="prayer-text">
            Viešpatie, tik parodyk mums savo Veidą,<br>
            Ir mes būsime išgelbėti.<br><br>
-
+ <p class="prayer-text">
            Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
            Atleisk mums, Viešpatie.<br><br>
-
+ <p class="prayer-text">
            Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
            Išklausyk mus, Viešpatie.<br><br>
-
+ <p class="prayer-text">
            Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
            Pasigailėk mūsų, Viešpatie.<br><br>
-
+ <p class="prayer-text">
            Melskimės.<br><br>
-
+ <p class="prayer-text">
            Šlovinu Tave,<br>
            garbinu Tave,<br>
            myliu Tave,<br>
@@ -301,9 +359,9 @@
            kreipiuosi į Tave,<br>
            ir nuolankiai meldžiu Tave<br>
            įspausti manyje visus Savo dieviškojo veido bruožus.<br><br>
-
+ <p class="prayer-text">
            Amen.<br><br>
-
+ <p class="prayer-text">
            Meldžiame Tave,<br>
            0 visagali ir gailestingasis Dieve,<br>
            suteik mums<br>
@@ -311,9 +369,9 @@
            malonę žiūrėti į Jį ir Jo didybės šlovę per visą amžinybę, per tą patį Jėzų Kristų, mūsų Viešpatį,<br>
            kuris viešpatauja su Tavimi ir Šventąja Dvasia,<br>
            vienas Dieve, per amžių amžius<br><br>
-
+ <p class="prayer-text">
            Amen.<br><br>
-
+ <p class="prayer-text">
            O mano Jėzau,<br>
            mesk į mus gailestingumo žvilgsnį!<br>
            Atsigręžk savo veidu į kiekvieną iš mūsų<br>
@@ -324,26 +382,16 @@
            kad prisimindami Tave,<br>
            galėtume visada semtis iš šio stiprybės šaltinio<br>
            gyvybingumo, būtino gyvenimo kovoms laimėti.<br><br>
-
+ <p class="prayer-text">
            Amen.
-       </p>
-    </section>
+       <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Litanijos</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Lithuanian Prayers to the Mother of God</p>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
-
-      
-      
-
-      
-
-
-
-
-
-      
-
-
         
