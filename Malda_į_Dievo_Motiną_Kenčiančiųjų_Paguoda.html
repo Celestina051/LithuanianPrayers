@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Malda į Dievo Motiną, Kenčiančiųjų Paguoda</title>
+    <title>Malda Į Dievo Motiną, Kenčiančiųjų Paguoda</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         /* Ensure the page takes at least the full height of the viewport */
         html, body {
             height: 100%;
             margin: 0;
+            font-family: 'Roboto', sans-serif; /* Ensure consistent font */
         }
 
         /* Flexbox container to push footer to the bottom */
@@ -22,6 +23,41 @@
         /* Main content should take remaining space */
         .flex-wrapper main {
             flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prayer-content {
+            max-width: 600px; /* Set a maximum width for the prayer content */
+            width: 100%; /* Ensure the content is responsive */
+            margin: 20px; /* Margin for spacing around the content */
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+        }
+
+        .prayer-text {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left; /* Keep the text left-aligned */
+        }
+
+        .prayer-navigation {
+            margin-top: 20px;
+            text-align: center; /* Center align the navigation */
+        }
+
+        .back-to-prayers {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .back-to-prayers:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -30,29 +66,29 @@
         <header>
             <div class="logo">
                 <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
-            <h1>Lietuviškas atsidavimas</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" aria-label="Home">Pradinis</a></li>
-                <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
-                <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
-                <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
-                <li><a href="about.html" aria-label="About Us">Apie mane</a></li>
-                <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="prayer-content">
-            <h2>Malda į Dievo Motiną, Kenčiančiųjų Paguoda</h2>
-            <p class="prayer-text">
+                <h1>Lietuviškas atsidavimas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                    <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                    <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                    <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                    <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="prayer-content">
+                <h2>Malda Į Dievo Motiną, Kenčiančiųjų Paguoda</h2>
+                <p class="prayer-text">
             Nekaltai Pradėtoji Mergele Marija,<br>
             Dievo Motina ir mūsų gailestingiausioji Motina,<br>
             nuolankiai atsiduodame Tavo akivaizdoje,<br>
             ir visiškai pasitikėdami<br>
             meldžiame Tavo motiniškos globos.<br><br>
-          
+            <p class="prayer-text">
             Šventoji Bažnyčia Tave vadina<br>
             kenčiančiųjų guodėja,<br>
             ir į Tave nuolat kreipiasi<br>
@@ -63,7 +99,7 @@
             tie, kuriems reikia visko.<br>
             Tiek viešose, tiek asmeninėse nelaimėse;<br>
             iš tavęs jie visi gauna paguodą ir stiprybę.<br><br>
-          
+            <p class="prayer-text">
             Mūsų brangiausioji Motina,<br>
             atgręžk ir į mus,<br>
             apgailėtinus nusidėjėlius, kokie mes esame,<br>
@@ -85,7 +121,7 @@
             To prašome per tą didžiulį džiaugsmą,<br>
             kuris pripildė Tavo tyrą sielą<br>
             šlovingojo Tavo dieviškojo Sūnaus prisikėlime.<br><br>
-          
+            <p class="prayer-text">
             Suteik ramybę Šventajai Bažnyčiai,<br>
             pagalbą ir paguodą jos regimajai Galvai,<br>
             Aukščiausiajam Popiežiui,<br>
@@ -97,7 +133,7 @@
             į savo meilės ir galybės globą,<br>
             kad galėtume dorai gyventi,<br>
             šventai numirti ir pasiekti amžinąją laimę danguje.<br><br>
-            Amen.<br>
+            <p class="prayer-text">Amen.<br>
         <div class="prayer-navigation">
                 <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Maldos</a>
             </div>
