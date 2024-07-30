@@ -10,6 +10,7 @@
         html, body {
             height: 100%;
             margin: 0;
+            font-family: 'Roboto', sans-serif; /* Ensure consistent font */
         }
 
         /* Flexbox container to push footer to the bottom */
@@ -22,6 +23,41 @@
         /* Main content should take remaining space */
         .flex-wrapper main {
             flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prayer-content {
+            max-width: 600px; /* Set a maximum width for the prayer content */
+            width: 100%; /* Ensure the content is responsive */
+            margin: 20px; /* Margin for spacing around the content */
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+        }
+
+        .prayer-text {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left; /* Keep the text left-aligned */
+        }
+
+        .prayer-navigation {
+            margin-top: 20px;
+            text-align: center; /* Center align the navigation */
+        }
+
+        .back-to-prayers {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .back-to-prayers:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -30,30 +66,30 @@
         <header>
             <div class="logo">
                 <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
-            <h1>Lietuviškas atsidavimas</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" aria-label="Home">Pradinis</a></li>
-                <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
-                <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
-                <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
-                <li><a href="about.html" aria-label="About Us">Apie mane</a></li>
-                <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="prayer-content">
-            <h2>Popiežiaus Pijaus XII Malda Poilsio Dievo Motinai</h2>
-            <p class="prayer-text">
+                <h1>Lietuviškas atsidavimas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                    <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                    <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                    <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                    <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="prayer-content">
+                <h2>Popiežiaus Pijaus XII Malda Poilsio Dievo Motinai</h2>
+                <p class="prayer-text">
             Išklausyk, Švenčiausioji Mergele,<br>
             maldas, kuriomis kreipiamės į Tave,<br>
             Poilsio Dievo Motina,<br>
             prisimindami tą motinišką meilę<br>
             su kuria Tu priimi savo vaikus.<br>
         </p>
-        <p>
+        <p><p class="prayer-text">
             Tavo galingu užtarimu, Marija,<br>
             mūsų širdys ir protai randa ramybę.<br>
             Mes gerai žinome savo silpnumą;<br>
@@ -62,7 +98,7 @@
             laikydamiesi nukryžiuotojo Jėzaus,<br>
             kuris savo kryžių pavertė ir mūsų kryžiumi.<br>
         </p>
-        <p>
+        <p><p class="prayer-text">
             O Marija, Tavo globojami<br>
             mes randame ramybę žemiškojo suspaudimo akivaizdoje.<br>
             Tu esi ramus stiprios sielos tikrumas,<br>
@@ -75,7 +111,7 @@
             kai baigsis mūsų piligrimystės dienos,<br>
             amžinąją ramybę būsimajame pasaulyje.<br>
         </p>
-        <p>
+        <p><p class="prayer-text">
             Amen.
         <div class="prayer-navigation">
                 <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Maldos</a>
