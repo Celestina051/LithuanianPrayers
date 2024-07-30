@@ -1,248 +1,303 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Švenčiausiojo Marijos vardo Litanija - Lithuanian Prayers</title>
+    <title>Švenčiausiojo Marijos Vardo Litanija</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif; /* Ensure consistent font */
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prayer-content {
+            max-width: 600px; /* Set a maximum width for the prayer content */
+            width: 100%; /* Ensure the content is responsive */
+            margin: 20px; /* Margin for spacing around the content */
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+        }
+
+        .prayer-text {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left; /* Keep the text left-aligned */
+        }
+
+        .prayer-navigation {
+            margin-top: 20px;
+            text-align: center; /* Center align the navigation */
+        }
+
+        .back-to-prayers {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .back-to-prayers:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Švenčiausiojo Marijos vardo Litanija</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prayers.html">Prayers</a></li>
-                <li><a href="litanies.html">Litanies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="litany_svenciausiojo_marijos_vardo">
-        <h2>Švenčiausiojo Marijos vardo Litanija</h2>
-        <p>
-            Viešpatie, pasigailėk.<br>
-            Viešpatie, pasigailėk.<br><br>
-
-            Kristau, pasigailėk.<br>
-            Kristau, pasigailėk.<br><br>
-
-            Viešpatie, pasigailėk.<br>
-            Viešpatie, pasigailėk.<br><br>
-
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+                <h1>Lietuviškas atsidavimas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                    <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                    <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                    <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                    <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="prayer-content">
+                <h2>Švenčiausiojo Marijos Vardo Litanija</h2>
+                <p class="prayer-text">
+            Kyrie, eleison! Christe, eleison! Kyrie, eleison!<br>
+            Kristau, išgirsk mus! Kristau, išklausyk mus!<br><br>
+            <p class="prayer-text">
             Marijos sūnau,<br>
             išklausyk mus.<br><br>
-
+            <p class="prayer-text">
             Marijos Sūnau,<br>
             maloningai išklausyk mus.<br><br>
-
+            <p class="prayer-text">
             Dangiškasis Tėve, kurio duktė yra Marija,<br>
             pasigailėk mūsų.<br><br>
-
+            <p class="prayer-text">
             Amžinasis Žodi, kurio Motina yra Marija,<br>
             pasigailėk mūsų.<br><br>
-
+            <p class="prayer-text">
             Šventoji Dvasia, kurios sutuoktinė yra Marija,<br>
             pasigailėk mūsų.<br><br>
-
+            <p class="prayer-text">
             Dieviškoji Trejybe, kurios tarnaitė yra Marija,<br>
             pasigailėk mūsų.<br><br>
-
+            <p class="prayer-text">
             Marija, Gyvojo Dievo Motina,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, Amžinosios Šviesos dukra,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, mūsų šviesa,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, mūsų seserie,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, Jėzaus gėle,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, Karaliaus gimdytoja,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, pagrindinis Dievo darbe,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, Dievo mylimoji,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, Nekaltai Pradėtoji Mergele,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, visa teisinga,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, šviesa tamsoje,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, mūsų tikroji ramybe,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, Dievo namai,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, Viešpaties šventove,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, Dieviškumo altoriau,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, Mergele Motina,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, apkabinusi savo Kūdikėlį Dievą,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, ilsėdamasi su Amžina Išmintimi,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, kartėlio vandenyne,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, jūros žvaigžde,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, kenčianti su Savo vieninteliu Sūnumi,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, skausmo kalaviju perverta,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, perverta žiaurios žaizdos,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, mirtinai nuliūdusi,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, netekusi bet kokios paguodos,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, paklusni Dievo įstatymui,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, stovinti prie Jėzaus kryžiaus,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, Dievo Motina,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, mūsų Karaliene,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, šlovės Karaliene,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, triumfuojančios Bažnyčios šlove,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, palaimintoji Karaliene,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, karingosios Bažnyčios užtarėja,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, Gailestingumo Karaliene,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, kenčiančios Bažnyčios guodėja,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, išaukštinta virš angelų,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, dvylika žvaigždžių vainikuota,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, skaisti kaip mėnulis,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, šviesi kaip saulė,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, išskirtinė virš visų,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, sėdinti Jėzaus dešinėje,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, mūsų viltie,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, mūsų saldume,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, Jeruzalės šlove,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, Izraelio džiaugsme,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, mūsų tautos garbe,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, Nekaltojo Prasidėjimo Dievo Motina,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, Loreto Dievo Motina,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, Lurdo Dievo Motina,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, Fatimos Dievo Motina,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, Čekoslovakijos Dievo Motina,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, Stebuklingojo medalikėlio Dievo Motina,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, Karmelio kalno Dievo Motina,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, Angelų Dievo Motina,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, Kankinių Dievo Motina,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, Gailestingumo Motina,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, Rožinio Dievo Motina,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, mūsų Pergalės Dievo Motina,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, La Trappe Dievo Motina,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Marija, Dievo Apvaizdos Dievo Motina,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
-            Atleisk mums, Viešpatie Jėzau.<br><br>
-
+            atleisk mums, Viešpatie Jėzau.<br><br>
+            <p class="prayer-text">
             Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
-            Išklausyk mus, Viešpatie Jėzau.<br><br>
-
+            išklausyk mus, Viešpatie Jėzau.<br><br>
+            <p class="prayer-text">
             Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
-            Pasigailėk mūsų, Viešpatie Jėzau.<br><br>
-
+            pasigailėk mūsų, Viešpatie Jėzau.<br><br>
+            <p class="prayer-text">
             Marijos Sūnau, išklausyk mus.<br>
             Marijos Sūnau, maloningai išklausyk mus.<br><br>
-
+            <p class="prayer-text">
             Melskimės.<br><br>
-
+            <p class="prayer-text">
             Visagali Dieve,<br>
             kuris matai savo tarnus, karštai trokštančius<br>
             atsidurti šešėlyje<br>
@@ -252,12 +307,15 @@
             būtume išlaisvinti nuo visokio blogio žemėje,<br>
             ir pasiektume amžinąjį džiaugsmą danguje,<br>
             per Jėzų Kristų, mūsų Viešpatį.<br><br>
-
+            <p class="prayer-text">
             Amen.
-            </p>
-    </section>
+            <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Litanijos</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Lithuanian Prayers to the Mother of God</p>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
