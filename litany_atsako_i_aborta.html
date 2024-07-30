@@ -1,228 +1,287 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atsako į abortą litanija</title>
+    <title>Atsako Į Abortą Litanija</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif; /* Ensure consistent font */
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prayer-content {
+            max-width: 600px; /* Set a maximum width for the prayer content */
+            width: 100%; /* Ensure the content is responsive */
+            margin: 20px; /* Margin for spacing around the content */
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+        }
+
+        .prayer-text {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left; /* Keep the text left-aligned */
+        }
+
+        .prayer-navigation {
+            margin-top: 20px;
+            text-align: center; /* Center align the navigation */
+        }
+
+        .back-to-prayers {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .back-to-prayers:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Atsako į abortą litanija</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prayers.html">Prayers</a></li>
-                <li><a href="litanies.html">Litanies</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Atsako į abortą litanija</h2>
-
-        Viešpatie, pasigailėk.<br>
-        Kristau, pasigailėk.<br>
-        Viešpatie, pasigailėk.<br>
-        Kristau, išklausyk mus.<br>
-        Kristau, maloningai išklausyk mus.<br><br>
-        
-        Dieve Tėve, pasaulio Kūrėjau,<br>
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+                <h1>Lietuviškas atsidavimas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                    <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                    <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                    <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                    <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="prayer-content">
+                <h2>Atsako Į Abortą Litanija</h2>
+                <p class="prayer-text">
+        <p class="prayer-text">
+        Kyrie, eleison! Christe, eleison! Kyrie, eleison!
+        Kristau, išgirsk mus! Kristau, išklausyk mus!
+        <p class="prayer-text"
+            
+        Tėve, dangaus Dieve, pasaulio Kūrėjau,<br>
         pasigailėk mūsų!<br><br>
-        
-        Dieve Sūnau, per kurį viskas buvo sukurta,<br>
+                <p class="prayer-text"
+        Sūnau, pasaulio Atpirkėjau, Dieve, per kurį viskas buvo sukurta,<br>
         pasigailėk mūsų!<br><br>
-        
-        Dieve, Šventoji Dvasia, Viešpatie ir Gyvybės Davėjau,<br>
+                <p class="prayer-text"
+        Šventoji Dvasia, Dieve, Viešpatie ir Gyvybės Davėjau,<br>
         pasigailėk mūsų!<br><br>
-        
+                <p class="prayer-text"
         Viešpatie Jėzau, Pradžia ir Pabaiga,<br>
         pasigailėk mūsų!<br><br>
-        
+                <p class="prayer-text"
         Viešpatie Jėzau, Kelias, Tiesa ir Gyvenime,<br>
         pasigailėk mūsų!<br><br>
-        
+                <p class="prayer-text"
         Viešpatie Jėzau, Prisikėlime ir Gyvenime,<br>
         pasigailėk mūsų!<br><br>
-        
+                <p class="prayer-text"
         Viešpatie Jėzau, amžinasis Gyvybės Žodi,<br>
         pasigailėk mūsų!<br><br>
-        
+                <p class="prayer-text"
         Viešpatie Jėzau, gyvenantis Mergelės Marijos įsčiose,<br>
         pasigailėk mūsų!<br><br>
-        
+                <p class="prayer-text"
         Viešpatie Jėzau, vargšų ir silpnųjų mylėtojau,<br>
         pasigailėk mūsų!<br><br>
-        
+                <p class="prayer-text"
         Viešpatie Jėzau, bejėgių gynėjau,<br>
         pasigailėk mūsų!<br><br>
-        
+                <p class="prayer-text"
         Viešpatie Jėzau, gyvybės duona,<br>
         pasigailėk mūsų!<br><br>
-        
+                <p class="prayer-text"
         Už kiekvieną nuodėmę prieš gyvybę,<br>
         pasigailėk mūsų!<br><br>
-        
+                <p class="prayer-text"
         Dėl aborto nuodėmės,<br>
         pasigailėk mūsų!<br><br>
-        
+                <p class="prayer-text"
         Dėl kasdienio nekaltų kūdikių žudymo,<br>
         pasigailėk mūsų!<br><br>
-        
+                <p class="prayer-text"
         Dėl kraujo praliejimo visoje mūsų šalyje,<br>
         pasigailėk mūsų!<br><br>
-        
+                <p class="prayer-text"
         Dėl tylių Tavo vaikų šauksmų,<br>
         pasigailėk mūsų!<br><br>
-        
+                <p class="prayer-text"
         Dėl Tavo būsimų mokinių žudymo,<br>
         pasigailėk mūsų!<br><br>
-        
+                <p class="prayer-text"
         Dėl moterų išnaudojimo atliekant abortus,<br>
         pasigailėk mūsų!<br><br>
-        
+                <p class="prayer-text"
         Dėl Tavo tautos tylos,<br>
         pasigailėk mūsų!<br><br>
-        
+                <p class="prayer-text"
         Dėl Tavo žmonių apatijos,<br>
         pasigailėk mūsų!<br><br>
-        
+                <p class="prayer-text"
         Už Tavo tautos bendradarbiavimą šioje tragedijoje,<br>
         pasigailėk mūsų!<br><br>
-        
+                <p class="prayer-text"
         Dėl mūsų dar negimusių brolių ir seserų, nužudytų dėl abortų,<br>
         Viešpatie, išklausyk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už mūsų dar negimusius brolius ir seseris, kuriems gresia abortai,<br>
         Viešpatie, išklausyk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už mūsų brolius ir seseris, kurie išgyveno abortą,<br>
         Viešpatie, išgirsk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už motinas, kurios pasidarė abortą,<br>
         Viešpatie, išklausyk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už motinas, gundomas darytis abortus,<br>
         Viešpatie, išgirsk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už motinas, verčiamas daryti abortus,<br>
         Viešpatie, išgirsk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už motinas, kurios atsisakė daryti abortą,<br>
         Viešpatie, išgirsk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už abortuotų kūdikių tėvus,<br>
         Viešpatie, išgirsk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už abortuotų kūdikių šeimas,<br>
         Viešpatie, išklausyk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už šeimas tų, kurie yra gundomi daryti abortus<br>
         Viešpatie, išklausyk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už abortus darančius asmenis,<br>
         Viešpatie, išklausyk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už visus, kurie padeda ir bendradarbiauja atliekant abortus,<br>
         Viešpatie, išklausyk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už gydytojus ir slaugytojus, kad jie puoselėtų gyvybę,<br>
         Viešpatie, išklausyk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už vyriausybės vadovus, kad jie gintų gyvybę,<br>
         Viešpatie, išklausyk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už dvasininkus, kad jie pasisakytų už gyvybę,<br>
         Viešpatie, išklausyk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už gyvybės judėjimą,<br>
         Viešpatie, išklausyk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už tuos, kurie kalba, rašo ir dirba, kad nutraukti abortus,<br>
         Viešpatie, išklausyk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už tuos, kurie padeda kurti alternatyvas abortams,<br>
         Viešpatie, išklausyk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už tuos, kurie skatina įvaikinimą,<br>
         Viešpatie, išklausyk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už nacionalines ir vietines už gyvybę pasisakančias grupes,<br>
         Viešpatie, išklausyk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už vienybę gyvybės judėjime,<br>
         Viešpatie, išklausyk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už drąsą ir ištvermę veikloje už gyvybę,<br>
         Viešpatie, išklausyk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už tuos, kurie kenčia patyčias ir atstūmimą dėl savo pozicijos už gyvybę,<br>
         Viešpatie, išklausyk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už tuos, kurie įkalinti už gyvybės gynimą,<br>
         Viešpatie, išklausyk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už tuos, kurie buvo sužeisti ir su kuriais buvo netinkamai elgiamasi dėl to, kad gynė gyvybę,<br>
         Viešpatie, išklausyk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už teisininkus,<br>
         Viešpatie, išklausyk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už teismus ir teisėjus,<br>
         Viešpatie, išklausyk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už policijos pareigūnus,<br>
         Viešpatie, išgirsk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už pedagogus,<br>
         Viešpatie, išgirsk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Už žiniasklaidos specialistus,<br>
         Viešpatie, išgirsk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Dėkojame už nuo abortų išgelbėtus kūdikius,<br>
         Viešpatie, išklausyk mūsų maldą.<br><br>
-        
+                <p class="prayer-text"
         Dėkojame už motinas, išgelbėtas ir išgydytas nuo aborto,<br>
         Viešpatie, išklausyk mūsų maldą.<br><br>
-
+        <p class="prayer-text"
         Dėkojame už buvusius abortų vykdytojus, kurie tapo gyvybės gynėjais,<br>
         Viešpatie, išklausyk mūsų maldą.<br><br>
-
+        <p class="prayer-text"
         Dėkojame už visus, kurie pasisako prieš abortus,<br>
         Viešpatie, išklausyk mūsų maldą.<br><br>
-
+        <p class="prayer-text"
         Dėkojame už kvietimą būti gyvybės judėjimo dalimi,<br>
         Viešpatie, išklausyk mūsų maldą.<br><br>
-
+        <p class="prayer-text"
         Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
         Atleisk mums, Viešpatie.<br><br>
-
+        <p class="prayer-text"
         Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
         Išklausyk mus, Viešpatie.<br><br>
-
+        <p class="prayer-text"
         Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
         Pasigailėk mūsų.<br><br>
-
+        <p class="prayer-text"
         Melskimės.<br><br>
-
+        <p class="prayer-text"
         Visagali ir amžinai gyvasis Dieve,<br>
         Tu viską sukūrei per savo Sūnų Jėzų Kristų.<br>
         Jis savo Velykų slėpiniu sutrypė mirties galią.<br>
         Tegul visi, kurie Tave pripažįsta, skatina gyvybės šventumą<br>
         ir visada ištikimai Tau tarnauja,<br>
         per tą patį Kristų, mūsų Viešpatį.<br><br>
-
+        <p class="prayer-text"
        Amen.
-        </p>
-    </section>
+       <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Litanijos</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Lithuanian Prayers to the Mother of God</p>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
-
-
-
-
-
-
