@@ -1,30 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Litanija Dievo Avinėliui Karo Metu - Lithuanian Prayers</title>
+    <title>Litanija Dievo Avinėliui Karo Metu</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif; /* Ensure consistent font */
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prayer-content {
+            max-width: 600px; /* Set a maximum width for the prayer content */
+            width: 100%; /* Ensure the content is responsive */
+            margin: 20px; /* Margin for spacing around the content */
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+        }
+
+        .prayer-text {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left; /* Keep the text left-aligned */
+        }
+
+        .prayer-navigation {
+            margin-top: 20px;
+            text-align: center; /* Center align the navigation */
+        }
+
+        .back-to-prayers {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .back-to-prayers:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Litanija Dievo Avinėliui Karo Metu</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prayers.html">Prayers</a></li>
-                <li><a href="litanies.html">Litanies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="litany_dievo_avineliui_karo_metu">
-        <h2>Litanija Dievo Avinėliui Karo Metu</h2>
-        <p>
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+                <h1>Lietuviškas atsidavimas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                    <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                    <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                    <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                    <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="prayer-content">
+                <h2>Litanija Dievo Avinėliui Karo Metu</h2>
+                <p class="prayer-text">
            Tegul Viešpats suteikia jums Savo ramybę;<br>
            Ramybę ir gerą valią.<br><br>
-
+<p class="prayer-text">
            Viešpatie Jėzau Kristau,<br>
            kuris savo apaštalams sakei,<br>
            "Palieku jums Savo ramybę."<br>
@@ -34,107 +95,104 @@
            pagal Savo valią,<br>
            kuris gyveni ir viešpatauji,<br>
            Vienas Dieve, per amžių amžius.<br><br>
-
+<p class="prayer-text">
            Amen.<br><br>
-
-           Viešpatie, pasigailėk.<br>
-           Kristau, pasigailėk.<br><br>
-
-           Viešpatie, pasigailėk. Jėzau išklausyk mus.<br>
-           Jėzau, maloningai išklausyk mus.<br><br>
-
+<p class="prayer-text">
+           Kyrie, eleison! Christe, eleison! Kyrie, eleison!<br>
+           Kristau, išgirsk mus! Kristau, išklausyk mus!<br><br>
+<p class="prayer-text">
            Angelų giesme apie Tavo gimimą,<br>
            suteik mums ramybę.<br><br>
-
+<p class="prayer-text">
            Savo pasveikinimu apaštalams,<br>
            suteik mums ramybę.<br><br>
-
+<p class="prayer-text">
            Savo balsu į Galilėjos bangas,<br>
            suteik mums ramybę.<br><br>
-
+<p class="prayer-text">
            Savo palaiminimu nusidėjėliams,<br>
            suteik mums ramybę.<br><br>
-
+<p class="prayer-text">
            Savo maldomis už vienybę tarp Savo mokinių,<br>
            suteik mums ramybę.<br><br>
-
+<p class="prayer-text">
            Meile, kuri turėjo paženklinti Tavo sekėjus,<br>
            suteik mums ramybę.<br><br>
-
+<p class="prayer-text">
            Didžiąja Kryžiaus taikos auka,<br>
            suteik mums ramybę.<br><br>
-
+<p class="prayer-text">
            Savo atsisveikinimo pažadu: "Aš palieku jums savo ramybę".<br>
            suteik mums ramybę.<br><br>
-
+<p class="prayer-text">
            Nuo imperijos ambicijų,<br>
            Išgelbėk mus, Viešpatie.<br><br>
-
+<p class="prayer-text">
            Nuo teritorijos troškimo,<br>
            Išgelbėk mus, Viešpatie.<br><br>
-
+<p class="prayer-text">
            Nuo neteisingumo,<br>
            Išgelbėk mus, Viešpatie.<br><br>
-
+<p class="prayer-text">
            Nuo savanaudiškumo, kuris yra vagystė,<br>
            Išgelbėk mus, Viešpatie.<br><br>
-
+<p class="prayer-text">
            Nuo meilės pinigams, kuri yra stabmeldystė,<br>
            Išgelbėk mus, Viešpatie.<br><br>
-
+<p class="prayer-text">
            Nuo neapykantos, kuri yra žmogžudystė,<br>
            Išgelbėk mus, Viešpatie.<br><br>
-
+<p class="prayer-text">
            Nuo kietumo, kuris neleidžia atleisti,<br>
            Išgelbėk mus, Viešpatie.<br><br>
-
+<p class="prayer-text">
            Nuo išdidumo, kuris neprašo atleidimo,<br>
            Išgelbėk mus, Viešpatie.<br><br>
-
+<p class="prayer-text">
            Bejėgiu našlaičių šauksmu,<br>
            Meldžiame Tave, išklausyk mus.<br><br>
-
+<p class="prayer-text">
            Našlių skausmingomis ašaromis,<br>
            Meldžiame Tave, išklausyk mus.<br><br>
-
+<p class="prayer-text">
            Mirštančiųjų dejonėmis,<br>
            Meldžiame Tave, išgirsk mus.<br><br>
-
+<p class="prayer-text">
            Mirusiųjų nepalaidotų kapuose,<br>
            Meldžiame Tave, išklausyk mus.<br><br>
-
+<p class="prayer-text">
            Prašome, kad visos tautos gyventų kaip viena,<br>
            Meldžiame Tave, išklausyk mus.<br><br>
-
+<p class="prayer-text">
            Prašome, kad valdovų širdys būtų kaip vaškas Tavo rankose,<br>
            Meldžiame Tave, išklausyk mus.<br><br>
-
+<p class="prayer-text">
            Prašome, kad pasimokę iš kančios, atsigręžtume į Tave,<br>
            Meldžiame Tave, išklausyk mus.<br><br>
-
+<p class="prayer-text">
            Prašome, kad žemėje liautųsi karai,<br>
            Meldžiame Tave, išklausyk mus.<br><br>
-
+<p class="prayer-text">
            Savo titulu "Taikos kunigaikštis".<br>
            meldžiame Tave, išklausyk mus.<br><br>
-
+<p class="prayer-text">
            Viešpatie, kariuomenių Dieve,<br>
            meldžiame Tave, išklausyk mus.<br><br>
-
+<p class="prayer-text">
            Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
            suteik mums ramybę.<br><br>
-
+<p class="prayer-text">
            Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
            suteik mums ramybę.<br><br>
-
+<p class="prayer-text">
            Dievo Avinėli, kuris nuimi pasaulio nuodėmes,<br>
            suteik mums ramybę.<br><br>
-
+<p class="prayer-text">
            Aš esu žmonių išgelbėjimas, - sako Viešpats;<br>
            Kokio tik suspaudimo metu jie manęs šauksis, aš juos išklausysiu.<br><br>
-
+<p class="prayer-text">
            Melskimės.<br><br>
-
+<p class="prayer-text">
            Jėzau, klusnus ir nuolankios širdies, išmokyk mus,<br>
            kurie nusidėjome dangui ir Tavo akivaizdoje,<br>
            gelbstinčios tikro nuolankumo malonės,<br>
@@ -150,26 +208,26 @@
            trokštame sumažinti kaltę ir pagreitinti tikrąją taiką,<br>
            be pergalių,<br>
            išskyrus vienybės su Tavimi pergalę.<br><br>
-
+<p class="prayer-text">
            Amen.<br><br>
-
+<p class="prayer-text">
            Švenčiausioji Jėzaus Širdie,<br>
            pasigailėk mūsų.<br><br>
-
+<p class="prayer-text">
            Švenčiausioji Jėzaus Širdie,<br>
            pasigailėk mūsų.<br><br>
-
+<p class="prayer-text">
            Švenčiausioji Jėzaus Širdie,<br>
            pasigailėk mūsų.<br><br>
-
+<p class="prayer-text">
            Suteik ramybę, Viešpatie, mūsų dienoms,<br>
            nes nėra kito, kuris už mus kovotų, tik Tu, mūsų Dieve.<br><br>
-
+<p class="prayer-text">
            Tebūna mūsų ramybė Tavo stiprybėje, Viešpatie,<br>
            Ir gausybė Tavo tvirtovėse.<br><br>
-
+<p class="prayer-text">
            Melskimės.<br><br>
-
+<p class="prayer-text">
            Dieve, iš kurio kyla visi šventi troškimai,<br>
            visi teisingi patarimai ir visi teisingi darbai,<br>
            suteik mums, savo tarnams<br>
@@ -178,18 +236,20 @@
            ir kad būdami išlaisvinti nuo priešų baimės,<br>
            galėtume ramiai leisti laiką Tavo globoje,<br>
            per Kristų, mūsų Viešpatį.<br><br>
-
+<p class="prayer-text">
            Amen.<br><br>
-
+<p class="prayer-text">
            Nekaltoji Taikos Karaliene,<br>
            Melskis už mus.<br><br>
-
+<p class="prayer-text">
            Amen.<br>
-        </p>
-    </section>
+        <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Litanijos</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Lithuanian Prayers to the Mother of God</p>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
-           
