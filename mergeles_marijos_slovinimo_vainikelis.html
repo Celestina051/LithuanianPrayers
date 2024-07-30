@@ -3,24 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mergelės Marijos šlovinimo vainikėlis (Atgailai už piktžodžiavimą)</title>
+    <title>Mergelės Marijos Šlovinimo Vainikėlis (Atgailai Už Piktžodžiavimą)</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif; /* Ensure consistent font */
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prayer-content {
+            max-width: 600px; /* Set a maximum width for the prayer content */
+            width: 100%; /* Ensure the content is responsive */
+            margin: 20px; /* Margin for spacing around the content */
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+        }
+
+        .prayer-text {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left; /* Keep the text left-aligned */
+        }
+
+        .prayer-navigation {
+            margin-top: 20px;
+            text-align: center; /* Center align the navigation */
+        }
+
+        .back-to-prayers {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .back-to-prayers:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Vainikėliai</h1>
-        <nav>
-            <ul>
-                <li><a href="prayers.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <h2>Mergelės Marijos šlovinimo vainikėlis (Atgailai už piktžodžiavimą)</h2>
-        <p>
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+                <h1>Lietuviškas atsidavimas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                    <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                    <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                    <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                    <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="prayer-content">
+                <h2>Mergelės Marijos Šlovinimo Vainikėlis (Atgailai Už Piktžodžiavimą)</h2>
+                <p class="prayer-text">
           Rožinio pradžioje vietoj „Tikiu į Dievą..“ ir „Tėve mūsų“ kalbama:<br><br>
-
+          <p class="prayer-text">
           „Marija, mano Nekaltoji Motina,<br>
           Trokštu aukoti Tau atgailą už nusikaltimus<br>
           kurias Tavo Nekaltoji Širdis<br>
@@ -37,16 +101,16 @@
           ir su gailesčiu žvelk į tuos piktžodžiautojus<br>
           kad jie netruktų ateiti<br>
           į Tavo motiniškas rankas.<br><br>
-          
+          <p class="prayer-text">
           Amen.“<br><br>
-
+          <p class="prayer-text">
           Ant karoliukų vietoj "Tėve mūsų":<br><br>
-          
+          <p class="prayer-text">
           „Suteik, kad galėčiau šlovinti tave, Šventoji Mergele!<br>
           Suteik man stiprybės prieš Tavo priešus!“<br><br>
-          
+          <p class="prayer-text">
           Ant 10 mažųjų karoliukų meldžiamasi po vieną kartą kiekvienu iš šių 10 šlovinimų:<br><br>
-          
+          <p class="prayer-text">
           1 karoliukas:"Palaiminta būk Didžioji Dievo Motina, Švenčiausioji Mergelė Marija!<br>
           2 karoliukas: Tebūna palaimintas jos šventasis ir nekaltasis prasidėjimas!<br>
           3 karoliukas: Tebūna palaimintas jos šlovingasis įžengimas į dangų!<br>
@@ -57,21 +121,21 @@
           8 karoliukas: Tebūna palaimintas jos visagalis Užtarimas!<br>
           9 karoliukas: Tebūnie palaiminti jos skausmai ir ašaros!<br>
           10 karoliukas: Tebūna palaimintos malonės, kuriomis Viešpats vainikavo ją dangaus ir žemės Karaliene!“<br><br>
-
+          <p class="prayer-text">
           Po kiekvienos dešimties:<br><br>
-          
+          <p class="prayer-text">
           „Šlovė Marijai, Tėvo Dukrai!<br>
           Garbė Marijai, Sūnaus Motinai!<br>
           Šlovė Marijai, Šventosios Dvasios Sutuoktinei!“<br><br>
-          
+          <p class="prayer-text">
           Baigiamoji malda:<br><br>
-          
+          <p class="prayer-text">
           „Mano Motina,<br>
           Aš myliu Tave už tuos, kurie Tavęs nemyli;<br>
           Aš šlovinu Tave už tuos, kurie Tave piktžodžiauja;<br>
           Aš atsiduodu Tau<br>
           už tuos, kurie nepripažįsta Tavęs kaip savo Motinos.“<br><br>
-          
+          <p class="prayer-text">
           (Pakartokite šią baigiamąją maldą 5 kartus)<br><br>
           </p>
     </section>
