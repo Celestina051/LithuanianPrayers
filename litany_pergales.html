@@ -1,165 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pergalės Motinos Litanija - Lithuanian Prayers</title>
+    <title>Pergalės Motinos Litanija</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif; /* Ensure consistent font */
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prayer-content {
+            max-width: 600px; /* Set a maximum width for the prayer content */
+            width: 100%; /* Ensure the content is responsive */
+            margin: 20px; /* Margin for spacing around the content */
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+        }
+
+        .prayer-text {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left; /* Keep the text left-aligned */
+        }
+
+        .prayer-navigation {
+            margin-top: 20px;
+            text-align: center; /* Center align the navigation */
+        }
+
+        .back-to-prayers {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .back-to-prayers:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Pergalės Motinos Litanija</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prayers.html">Prayers</a></li>
-                <li><a href="litanies.html">Litanies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="litany_pergales_motinos">
-        <h2>Pergalės Motinos Litanija</h2>
-        <p>
-            Viešpatie, pasigailėk mūsų.<br>
-            Kristau, pasigailėk mūsų.<br><br>
-
-            Viešpatie, pasigailėk mūsų.<br>
-            Kristau, išklausyk mus. Kristau, maloningai išklausyk mus.<br><br>
-
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+                <h1>Lietuviškas atsidavimas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                    <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                    <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                    <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                    <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="prayer-content">
+                <h2>Pergalės Motinos Litanija</h2>
+                <p class="prayer-text">
+            Kyrie, eleison! Christe, eleison! Kyrie, eleison!<br>
+            Kristau, išgirsk mus! Kristau, išklausyk mus!<br><br>
+            <p class="prayer-text">
             Tėve, dangaus Dieve, pasigailėk mūsų!<br>
             Sūnau, pasaulio Atpirkėjau, Dieve, pasigailėk mūsų!<br>
             Šventoji Dvasia, Dieve, pasigailėk mūsų!<br>
             Šventoji Trejybe, vienas Dieve, pasigailėk mūsų!<br><br>
-
+            <p class="prayer-text">
             Marija, Pergalės Mergele,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga Tėvo dukra,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga Sūnaus Motina,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga Šventosios Dvasios Sutuoktine,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga Švenčiausiosios Trejybės pasirinkime,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga Savo Nekaltuoju Prasidėjimu,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga sutriuškindama gyvatės galvą,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga prieš visus Adomo vaikus,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga virš visų mūsų priešų,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga angelo Gabrieliaus globoje,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga Savo santuokoje su Šv. Juozapu,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga Betliejaus scenoje,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga bėgime į Egiptą,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga Savo tremtyje,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga Savo kuklioje buveinėje Nazarete,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga, kai radai Savo dieviškąjį Kūdikį šventykloje,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga žemiškajame mūsų Viešpaties gyvenime,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga Jo kančioje ir mirtyje,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga Prisikėlime,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga Žengimu į dangų,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga Šventosios Dvasios nužengimu,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga Savo skausmuose,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga Savo džiaugsmuose,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga Savo įžengimu į dangiškąją Jeruzalę,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga tarp angelų, kurie liko ištikimi,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga palaimintųjų laimėje,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga teisingųjų malonėse,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga Pranašų skelbime,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga patriarchų troškimuose,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga apaštalų uolume,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga evangelistų šviesoje,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga daktarų išmintyje,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga išpažinėjų karūnose,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga gausių mergelių būrių tyrume,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga kankinių tvirtume,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga Savo visagaliu užtarimu,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga Savo daugybėje titulų,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Pergalinga mūsų mirties valandą,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
-            Atleisk mums, Viešpatie.<br><br>
-
-            Dievo Avinėli, kuris naikini pasaulio nuodėmes, išklausyk mus, Viešpatie.<br><br>
-
+            atleisk mums, Viešpatie.<br><br>
+            <p class="prayer-text">
+            Dievo Avinėli, kuris naikini pasaulio nuodėmes, 
+            išklausyk mus, Viešpatie.<br><br>
+            <p class="prayer-text">
             Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
-            Pasigailėk mūsų, Viešpatie.<br><br>
-
+            pasigailėk mūsų, Viešpatie.<br><br>
+            <p class="prayer-text">
             Melskis už mus, Švenčiausioji Pergalės Motina!<br>
-            Kad taptume verti Kristaus pažadų.<br><br>
-
+            Kad taptume verti Kristaus Žadėjimų.<br><br>
+            <p class="prayer-text">
             Melskimės.<br><br>
-
+            <p class="prayer-text">
             O pergalingoji Dievo Motina!<br>
             Tu, kuri turi tokią galingą įtaką<br>
             su savo dieviškuoju Sūnumi,<br>
@@ -169,12 +228,15 @@
             dieviškosios malonės spinduliai sušvelnintų jų širdis,<br>
             ir jie sugrįžtų į tikrojo tikėjimo vienybę,<br>
             per Kristų, mūsų Viešpatį.<br><br>
-
+            <p class="prayer-text">
             Amen.
-        </p>
-    </section>
+        <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Litanijos</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Lithuanian Prayers to the Mother of God</p>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
