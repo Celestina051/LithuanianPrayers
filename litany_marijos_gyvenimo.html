@@ -1,439 +1,286 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marijos Gyvenimo Litanija - Lithuanian Prayers</title>
+    <title>Marijos Gyvenimo Litanija</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif; /* Ensure consistent font */
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prayer-content {
+            max-width: 600px; /* Set a maximum width for the prayer content */
+            width: 100%; /* Ensure the content is responsive */
+            margin: 20px; /* Margin for spacing around the content */
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+        }
+
+        .prayer-text {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left; /* Keep the text left-aligned */
+        }
+
+        .prayer-navigation {
+            margin-top: 20px;
+            text-align: center; /* Center align the navigation */
+        }
+
+        .back-to-prayers {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .back-to-prayers:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Marijos Gyvenimo Litanija</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prayers.html">Prayers</a></li>
-                <li><a href="litanies.html">Litanies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="litany_marijos_gyvenimo">
-        <h2>Marijos Gyvenimo Litanija</h2>
-        <p>
-            Viešpatie, pasigailėk<br>
-            Kristau, pasigailėk.<br><br>
-
-            Viešpatie, pasigailėk. Kristau, išklausyk mus.<br>
-            Kristau, maloningai išklausyk mus.<br><br>
-
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+                <h1>Lietuviškas atsidavimas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                    <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                    <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                    <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                    <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="prayer-content">
+                <h2>Marijos Gyvenimo Litanija</h2>
+                <p class="prayer-text">
+            Kyrie, eleison! Christe, eleison! Kyrie, eleison!<br>
+            Kristau, išgirsk mus! Kristau, išklausyk mus!<br><br>
+            <p class="prayer-text">
             Tėve, dangaus Dieve, pasigailėk mūsų!<br>
             Sūnau, pasaulio Atpirkėjau, Dieve, pasigailėk mūsų!<br>
             Šventoji Dvasia, Dieve, pasigailėk mūsų!<br>
             Šventoji Trejybe, vienas Dieve, pasigailėk mūsų!<br><br>
-
+            <p class="prayer-text">
             Šventoji Marija,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             kilusi iš Dovydo giminės,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             Jesės šaknie,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             pradėta be gimtosios nuodėmės,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             vaikystėje pristatyta šventykloje,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             sužadėta su teisiuoju Juozapu,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Švenčiausioji Mergele,<br>
             susaistyta neliečiamu skaistybės įžadu,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             šlovingai pasveikinta angelo,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             malonės pilnoji,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             palaiminta tarp visų moterų,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             sutinkanti su Dangaus prašymu,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             pradėjusi kūdikį Šventosios Dvasios veikimu,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             nešiojanti savo įsčiose Žmogų-Dievą,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             Viešpaties Motina,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             tikrojo Saliamono Motina,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             Dievo Motina,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             palaimintoji žeme, iš kurios kilo Gelbėtojas,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele, šventieji vartai,<br>
             pro kuriuos gali praeiti tik Dangaus Karalius,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             keliaujanti į Betliejų su savo sutuoktiniu Juozapu,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             atnešanti į pasaulį savo dieviškąjį Sūnų,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             savo Kūrėjo Motina,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             paguldžiusi Dievą Sūnų į ėdžias,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Švenčiausioji Mergele,<br>
             kurią aplankė piemenėliai,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Švenčiausioji Mergele,<br>
             pasveikinta išminčių,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             pateikianti savo Sūnų apipjaustyti,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             pasiduodama apsivalymo įstatymui,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             aukojanti savo brangųjį Sūnų šventykloje,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             bėganti į Egiptą gelbėti savo Kūdikio,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             grįžtanti į Izraelio žemę,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             Nazarete gyvenanti kuklų gyvenimą,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             laikydamasi Įstatymo nustatytų švenčių,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             kenčianti dėl savo Kūdikio netekties,<br>
             kai Jam buvo dvylika metų,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             tris dienas liūdnai ieškojusi savo Kūdikio,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             pagerbusi savo buvimu Kanos santuokos šventę,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             savo užtarimu pasiekusi pirmąjį viešą Kristaus stebuklą,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             sekdama savo Sūnų Jo tarnystėje,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             dalydamasi savo Sūnaus skausmais,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             stovinti Kryžiaus papėdėje,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             kurią Tavo Sūnus patikėjo mylimajam mokiniui Jonui,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             perverta liūdesio kalaviju,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             Sekminių dieną pripildyta Šventosios Dvasios,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             Savo Sūnaus paimta į dangų,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             viešpataujanti danguje, mūsų Karaliene,<br>
             melski už mus.<br><br>
-
+            <p class="prayer-text">
             Šventoji Mergele,<br>
             visų kartų vadinama palaimintąja,<br>
             melski už mus.<br><br>
-
-            Dievo Avinėli, kuris naikini pasaulio nuodėmes,<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marijos Gyvenimo Litanija - Lithuanian Prayers</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Marijos Gyvenimo Litanija</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prayers.html">Prayers</a></li>
-                <li><a href="litanies.html">Litanies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="litany_marijos_gyvenimo">
-        <h2>Marijos Gyvenimo Litanija</h2>
-        <p>
-            Viešpatie, pasigailėk<br>
-            Kristau, pasigailėk.<br><br>
-
-            Viešpatie, pasigailėk. Kristau, išklausyk mus.<br>
-            Kristau, maloningai išklausyk mus.<br><br>
-
-            Tėve, dangaus Dieve, pasigailėk mūsų!<br>
-            Sūnau, pasaulio Atpirkėjau, Dieve, pasigailėk mūsų!<br>
-            Šventoji Dvasia, Dieve, pasigailėk mūsų!<br>
-            Šventoji Trejybe, vienas Dieve, pasigailėk mūsų!<br><br>
-
-            Šventoji Marija,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            kilusi iš Dovydo giminės,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            Jesės šaknie,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            pradėta be gimtosios nuodėmės,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            vaikystėje pristatyta šventykloje,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            sužadėta su teisiuoju Juozapu,<br>
-            melski už mus.<br><br>
-
-            Švenčiausioji Mergele,<br>
-            susaistyta neliečiamu skaistybės įžadu,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            šlovingai pasveikinta angelo,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            malonės pilnoji,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            palaiminta tarp visų moterų,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            sutinkanti su Dangaus prašymu,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            pradėjusi kūdikį Šventosios Dvasios veikimu,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            nešiojanti savo įsčiose Žmogų-Dievą,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            Viešpaties Motina,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            tikrojo Saliamono Motina,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            Dievo Motina,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            palaimintoji žeme, iš kurios kilo Gelbėtojas,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele, šventieji vartai,<br>
-            pro kuriuos gali praeiti tik Dangaus Karalius,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            keliaujanti į Betliejų su savo sutuoktiniu Juozapu,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            atnešanti į pasaulį savo dieviškąjį Sūnų,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            savo Kūrėjo Motina,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            paguldžiusi Dievą Sūnų į ėdžias,<br>
-            melski už mus.<br><br>
-
-            Švenčiausioji Mergele,<br>
-            kurią aplankė piemenėliai,<br>
-            melski už mus.<br><br>
-
-            Švenčiausioji Mergele,<br>
-            pasveikinta išminčių,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            pateikianti savo Sūnų apipjaustyti,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            pasiduodama apsivalymo įstatymui,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            aukojanti savo brangųjį Sūnų šventykloje,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            bėganti į Egiptą gelbėti savo Kūdikio,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            grįžtanti į Izraelio žemę,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            Nazarete gyvenanti kuklų gyvenimą,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            laikydamasi Įstatymo nustatytų švenčių,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            kenčianti dėl savo Kūdikio netekties,<br>
-            kai Jam buvo dvylika metų,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            tris dienas liūdnai ieškojusi savo Kūdikio,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            pagerbusi savo buvimu Kanos santuokos šventę,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            savo užtarimu pasiekusi pirmąjį viešą Kristaus stebuklą,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            sekdama savo Sūnų Jo tarnystėje,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            dalydamasi savo Sūnaus skausmais,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            stovinti Kryžiaus papėdėje,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            kurią Tavo Sūnus patikėjo mylimajam mokiniui Jonui,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            perverta liūdesio kalaviju,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            Sekminių dieną pripildyta Šventosios Dvasios,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            Savo Sūnaus paimta į dangų,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            viešpataujanti danguje, mūsų Karaliene,<br>
-            melski už mus.<br><br>
-
-            Šventoji Mergele,<br>
-            visų kartų vadinama palaimintąja,<br>
-            melski už mus.<br><br>
-
+            <p class="prayer-text">
             Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
-            Atleisk mums, Viešpatie.<br><br>
-
+            atleisk mums, Viešpatie.<br><br>
+            <p class="prayer-text">
             Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
-            Išklausyk mus, Viešpatie.<br><br>
-
+            išklausyk mus, Viešpatie.<br><br>
+            <p class="prayer-text">
             Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
-            Pasigailėk mūsų.<br><br>
-
+            pasigailėk mūsų.<br><br>
+            <p class="prayer-text">
             Melski už mus, Šventoji Dievo Motina,<br>
-            kad būtume verti Kristaus pažadų.<br><br>
-
+            kad būtume verti Kristaus žadėjimų.<br><br>
+            <p class="prayer-text">
             Melskimės.<br><br>
-
+            <p class="prayer-text">
            Apsaugok, Viešpatie,<br>
            savo tarnus savo maloninga ir gausia pagalba,<br>
            ir suteik, kad mūsų pasitikėjimas<br>
@@ -442,16 +289,18 @@
            kuris mums suteiktų apsaugą<br>
            nuo visų priešų ir pavojų,<br>
            per mūsų Viešpatį Jėzų Kristų.<br><br>
-
+            <p class="prayer-text">
            Amen.
-            </p>
-    </section>
+           <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Litanijos</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Lithuanian Prayers to the Mother of God</p>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
-
 
 
 
