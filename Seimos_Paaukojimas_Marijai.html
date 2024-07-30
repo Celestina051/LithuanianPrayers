@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Šeimos paaukojimas Marijai</title>
+    <title>Šeimos Paaukojimas Marijai</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         /* Ensure the page takes at least the full height of the viewport */
         html, body {
             height: 100%;
             margin: 0;
+            font-family: 'Roboto', sans-serif; /* Ensure consistent font */
         }
 
         /* Flexbox container to push footer to the bottom */
@@ -22,6 +23,41 @@
         /* Main content should take remaining space */
         .flex-wrapper main {
             flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prayer-content {
+            max-width: 600px; /* Set a maximum width for the prayer content */
+            width: 100%; /* Ensure the content is responsive */
+            margin: 20px; /* Margin for spacing around the content */
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+        }
+
+        .prayer-text {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left; /* Keep the text left-aligned */
+        }
+
+        .prayer-navigation {
+            margin-top: 20px;
+            text-align: center; /* Center align the navigation */
+        }
+
+        .back-to-prayers {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .back-to-prayers:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -30,23 +66,23 @@
         <header>
             <div class="logo">
                 <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
-            <h1>Lietuviškas atsidavimas</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" aria-label="Home">Pradinis</a></li>
-                <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
-                <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
-                <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
-                <li><a href="about.html" aria-label="About Us">Apie mane</a></li>
-                <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="prayer-content">
-            <h2>Šeimos paaukojimas Marijai</h2>
-            <p class="prayer-text">
+                <h1>Lietuviškas atsidavimas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                    <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                    <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                    <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                    <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="prayer-content">
+                <h2>Šeimos Paaukojimas Marijai</h2>
+                <p class="prayer-text">
             Švenčiausioji Mergele Marija,<br>
             Nekaltai Pradėtoji Karaliene ir Motina,<br>
             visų neramių sielų priebėga ir paguoda!<br>
@@ -54,21 +90,21 @@
             ir renkuosi Tave savo Valdove, Motina,<br>
             ir užtarėja pas Dievą.<br>
         </p>
-        <p>
+        <p><p class="prayer-text">
             Pasišvenčiu save ir visus, kurie man priklauso, Tavo tarnystei visiems laikams.<br>
             Meldžiu Tave, Dievo Motina,<br>
             priimti mus į savo tarnų būrį.<br>
             Paimk mus į savo globą.<br>
             Padėk mums gyvenime ir mirties valandą.<br>
         </p>
-        <p>
+        <p><p class="prayer-text">
             Gailestingumo Motina,<br>
             Tave skiriu savo šeimos ir giminių Motina ir Karaliene,<br>
             mano interesų ir visų mano sumanymų.<br>
             Imk juos į savo rankas;<br>
             tvarkyk viską taip, kaip Tau patinka.<br>
         </p>
-        <p>
+        <p><p class="prayer-text">
             Palaimink mane ir visą mano šeimą.<br>
             Niekada neleisk nė vienam iš mūsų įžeisti Tavo Sūnaus.<br>
             Kiekvienoje pagundoje apgink mus;<br>
@@ -79,7 +115,7 @@
             kiekvienoje ligoje,<br>
             o ypač galutiniame mirties liūdesyje.<br>
         </p>
-        <p>
+        <p><p class="prayer-text">
             Niekada neleisk pragaro galybėms girtis,<br>
             kad jos pavergė kurį nors iš tų, kurie čia Tau pasišventė.<br>
             Suteik, kad visi įžengę į dangų galėtume Tau dėkoti ir,<br>
@@ -87,9 +123,9 @@
             šlovinti ir mylėti Jėzų, mūsų Atpirkėją, per visą amžinybę.<br>
         </p>
         <p>
-            Amen.<br>
-            Tebūnie taip.<br>
-            Amen.<br>
+            <p class="prayer-text">Amen.
+            <p class="prayer-text">Tebūnie taip.<br>
+            <p class="prayer-text">Amen.<br>
          <div class="prayer-navigation">
                 <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Maldos</a>
             </div>
