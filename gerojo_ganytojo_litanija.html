@@ -1,84 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerojo Ganytojo litanija - Lithuanian Prayers</title>
+    <title>Gerojo Ganytojo Litanija</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif; /* Ensure consistent font */
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prayer-content {
+            max-width: 600px; /* Set a maximum width for the prayer content */
+            width: 100%; /* Ensure the content is responsive */
+            margin: 20px; /* Margin for spacing around the content */
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+        }
+
+        .prayer-text {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left; /* Keep the text left-aligned */
+        }
+
+        .prayer-navigation {
+            margin-top: 20px;
+            text-align: center; /* Center align the navigation */
+        }
+
+        .back-to-prayers {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .back-to-prayers:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Gerojo Ganytojo litanija</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prayers.html">Prayers</a></li>
-                <li><a href="litanies.html">Litanies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="gerojo_ganytojo_litanija">
-        <h2>Gerojo Ganytojo litanija</h2>
-        <p>
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+                <h1>Lietuviškas atsidavimas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                    <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                    <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                    <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                    <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="prayer-content">
+                <h2>Gerojo Ganytojo Litanija</h2>
+                <p class="prayer-text">
           Tėve, dangaus Dieve, Avinėlio Tėve,<br>
           pasigailėk mūsų.<br><br>
-
+<p class="prayer-text">
           Sūnau, pasaulio Atpirkėjau, Dieve, aukos avinėli,<br>
           pasigailėk mūsų.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Dvasia, Dieve, Avinėlio gyvybe,<br>
           pasigailėk mūsų.<br><br>
-          
+          <p class="prayer-text">
           Gerasis Jėzau, teisiųjų Ganytojau,
           išklausyk mus.
-          
+          <p class="prayer-text">
           Budrus paklydusių avių Ieškotojau,<br>
           vesk mus.<br><br>
-          
+          <p class="prayer-text">
           Karšta puolusio avinėlio viltie,<br>
           vesk mus.<br><br>
-          
+          <p class="prayer-text">
           Nuolatini sudraskytos bandos Ganytojau,<br>
           vesk mus.<br><br>
-          
+          <p class="prayer-text">
           Gerasis Ganytojau,<br>
           išklausyk savo avis.<br><br>
-
+<p class="prayer-text">
           Tyriausia trokštančios širdies priebėga,<br>
           maitink mus.<br><br>
-          
+          <p class="prayer-text">
           Amžinoji alkanos sielos puota,<br>
           maitink mus.<br><br>
-          
+          <p class="prayer-text">
           Ilgalaike tobulo gyvenimo duona,<br>
           maitink mus.<br><br>
-          
+          <p class="prayer-text">
           Gerasis Ganytojau,<br>
           išklausyk savo avis.<br><br>
-          
+          <p class="prayer-text">
           Kantrus maištaujančiųjų valių sutramdytojau,<br>
           nukirpk mus.<br><br>
-          
+          <p class="prayer-text">
           Ištikimas visų gerų įsakymų mokytojau,<br>
           nukirpk mus.<br><br>
-          
+          <p class="prayer-text">
           Švelnus visų nuodėmės dėmių valytojau,<br>
           nukirpk mus.<br><br>
-          
+          <p class="prayer-text">
           Gerasis Ganytojau,<br>
           išklausyk savo avis.<br><br>
-
+<p class="prayer-text">
           Nuo netikrų ganytojų, pasislėpusių Tavo pavidalu, vilionių,<br>
           apsaugok mus.<br><br>
-          
+          <p class="prayer-text">
           Nuo derlingesnių pievų miražų, užkariaujančių mūsų protus,<br>
           apsaugok mus.<br><br>
-          
+          <p class="prayer-text">
           Nuo sielos ligų, atskiriančių mus nuo Tavo kaimenės,<br>
           apsaugok mus.<br><br>
-          
+          <p class="prayer-text">
           O Gerasis Ganytojau, vienu metu ir Ganytojau, ir Avinėli,<br>
           kuris gerai pažįsti avis, kurias vedi,<br>
           Vadovauk mums, maitink mus, nukirpk mus,<br>
@@ -86,13 +147,15 @@
           džiaugtis Tavo dangiškąja ganykla,<br>
           ir šlovinti Tave<br>
           per amžius.<br><br>
-          
+          <p class="prayer-text">
           Amen.
-           </p>
-    </section>
+           <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Litanijos</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Lithuanian Prayers to the Mother of God</p>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
-          
