@@ -1,61 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maldavimai į Vargšų Mergelę - Lithuanian Prayers</title>
+    <title>Maldavimai Į Vargšų Mergelę</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif; /* Ensure consistent font */
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prayer-content {
+            max-width: 600px; /* Set a maximum width for the prayer content */
+            width: 100%; /* Ensure the content is responsive */
+            margin: 20px; /* Margin for spacing around the content */
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+        }
+
+        .prayer-text {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left; /* Keep the text left-aligned */
+        }
+
+        .prayer-navigation {
+            margin-top: 20px;
+            text-align: center; /* Center align the navigation */
+        }
+
+        .back-to-prayers {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .back-to-prayers:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Maldavimai į Vargšų Mergelę</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prayers.html">Prayers</a></li>
-                <li><a href="litanies.html">Litanies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="maldavimai_i_vargsu_mergele">
-        <h2>Maldavimai į Vargšų Mergelę</h2>
-        <p>
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+                <h1>Lietuviškas atsidavimas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                    <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                    <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                    <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                    <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="prayer-content">
+                <h2>Maldavimai Į Vargšų Mergelę</h2>
+                <p class="prayer-text">
           Palaimintoji Vargšų Mergele,<br>
           vesk mus pas Jėzų, malonės šaltinį.<br><br>
-
+ <p class="prayer-text">
           Palaimintoji Vargšų Mergele,<br>
           Gelbėk visas tautas.<br><br>
-          
+           <p class="prayer-text">
           Palaimintoji Vargšų Mergele,<br>
           Atleisk ligoniams.<br><br>
-          
+           <p class="prayer-text">
           Palaimintoji Vargšų Mergele,<br>
           Palengvink kančią.<br><br>
-          
+           <p class="prayer-text">
           Palaimintoji Vargšų Mergele,<br>
           Melskis už kiekvieną iš mūsų.<br><br>
-          
+           <p class="prayer-text">
           Palaimintoji Vargšų Mergele,<br>
           Mes tikime Tavimi.<br><br>
-
+ <p class="prayer-text">
           Palaimintoji Vargšų Mergele,<br>
           Tikėk mumis.<br><br>
-          
+           <p class="prayer-text">
           Palaimintoji Vargšų Mergele,<br>
           Mes uoliai melsimės.<br><br>
-          
+           <p class="prayer-text">
           Palaimintoji Vargšų Mergele,<br>
           Palaimink mus.<br><br>
-          
+           <p class="prayer-text">
           Palaimintoji Vargšų Mergele,<br>
           Išganytojo Motina,<br>
           Dievo Motina,<br>
           dėkojame tau.<br><br>
-          
+           <p class="prayer-text">
           Melskimės.<br><br>
-
+ <p class="prayer-text">
           Vargšų Dievo Motina,<br>
           Mūsų Išganytojo Motina,<br>
           Dievo Motina,<br>
@@ -63,24 +124,27 @@
           kadangi pažadėjai tikėti mumis<br>
           jei mes tikėsime Tavimi,<br>
           mes visiškai pasitikime tavimi.<br><br>
-          
+           <p class="prayer-text">
           Maloningai išklausyk maldas<br>
           kurias prašai Tau aukoti;<br>
           Pasigailėk visų mūsų dvasinių ir laikinų vargų.<br>
           Sugrąžink nusidėjėliams tikėjimo lobį,<br>
           ir duok vargšams kasdienės duonos.<br><br>
-          
+           <p class="prayer-text">
           Suteik malonę palengvinti kančią,<br>
           išgydyti ligonius ir melstis už juos,<br>
           kad taip per Tavo užtarimą,<br>
           Kristaus Karaliaus viešpatavimas<br>
           išsiplėstų virš visų tautų.<br><br>
-          
+           <p class="prayer-text">
           Amen.
-          </p>
-    </section>
+          <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Litanijos</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Lithuanian Prayers to the Mother of God</p>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
