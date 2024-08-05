@@ -1,144 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Šventosios Filomenos litanija - Lithuanian Prayers</title>
+    <title>Šventosios Filomenos Litanija</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif; /* Ensure consistent font */
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prayer-content {
+            max-width: 600px; /* Set a maximum width for the prayer content */
+            width: 100%; /* Ensure the content is responsive */
+            margin: 20px; /* Margin for spacing around the content */
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+        }
+
+        .prayer-text {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left; /* Keep the text left-aligned */
+        }
+
+        .prayer-navigation {
+            margin-top: 20px;
+            text-align: center; /* Center align the navigation */
+        }
+
+        .back-to-prayers {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .back-to-prayers:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Šventosios Filomenos litanija</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prayers.html">Prayers</a></li>
-                <li><a href="litanies.html">Litanies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="sventosios_filomenos_litanija">
-        <h2>Šventosios Filomenos litanija</h2>
-        <p>
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+                <h1>Lietuviškas atsidavimas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                    <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                    <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                    <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                    <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="prayer-content">
+                <h2>Šventosios Filomenos Litanija</h2>
+                <p class="prayer-text">
           Kyrie, eleison! Christe, eleison! Kyrie, eleison!<br>
           Kristau, išgirsk mus! Kristau, išklausyk mus!<br><br>
-
+<p class="prayer-text">
           Tėve, dangaus Dieve, pasigailėk mūsų!<br>
           Sūnau, pasaulio Atpirkėjau, Dieve, pasigailėk mūsų!<br>
           Šventoji Dvasia, Dieve, pasigailėk mūsų!<br>
           Šventoji Trejybe, vienas Dieve, pasigailėk mūsų!<br><br>
-          
+          <p class="prayer-text">
           Šventoji Marija, Mergelių Karaliene,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Filomena,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Filomena,<br>
           kupina gausiausių malonių<br>
           nuo pat savo gimimo,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Filomena, ištikima Marijos sekėja,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Filomena, mergelių pavyzdy,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Filomena, tobuliausio nuolankumo šventove,<br>
           melski už mus.<br><br>
-
+<p class="prayer-text">
           Šventoji Filomena, užsidegusi uolumu dėl Dievo garbės,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Filomena, Jėzaus meilės auka,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Filomena, stiprybės ir ištvermės pavyzdy,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Filomena, nenugalima skaistybės gynėja,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Filomena, didvyriškiausių dorybių veidrodi,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Filomena, tvirta ir neabejinga kančių akivaizdoje,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Filomena, plakama kaip tavo dieviškasis Sutuoktinis,<br>
           melski už mus.<br><br>
-
+<p class="prayer-text">
           Šventoji Filomena, perverta strėlių lietaus,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Filomena, Dievo Motinos guodžiama, kai buvai sukaustyta grandinėmis,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Filomena, stebuklingai išgydyta kalėjime,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Filomena, angelų guodžiama savo kančiose,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Filomena, kuri mieliau rinkaisi kančias ir mirtį nei sosto spindesį,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Filomena, kuri atvertei savo kankinystės liudytojus,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Filomena, kuri išsękinai savo egzekutorių įniršį,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Filomena, nekaltųjų globėja,<br>
           melski už mus.<br><br>
-
+<p class="prayer-text">
           Šventoji Filomena, jaunimo globėja,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Filomena, nelaimingųjų priebėga,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Filomena, ligonių ir silpnųjų sveikata,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Filomena, naujoji kovojančios Bažnyčios šviesa,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Filomena, kuri sugėdini pasaulio bedievybę,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Filomena, skatinanti tikinčiųjų tikėjimą ir drąsą,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Filomena, kurios vardas šlovinamas danguje ir bijomas pragare,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Filomena, išgarsėjusi ryškiausiais stebuklais,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Filomena, visagalė Dievuje,<br>
           melski už mus.<br><br>
-
+<p class="prayer-text">
           Šventoji Filomena, viešpataujanti šlovėje,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
           atleisk, Viešpatie.<br><br>
-          
+          <p class="prayer-text">
           Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
           išklausyk mus, Viešpatie.<br><br>
-          
+          <p class="prayer-text">
           Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
           pasigailėk mūsų.<br><br>
-          
+          <p class="prayer-text">
           Melskis už mus, didžioji šventoji Filomena,<br>
           Kad taptume verti Kristaus pažadų.<br><br>
-          
+          <p class="prayer-text">
           Melskimės.<br><br>
-
+<p class="prayer-text">
           Meldžiame Tave, Viešpatie,<br>
           šventosios Filomenos užtarimu,<br>
           Mergelės ir kankinės,<br>
@@ -147,14 +208,17 @@
           ir visų dorybių praktikavimo,<br>
           atleisk mums mūsų nuodėmes<br>
           ir suteik mums visas reikalingas malones<br><br>
-          
+          <p class="prayer-text">
           (Įvardykite bet kokią ypatingą malonę, kurios trokštate.)<br><br>
-          
+          <p class="prayer-text">
           Amen.
-           </p>
-    </section>
+           <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Litanijos</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Lithuanian Prayers to the Mother of God</p>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
