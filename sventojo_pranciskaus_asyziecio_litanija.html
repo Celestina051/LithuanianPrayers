@@ -1,130 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Šventojo Pranciškaus Asyžiečio litanija - Lithuanian Prayers</title>
+    <title>Šventojo Pranciškaus Asyžiečio Litanija</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif; /* Ensure consistent font */
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prayer-content {
+            max-width: 600px; /* Set a maximum width for the prayer content */
+            width: 100%; /* Ensure the content is responsive */
+            margin: 20px; /* Margin for spacing around the content */
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+        }
+
+        .prayer-text {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left; /* Keep the text left-aligned */
+        }
+
+        .prayer-navigation {
+            margin-top: 20px;
+            text-align: center; /* Center align the navigation */
+        }
+
+        .back-to-prayers {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .back-to-prayers:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Šventojo Pranciškaus Asyžiečio litanija</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prayers.html">Prayers</a></li>
-                <li><a href="litanies.html">Litanies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="sventojo_pranciskaus_asyziecio_litanija">
-        <h2>Šventojo Pranciškaus Asyžiečio litanija</h2>
-        <p>
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+                <h1>Lietuviškas atsidavimas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                    <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                    <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                    <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                    <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="prayer-content">
+                <h2>Šventojo Pranciškaus Asyžiečio Litanija</h2>
+                <p class="prayer-text">
           Kyrie, eleison! Christe, eleison! Kyrie, eleison!<br>
           Kristau, išgirsk mus! Kristau, išklausyk mus!<br><br>
-
+<p class="prayer-text">
           Tėve, dangaus Dieve, pasigailėk mūsų!<br>
           Sūnau, pasaulio Atpirkėjau, Dieve, pasigailėk mūsų!<br>
           Šventoji Dvasia, Dieve, pasigailėk mūsų!<br>
           Šventoji Trejybe, vienas Dieve, pasigailėk mūsų!<br><br>
-          
+          <p class="prayer-text">
           Šventoji Marija, pradėta be nuodėmės,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Marija, ypatingoji trijų šventojo Pranciškaus ordinų globėja,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventasis Pranciškau, serafiškasis patriarchai,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventasis Pranciškau, išmintingiausias tėve,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventasis Pranciškau, pasaulio niekintojau,<br>
           melski už mus.<br><br>
-
+<p class="prayer-text">
           Šventasis Pranciškus, atgailos pavyzdy,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventasis Pranciškau, ydų nugalėtojau,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventasis Pranciškau, Gelbėtojo mėgdžiotojau,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventasis Pranciškau, Kristaus ženklų nešėjau,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventasis Pranciškau, užantspauduotas Jėzaus charakteriu,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventasis Pranciškau, tyrumo pavyzdy,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventasis Pranciškau, nuolankumo paveiksle,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventasis Pranciškau, gausus malonėse,<br>
           melski už mus.<br><br>
-
+<p class="prayer-text">
           Šventasis Pranciškau, klystančiųjų reformatoriau,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventasis Pranciškau, ligonių gydytojau,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventasis Pranciškus, Bažnyčios ramsti,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventasis Pranciškau, tikėjimo gynėjau,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventasis Pranciškau, Kristaus gynėjau,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventasis Pranciškau, Savo vaikų gynėjau,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventasis Pranciškau, neįveikiamas skyde,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventasis Pranciškau, eretikų sutriuškintojau,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventasis Pranciškau, pagonių keitėjau,<br>
           melski už mus.<br><br>
-
+<p class="prayer-text">
           Šventasis Pranciškau, šlubųjų ramsti,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventasis Pranciškau, mirusiųjų prikelėjau,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventasis Pranciškau, raupsuotųjų gydytojas,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventasis Pranciškau, mūsų gynėjau,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
           atleisk mums, Viešpatie.<br><br>
-          
+          <p class="prayer-text">
           Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
           išklausyk mus, Viešpatie.<br><br>
-          
+          <p class="prayer-text">
           Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
           pasigailėk mūsų.<br><br>
-          
+          <p class="prayer-text">
           Kristau, išklausyk mus.<br>
           Kristau, maloningai išklausyk mus.<br><br>
-
+<p class="prayer-text">
           Melskis už mus, palaimintasis tėve Pranciškau,<br>
           Kad taptume verti Kristaus pažadų.<br><br>
-          
+          <p class="prayer-text">
           Melskimės.<br><br>
-          
+          <p class="prayer-text">
           Viešpatie Jėzau Kristau, kuris,<br>
           kai pasaulis buvo atšalęs,<br>
           norėdamas atnaujinti mūsų širdyse<br>
@@ -136,13 +197,15 @@
           ir duotume atgailos vertų vaisių,<br>
           Tu, kuris gyveni ir viešpatauji,<br>
           per amžių amžius.<br><br>
-          
+          <p class="prayer-text">
           Amen.
-           </p>
-    </section>
+            <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Litanijos</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Lithuanian Prayers to the Mother of God</p>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
-                    
