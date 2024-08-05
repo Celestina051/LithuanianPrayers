@@ -1,208 +1,269 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Šventosios Ritos litanija - Lithuanian Prayers</title>
+    <title>Šventosios Ritos Litanija</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif; /* Ensure consistent font */
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prayer-content {
+            max-width: 600px; /* Set a maximum width for the prayer content */
+            width: 100%; /* Ensure the content is responsive */
+            margin: 20px; /* Margin for spacing around the content */
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+        }
+
+        .prayer-text {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left; /* Keep the text left-aligned */
+        }
+
+        .prayer-navigation {
+            margin-top: 20px;
+            text-align: center; /* Center align the navigation */
+        }
+
+        .back-to-prayers {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .back-to-prayers:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Šventosios Ritos litanija</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prayers.html">Prayers</a></li>
-                <li><a href="litanies.html">Litanies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="sventosios_ritos_litanija">
-        <h2>Šventosios Ritos litanija</h2>
-        <p>
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+                <h1>Lietuviškas atsidavimas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                    <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                    <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                    <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                    <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="prayer-content">
+                <h2>Šventosios Ritos Litanija</h2>
+                <p class="prayer-text">
           Kyrie, eleison! Christe, eleison! Kyrie, eleison!<br>
           Kristau, išgirsk mus! Kristau, išklausyk mus!.<br><br>
-
+ <p class="prayer-text">
           Tėve, dangaus Dieve, pasigailėk mūsų!<br>
           Sūnau, pasaulio Atpirkėjau, Dieve, pasigailėk mūsų!<br>
           Šventoji Dvasia, Dieve, pasigailėk mūsų!<br>
           Šventoji Trejybe, vienas Dieve, pasigailėk mūsų!<br><br>
-          
+           <p class="prayer-text">
           Nekaltai Pradėtoji Marija, Dievo Motina,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Marija, tyriausios meilės Motina,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Marija, perverta sielvarto kalavijo,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Marija, kenčiančiųjų guodėja,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Marija, visų šventųjų Karaliene,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Marija, šventosios Ritos globėja,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Rita, mūsų gynėja ir globėja,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, Viešpaties paskirtoji,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, dangaus dovana,<br>
           melskis už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, angelo išpranašauta,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, nepaprasta vaikystėje,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, pamilusi vienatvę,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, klusnumo pavyzdy,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Rita, susivienijusi su Dievo valia,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, nepaliaujamos kantrybės,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, švelnumo pavyzdy,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, krikščioniškos motinos pavyzdy,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, krikščionių sutuoktinių veidrodi,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, tvirtybės stebukle,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, didvyriško pasiaukojimo didvyre,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Rita, dosni atleidume,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, švelnioji savo priešų geradare,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, atgailos kankine,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, nusižeminusi nuolankume,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, savanoriškai priėmusi neturtą,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, pavyzdinga našle,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, Jėzaus mylimoji,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, kuriai buvo leista kalbėtis su savo dieviškuoju Sutuoktiniu,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Rita, greitai atsiliepianti į Dievo kvietimą,<br>
           melskis už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, vienuolinio gyvenimo veidrodi,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, mistine visų dorybių rože,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, saldus korį,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, kvapniosios miros puokšte,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, Kristaus kančios sužadėtine,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, erškėčiu perverta,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, gilioji gailesčio jūra,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, ekstazės apimpta priešais Švenčiausiąjį Sakramentą,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Rita, dieviškosios meilės apimta,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, kviečiama prie Jaunikio sosto,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, su džiaugsmu priimta į dangų,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, apgaubta neapsakomos šlovės,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, neįmanomų dalykų gynėja,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, beviltiškų atvejų advokate,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, Šventosios Bažnyčios šviesa,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, neištikimųjų gydytoja,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, balzame kiekvienam liūdesiui,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, balzame nuo visų ligų,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, ištvermingoji maldoje,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, pasitikinti savo malda,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, viską galinti gauti iš savo mirštančio Jėzaus,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, kuri žinai kelią į Jo Švenčiausiąją Širdį,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Rita, mūsų galingoji užtarėja,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
           atleisk mums, Viešpatie.<br><br>
-          
+           <p class="prayer-text">
           Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
           išklausyk mus, Viešpatie.<br><br>
-          
+           <p class="prayer-text">
           Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
           pasigailėk mūsų.<br><br>
-          
+           <p class="prayer-text">
           Tu paženklinai savo tarnaitę Ritą<br>
           savo meilės ir kančios ženklais.<br><br>
-          
+           <p class="prayer-text">
           Melskis už mus, šventoji Rita,<br>
           kad taptume verti Kristaus pažadų.<br><br>
-          
+           <p class="prayer-text">
           Melskimės.<br><br>
-
+ <p class="prayer-text">
           Dieve, kuris savo begaliniu švelnumu<br>
           patikėjai atsižvelgti į maldą<br>
           savo tarnaitės palaimintosios Ritos<br>
@@ -218,12 +279,15 @@
           bejėgių apsauga,<br>
           ir stiprybė tų, kurie pasitiki Tavimi,<br>
           per Jėzų Kristų, mūsų Viešpatį.<br><br>
-          
+           <p class="prayer-text">
           Amen.
-           </p>
-    </section>
+          <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Litanijos</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Lithuanian Prayers to the Mother of God</p>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
