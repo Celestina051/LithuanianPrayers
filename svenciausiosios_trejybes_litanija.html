@@ -1,197 +1,258 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Švenčiausiosios Trejybės litanija - Lithuanian Prayers</title>
+    <title>Švenčiausiosios Trejybės Litanija</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif; /* Ensure consistent font */
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prayer-content {
+            max-width: 600px; /* Set a maximum width for the prayer content */
+            width: 100%; /* Ensure the content is responsive */
+            margin: 20px; /* Margin for spacing around the content */
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+        }
+
+        .prayer-text {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left; /* Keep the text left-aligned */
+        }
+
+        .prayer-navigation {
+            margin-top: 20px;
+            text-align: center; /* Center align the navigation */
+        }
+
+        .back-to-prayers {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .back-to-prayers:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Švenčiausiosios Trejybės litanija</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prayers.html">Prayers</a></li>
-                <li><a href="litanies.html">Litanies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="svenciausiosios_trejybes_litanija">
-        <h2>Švenčiausiosios Trejybės litanija</h2>
-        <p>
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+                <h1>Lietuviškas atsidavimas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                    <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                    <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                    <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                    <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="prayer-content">
+                <h2>Švenčiausiosios Trejybės Litanija</h2>
+                <p class="prayer-text">
           Kyrie, eleison! Christe, eleison! Kyrie, eleison!<br>
           Kristau, išgirsk mus! Kristau, išklausyk mus!<br><br>
-
+<p class="prayer-text">
           Švenčiausioji Trejybe,<br>
           išklausyk mus.<br><br>
-          
+          <p class="prayer-text">
           Garbingoji vienybe,<br>
           maloningai išklausyk mus.<br><br>
-          
+          <p class="prayer-text">
           Tėve, dangaus Dieve, pasigailėk mūsų!<br>
           Sūnau, pasaulio Atpirkėjau, Dieve, pasigailėk mūsų!<br>
           Šventoji Dvasia, Dieve, pasigailėk mūsų!<br>
           Šventoji Trejybe, vienas Dieve, pasigailėk mūsų!<br><br>
-          
+          <p class="prayer-text">
           Tėve, iš kurio viskas yra,<br>
           pasigailėk mūsų.<br><br>
-          
+          <p class="prayer-text">
           Sūnau, per kurį visa yra,<br>
           pasigailėk mūsų.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Dvasia, kurioje viskas yra,<br>
           pasigailėk mūsų.<br><br>
-
+<p class="prayer-text">
           Švenčiausioji ir nedaloma Trejybe,<br>
           pasigailėk mūsų.<br><br>
-          
+          <p class="prayer-text">
           Tėve amžinasis,<br>
           pasigailėk mūsų.<br><br>
-          
+          <p class="prayer-text">
           Viengimi Tėvo Sūnau,<br>
           pasigailėk mūsų.<br><br>
-          
+          <p class="prayer-text">
           Dvasia, kuri kyla iš Tėvo ir Sūnaus,<br>
           pasigailėk mūsų.<br><br>
-          
+          <p class="prayer-text">
           Trijų dieviškųjų Asmenų bendražmogiška didybe,<br>
           pasigailėk mūsų.<br><br>
-          
+          <p class="prayer-text">
           Tėve Kūrėjau,<br>
           pasigailėk mūsų.<br><br>
-          
+          <p class="prayer-text">
           Sūnau, Atpirkėjau,<br>
           pasigailėk mūsų.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Dvasia, Guodėjau,<br>
           pasigailėk mūsų.<br><br>
-
+<p class="prayer-text">
           Dieve, Aukščiausiasis, kuris gyveni amžinybėje,<br>
           pasigailėk mūsų.<br><br>
-          
+          <p class="prayer-text">
           Kuriam vieninteliam priklauso visa garbė ir šlovė,<br>
           pasigailėk mūsų.<br><br>
-          
+          <p class="prayer-text">
           Kuris vienintelis darai didžius stebuklus,<br>
           pasigailėk mūsų.<br><br>
-          
+          <p class="prayer-text">
           Galia begaline,<br>
           pasigailėk mūsų.<br><br>
-          
+          <p class="prayer-text">
           Išmintie nesuvokiama,<br>
           pasigailėk mūsų.<br><br>
-          
+          <p class="prayer-text">
           Neapsakoma meile,<br>
           būk gailestingas.<br><br>
-          
+          <p class="prayer-text">
           Pasigailėk mūsų, Švenčiausioji Trejybe.<br>
           Būk gailestinga.<br><br>
-
+<p class="prayer-text">
           Gailestingai išklausyk mus,<br>
           O Švenčiausioji Trejybe.<br><br>
-          
+          <p class="prayer-text">
           Nuo viso pikto,<br>
           išvaduok mus, o Švenčiausioji Trejybe.<br><br>
-          
+          <p class="prayer-text">
           Nuo visų nuodėmių,<br>
           išvaduok mus, o Švenčiausioji Trejybe.<br><br>
-          
+          <p class="prayer-text">
           Nuo visokio išdidumo,<br>
           išvaduok mus, o Švenčiausioji Trejybe.<br><br>
-          
+          <p class="prayer-text">
           Nuo visos meilės turtams,<br>
           išvaduok mus, o Švenčiausioji Trejybe.<br><br>
-          
+          <p class="prayer-text">
           Nuo visų nešvarumų,<br>
           išvaduok mus, o Švenčiausioji Trejybe.<br><br>
-          
+          <p class="prayer-text">
           Nuo bet kokio tingumo,<br>
           išvaduok mus, o Švenčiausioji Trejybe.<br><br>
-          
+          <p class="prayer-text">
           Nuo visų nevaldomų aistrų,<br>
           išvaduok mus, o Švenčiausioji Trejybe.<br><br>
-          
+          <p class="prayer-text">
           Nuo pavydo ir piktumo,<br>
           išvaduok mus, o Švenčiausioji Trejybe.<br><br>
-
+<p class="prayer-text">
           Nuo visokio pykčio ir nekantrumo,<br>
           išvaduok mus, o Švenčiausioji Trejybe.<br><br>
-          
+          <p class="prayer-text">
           Nuo visų minčių, žodžių ir darbų, priešingų Tavo šventajam įstatymui,<br>
           išvaduok mus, o Švenčiausioji Trejybe.<br><br>
-          
+          <p class="prayer-text">
           Nuo Tavo amžinosios bausmės,<br>
           išvaduok mus, o Švenčiausioji Trejybe.<br><br>
-          
+          <p class="prayer-text">
           Savo visagale galia,<br>
           išvaduok mus, o Švenčiausioji Trejybe.<br><br>
-          
+          <p class="prayer-text">
           Per Tavo gausų mylintį gerumą,<br>
           išvaduok mus, o Švenčiausioji Trejybe.<br><br>
-          
+          <p class="prayer-text">
           Per didžiuosius Tavo gerumo ir meilės lobius,<br>
           išvaduok mus, o Švenčiausioji Trejybe.<br><br>
-          
+          <p class="prayer-text">
           Per Tavo išminties ir pažinimo gelmes,<br>
           išvaduok mus, o Švenčiausioji Trejybe.<br><br>
-          
+          <p class="prayer-text">
           Per visas Tavo neapsakomas tobulybes,<br>
           išvaduok mus, o Švenčiausioji Trejybe.<br><br>
-
+<p class="prayer-text">
           Mes, nusidėjėliai,<br>
           meldžiame Tave, išklausyk mus.<br><br>
-          
+          <p class="prayer-text">
           Kad galėtume visada tarnauti tik Tau,<br>
           meldžiame Tave, išklausyk mus.<br><br>
-          
+          <p class="prayer-text">
           Kad galėtume garbinti Tave dvasia ir tiesa,<br>
           meldžiame Tave, išklausyk mus.<br><br>
-          
+          <p class="prayer-text">
           Kad mylėtume Tave visa širdimi,<br>
           visa savo siela,<br>
           ir visomis jėgomis,<br>
           Meldžiame tave, išklausyk mus.<br><br>
-          
+          <p class="prayer-text">
           Kad dėl tavęs,<br>
           mylėtume savo artimą kaip save pačius,<br>
           Meldžiame tave, išklausyk mus.<br><br>
-          
+          <p class="prayer-text">
           Kad ištikimai laikytumėmės tavo šventųjų įsakymų,<br>
           Meldžiame Tave, išklausyk mus.<br><br>
-          
+          <p class="prayer-text">
           Kad niekada nesuteptume savo kūnų<br>
           ir savo sielų nuodėme,<br>
           Meldžiame tave, išklausyk mus.<br><br>
-
+<p class="prayer-text">
           Kad eitume iš malonės į malonę,<br>
           ir iš dorybės į dorybę,<br>
           Meldžiame tave, išklausyk mus.<br><br>
-          
+          <p class="prayer-text">
           Kad galiausiai galėtume džiaugtis<br>
           Tavimi šlovėje,<br>
           meldžiame Tave, išklausyk mus.<br><br>
-          
+          <p class="prayer-text">
           Kad mus išgirstum,<br>
           meldžiame Tave, išklausyk mus.<br><br>
-          
+          <p class="prayer-text">
           O palaimintoji Trejybe,<br>
           meldžiame Tave, išgelbėk mus.<br><br>
-          
+          <p class="prayer-text">
           O palaimintoji Trejybe,<br>
           pasigailėk mūsų.<br><br>
-          
+          <p class="prayer-text">
           Viešpatie, pasigailėk.<br>
           Kristau, pasigailėk.<br>
           Viešpatie, pasigailėk.<br><br>
-          
+          <p class="prayer-text">
           Palaimintas esi, Viešpatie, dangaus skliaute.<br>
           Ir vertas būti giriamas, ir šlovinamas, ir didžiai išaukštintas per amžius.<br><br>
-
+<p class="prayer-text">
           Melskimės.<br><br>
-          
+          <p class="prayer-text">
           Visagalis ir amžinasis Dieve,<br>
           Tu davei mums savo tarnams<br>
           malonę išpažinti tikrąjį tikėjimą,<br>
@@ -200,12 +261,15 @@
           Meldžiame Tave tai mums suteikti,<br>
           kad savo ištikimybe tame pačiame Tikėjime,<br>
           visada būtume apsaugoti nuo visų pavojų.<br><br>
-          
+          <p class="prayer-text">
           Amen.
-          </p>
-    </section>
+            <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Litanijos</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Lithuanian Prayers to the Mother of God</p>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
