@@ -1,131 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atsidavimo Dievo Valiai litanija.  - Lithuanian Prayers</title>
+    <title>Atsidavimo Dievo Valiai Litanija.</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif; /* Ensure consistent font */
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prayer-content {
+            max-width: 600px; /* Set a maximum width for the prayer content */
+            width: 100%; /* Ensure the content is responsive */
+            margin: 20px; /* Margin for spacing around the content */
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+        }
+
+        .prayer-text {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left; /* Keep the text left-aligned */
+        }
+
+        .prayer-navigation {
+            margin-top: 20px;
+            text-align: center; /* Center align the navigation */
+        }
+
+        .back-to-prayers {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .back-to-prayers:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Atsidavimo Dievo Valiai litanija.</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prayers.html">Prayers</a></li>
-                <li><a href="litanies.html">Litanies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="atsidavimo_dievo_valiai_litanija">
-        <h2>Atsidavimo Dievo Valiai litanija.</h2>
-        <p>
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+                <h1>Lietuviškas atsidavimas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                    <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                    <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                    <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                    <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="prayer-content">
+                <h2>Atsidavimo Dievo Valiai Litanija.</h2>
+                <p class="prayer-text">
           Kyrie, eleison! Christe, eleison! Kyrie, eleison!<br>
           Kristau, išgirsk mus! Kristau, išklausyk mus!<br><br>
-
+<p class="prayer-text">
           Tėve, dangaus Dieve,<br>
           kuris mane sukūrei,<br>
           tebūnie šventa Tavo valia.<br><br>
-          
+          <p class="prayer-text">
           Sūnau, pasaulio Atpirkėjau, Dieve,<br>
           kuris mane atpirkai,<br>
           Teesie ne mano, bet Tavo valia.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Dvasia, Dieve,<br>
           kuri suteikei pašventinimą,<br>
           tebūnie palaiminta saldžiausia Dievo valia.<br><br>
-          
+          <p class="prayer-text">
           Tu, kuris viską žinai ir numatai,<br>
           pasigailėk mūsų.<br><br>
-          
+          <p class="prayer-text">
           Tu, kuris viską valdai ir valdei,<br>
           pasigailėk mūsų.<br><br>
-
+<p class="prayer-text">
           Tu, kuris pagal savo nesuvokiamus planus,<br>
           viską nuostabiai įgyvendini,<br>
           pasigailėk mūsų.<br><br>
-          
+          <p class="prayer-text">
           Tu, kuris leidi blogį, kad<br> 
           išgautum gėrį išrinktųjų išgelbėjimui,<br>
           pasigailėk mūsų.<br><br>
-          
+          <p class="prayer-text">
           Visuose dalykuose ir visuose įmanomuose įvykiuose,<br>
           teesie Tavo šventoji valia, mano Dieve.<br><br>
-          
+          <p class="prayer-text">
           Visose aplinkybėse ir negandose,<br>
           teesie Tavo šventoji valia, mano Dieve.<br><br>
-          
+          <p class="prayer-text">
           Mano valstybėje ir darbe,<br>
           teesie Tavo šventoji valia, mano Dieve.<br><br>
-          
+          <p class="prayer-text">
           Mano reikaluose ir užsiėmimuose,<br>
           teesie Tavo šventoji valia, mano Dieve.<br><br>
-          
+          <p class="prayer-text">
           Visuose mano veiksmuose,<br>
           teesie Tavo šventoji valia, mano Dieve.<br><br>
-          
+          <p class="prayer-text">
           Mano sveikatoje ir stiprybėje,<br>
           teesie Tavo šventoji valia, mano Dieve.<br><br>
-
+<p class="prayer-text">
           Mano kūne ir sieloje,<br>
           teesie Tavo šventoji valia, mano Dieve.<br><br>
-          
+          <p class="prayer-text">
           Mano gyvenime ir mirtyje,<br>
           teesie Tavo šventoji valia, mano Dieve.<br><br>
-          
+          <p class="prayer-text">
           Manyje pačiame ir tuose, kurie man priklauso,<br>
           teesie Tavo šventoji valia, mano Dieve.<br><br>
-          
+          <p class="prayer-text">
           Visuose žmonėse ir angeluose,<br>
           teesie Tavo šventoji valia, mano Dieve.<br><br>
-          
+          <p class="prayer-text">
           Visuose kūriniuose,<br>
           teesie Tavo šventoji valia, mano Dieve.<br><br>
-          
+          <p class="prayer-text">
           Visose žemės pakraščiuose,<br>
           teesie Tavo šventoji valia, mano Dieve.<br><br>
-          
+          <p class="prayer-text">
           Visais laikais,<br>
           teesie Tavo šventoji valia, mano Dieve.<br><br>
-          
+          <p class="prayer-text">
           Per visą amžinybę,<br>
           teesie Tavo šventoji valia, mano Dieve.<br><br>
-
+<p class="prayer-text">
           Nors silpna prigimtis skundžiasi,<br>
           teesie Tavo šventoji valia, mano Dieve.<br><br>
-          
+          <p class="prayer-text">
           Nors daug kainuoja savimeilė ir jausmingumas,<br>
           teesie Tavo šventoji valia, mano Dieve.<br><br>
-          
+          <p class="prayer-text">
           Tik ir tik per meilę Tau ir Tavo geram norui,<br>
           teesie Tavo šventoji valia, mano Dieve.<br><br>
-          
+          <p class="prayer-text">
           Nes Tu esi mano Kūrėjas,<br>
           teesie Tavo šventoji valia, mano Dieve.<br><br>
-          
+          <p class="prayer-text">
           Nes Tu esi aukščiausias visų dalykų Viešpats,<br>
           teesie Tavo šventoji valia, mano Dieve.<br><br>
-          
+          <p class="prayer-text">
           Kadangi Tu esi begalinis tobulumas,<br>
           todėl sakau su visais šventaisiais danguje;<br><br>
-          
+          <p class="prayer-text">
           Su Švenčiausiąja Mergele Marija,<br>
           teesie Tavo šventoji valia, o mano Dieve.<br><br>
-          
+          <p class="prayer-text">
           Su Jėzumi Alyvų sode,<br>
           teesie Tavo šventoji valia, o mano Dieve.<br><br>
-          
+          <p class="prayer-text">
           Sukalbėkite Tėve mūsų.<br><br>
-          
+          <p class="prayer-text">
           Tegul visur įvyksta teisingoji, maloningoji Dievo valia.<br>
           Tebūnie ji šlovinama ir aukštinama per amžius!<br><br>
-          
+          <p class="prayer-text">
           Amen.<br><br>
-          
+          <p class="prayer-text">
           Melskimės.<br><br>
-
+<p class="prayer-text">
           Tėve, suteik man savo malonę,<br>
           kad mane lydėtų tobulas atsidavimas Tavo šventajai valiai,<br>
           ir dirbtų su manimi,<br>
@@ -138,12 +199,16 @@
           Tegul mano valia visada sutampa su Tavo valia, o ne su mano valia;<br>
           tegul aš nieko negaliu nei norėti, nei nenorėti.<br>
           išskyrus tai, ko Tu nori ar nenori.<br><br>
-          
+          <p class="prayer-text">
           Amen.
-           </p>
-    </section>
+         <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Litanijos</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Lithuanian Prayers to the Mother of God</p>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
+
