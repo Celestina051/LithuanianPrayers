@@ -1,217 +1,278 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Šventosios Scholastikos litanija - Lithuanian Prayers</title>
+    <title>Šventosios Scholastikos Litanija</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif; /* Ensure consistent font */
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prayer-content {
+            max-width: 600px; /* Set a maximum width for the prayer content */
+            width: 100%; /* Ensure the content is responsive */
+            margin: 20px; /* Margin for spacing around the content */
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+        }
+
+        .prayer-text {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left; /* Keep the text left-aligned */
+        }
+
+        .prayer-navigation {
+            margin-top: 20px;
+            text-align: center; /* Center align the navigation */
+        }
+
+        .back-to-prayers {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .back-to-prayers:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Šventosios Scholastikos litanija</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prayers.html">Prayers</a></li>
-                <li><a href="litanies.html">Litanies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="sventosios_scholastikos_litanija">
-        <h2>Šventosios Scholastikos litanija</h2>
-        <p>
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+                <h1>Lietuviškas atsidavimas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                    <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                    <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                    <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                    <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="prayer-content">
+                <h2>Šventosios Scholastikos Litanija</h2>
+                <p class="prayer-text">
           Kyrie, eleison! Christe, eleison! Kyrie, eleison!<br>
           Kristau, išgirsk mus! Kristau, išklausyk mus!<br><br>
-          
+           <p class="prayer-text">
           Tėve, dangaus Dieve, pasigailėk mūsų!<br>
           Sūnau, pasaulio Atpirkėjau, Dieve, pasigailėk mūsų!<br>
           Šventoji Dvasia, Dieve, pasigailėk mūsų!<br>
           Šventoji Trejybe, vienas Dieve, pasigailėk mūsų!<br><br>
-          
+           <p class="prayer-text">
           Šventoji Marija,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Dievo Motina,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji mergelių Mergele,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Scholastika,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Scholastika,<br>
           tikroji šventojo Benedikto seserie,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Scholastika,<br>
           Dievo išrinktoji amžių pradžioje,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Scholastika,<br>
           linkusi į tikėjimą<br>
           Kristaus, mūsų Viešpaties, malone,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Scholastika,<br>
           nuo pat kūdikystės pašvęsta Dievui,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Scholastika,<br>
           visada išlikusi nekalta mergele,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Scholastika,<br>
           susižadėjusi su Jėzumi Kristumi,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Scholastika,<br>
           Šventosios Dvasios mokine,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Schilastika,<br>
           nekaltumo veidrodi,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Scholastika,<br>
           tobulumo pavyzdy,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Scholastika,<br>
           dorybių pavyzdy,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Scholastika,<br>
           vienuolinio gyvenimo šlove,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Scholastika,<br>
           nesuskaičiuojamų mergelių motina,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Scholastika,<br>
           angeliškojo gyvenimo mėgdžiotoja,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Scholastika,<br>
           kupina tikėjimo Dievu,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Scholastika,<br>
           pasipildyta viltimi dėl dangaus gėrybių,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Scholastika,<br>
           visada deganti savo Sutuoktinio meile,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Scholastika,<br>
           spindinti nuolankumu,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Scholastika,<br>
           pasitikinti kaip dukra Viešpačiu,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Scholastika,<br>
           greitai išgirdusi Viešpatį,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Scholastika,<br>
           garsėjanti ištvermingu šlovinimu,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Scholastika,<br>
           kuri balandžio pavidalu įžengei į dangaus sodus,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Scholastika,<br>
           kuri dabar seki paskui Avinėlį, kad ir kur Jis eitų,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Scholastika,<br>
           kuri amžinai džiaugiesi savo Sutuoktinio malonumais,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Scholastika,<br>
           pasipuošusi šlovės vainiku,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Scholastika,<br>
           užtarėja pas Dievą tų, kurie tavęs šaukiasi,<br>
           melski už mus.<br><br>
-
+ <p class="prayer-text">
           Šventoji Scholastika,<br>
           dosni tave mėgdžiojančiųjų globėja,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Šventoji Sholastika,<br>
           šventoji ir nekaltoji mergele,<br>
           melski už mus.<br><br>
-          
+           <p class="prayer-text">
           Mes, nusidėjėliai<br>
           meldžiame tave, šventoji Scholastika, išklausyk mus.<br><br>
-          
+           <p class="prayer-text">
           Kad tu malonėtum<br>
           padėti mums savo švenčiausiomis<br>
           ir veiksmingomis maldomis,<br>
           meldžiame tave, išklausyk mus.<br><br>
-          
+           <p class="prayer-text">
           Kad tu malonėtum<br>
           globoti ir saugoti savo globa,<br>
           benediktinų ordiną (ir šį vienuolyną)<br>
           ir visus jame gyvenančius,<br>
           meldžiame Tave, išklausyk mus.<br><br>
-
+ <p class="prayer-text">
           Kad Tu mus priimtum<br>
           kaip savo vaikais,<br>
           meldžiame Tave, išklausyk mus.<br><br>
-          
+           <p class="prayer-text">
           Kad tu malonėtum<br>
           pakelti, padidinti,<br>
           ir išsaugoti mūsų atsidavimą Tau,<br>
           meldžiame Tave, išklausyk mus.<br><br>
-          
+           <p class="prayer-text">
           Kad Tu malonėtum<br>
           išsaugoti mumyse tobulą laikymąsi<br>
           Tavo palaimintojo brolio regulos,<br>
           mūsų švenčiausiojo tėvo šventojo Benedikto,<br>
           meldžiame Tave, išklausyk mus.<br><br>
-          
+           <p class="prayer-text">
           Kad tu malonėtum,<br>
           savo maldavimais,<br>
           sudrėkinti mūsų širdžių sausumą<br>
           dangiškosios malonės rasa,<br>
           meldžiame Tave, išklausyk mus.<br><br>
-
+ <p class="prayer-text">
           Kad tavo užtarimu<br>
           amžinai suvienytum mus su Kristumi,<br>
           mūsų sielų Sutuoktiniu,<br>
           meldžiame Tave, išklausyk mus.<br><br>
-          
+           <p class="prayer-text">
           Kad nuvestum mus į amžinuosius džiaugsmus,<br>
           ir pas Jėzų, mūsų mieliausią Sutuoktinį,<br>
           meldžiame Tave, išklausyk mus.<br><br>
-          
+           <p class="prayer-text">
           Kad Tu mus išklausytum,<br>
           Meldžiame Tave, išklausyk mus.<br><br>
-          
+           <p class="prayer-text">
           Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
           atleisk mums, Viešpatie.<br><br>
-          
+           <p class="prayer-text">
           Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
           išklausyk mus, Viešpatie.<br><br>
-          
+           <p class="prayer-text">
           Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
           Pasigailėk mūsų.<br><br>
-          
+           <p class="prayer-text">
           Melskis už mus, šventoji Mergele Scholastika,<br>
           Kad taptume verti Kristaus pažadų.<br><br>
-          
+           <p class="prayer-text">
           Melskimės.<br><br>
-
+ <p class="prayer-text">
           Dieve, kuris, norėdamas parodyti jos gyvenimo nekaltumą,<br>
           savo palaimintosios mergelės Scholastikos sielą<br>
           pakėlei į dangų balandžio pavidalu,<br>
@@ -224,13 +285,15 @@
           kuris su Tavimi ir Šventąja Dvasia<br>
           gyvena ir viešpatauja,<br>
           per amžių amžius.<br><br>
-          
+           <p class="prayer-text">
           Amen.
-          </p>
-    </section>
+          <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Litanijos</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Lithuanian Prayers to the Mother of God</p>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
-
