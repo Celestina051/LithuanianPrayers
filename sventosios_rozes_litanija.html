@@ -1,143 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Šventosios Rožės litanija - Lithuanian Prayers</title>
+    <title>Šventosios Rožės Litanija</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif; /* Ensure consistent font */
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prayer-content {
+            max-width: 600px; /* Set a maximum width for the prayer content */
+            width: 100%; /* Ensure the content is responsive */
+            margin: 20px; /* Margin for spacing around the content */
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+        }
+
+        .prayer-text {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left; /* Keep the text left-aligned */
+        }
+
+        .prayer-navigation {
+            margin-top: 20px;
+            text-align: center; /* Center align the navigation */
+        }
+
+        .back-to-prayers {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .back-to-prayers:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Šventosios Rožės litanija</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prayers.html">Prayers</a></li>
-                <li><a href="litanies.html">Litanies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="sventosios_rozes_litanija">
-        <h2>Šventosios Rožės litanija</h2>
-        <p>
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+                <h1>Lietuviškas atsidavimas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                    <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                    <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                    <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                    <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="prayer-content">
+                <h2>Šventosios Rožės Litanija</h2>
+                <p class="prayer-text">
           Kyrie, eleison! Christe, eleison! Kyrie, eleison!<br>
           Kristau, išgirsk mus! Kristau, išklausyk mus!<br><br>
-
+<p class="prayer-text">
           Tėve, dangaus Dieve, pasigailėk mūsų!<br>
           Sūnau, pasaulio Atpirkėjau, Dieve, pasigailėk mūsų!<br>
           Šventoji Dvasia, Dieve, pasigailėk mūsų!<br>
           Šventoji Trejybe, vienas Dieve, pasigailėk mūsų!<br><br>
-          
+          <p class="prayer-text">
           Šventoji Marija, Mergelių Karaliene,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventasis Dominykai, šlovingasis patriarchai,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Rože, dangiškosios malonės rasa,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Rože, kurioje Dievo malonė nebuvo bevaisė,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Rože, nuo kūdikystės pasižymėjusi šventumu,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Rože, kvaila pasauliui, bet Dievo išrinkta,<br>
           kad suglumintų išmintinguosius,<br>
           melski už mus.<br><br>
-
+<p class="prayer-text">
           Šventoji Rože, brangi Mergelei Marijai, dar būdama vaiku,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Rože, pašvęsta Kristui nekaltybės įžadu,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Rože, kuri bjaurėjaisi žemiškomis tuštybėmis,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Rože, kuri paniekinai grožį,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Rože, kuri paniekinai viską, kad įgytum Kristų,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Rože, angeliško gyvenimo pavyzdy,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Rože, lelija tarp erškėčių,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Rože, prikalta prie Kristaus kryžiaus,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Rože, kantrybės ir nusižeminimo pavyzdy,<br>
           melski už mus.<br><br>
-
+<p class="prayer-text">
           Šventoji Rože, kuri pasninkavai beveik viršydama žmogaus jėgas,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Rože, vainikuota aštriomis vinimis,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Rože, pasiekusi nesuskaičiuojams pergales prieš demonus,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Rože, daugybės šmeižikiškų kalbų auka,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Rože, gaivinama dangiškosios paguodos,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Rože, apdovanota Dievo Motinos regėjimais,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Rože, atsidavusi dangiškajai kontempliacijai,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Rože, uždegta Serafiškos meilės Dievui,<br>
           melski už mus.<br><br>
-
+<p class="prayer-text">
           Šventoji Rože, uoliai siekianti sielų išganymo,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Rože, kurios meilės neužgesino persekiojimai,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Rože, kuri skleidi saldų Kristaus kvapą,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Rože, mirštanti Jėzaus ir Marijos meilėje,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Rože, kuri buvai atvesta pas Tą, kurį mylėjai,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Rože, pirmoji šventumo gėle Amerikoje,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Šventoji Rože, krikščionių mergelių puošmena,<br>
           melski už mus.<br><br>
-          
+          <p class="prayer-text">
           Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
           atleisk mums, Viešpatie.<br><br>
-
+<p class="prayer-text">
           Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
           išklausyk mus, Viešpatie.<br><br>
-          
+          <p class="prayer-text">
           Dievo Avinėli, kuris naikini pasaulio nuodėmes,<br>
           pasigailėk mūsų.<br><br>
-          
+          <p class="prayer-text">
           Kristau išklausyk mus.<br>
           Kristau, maloningai išklausyk mus.<br><br>
-          
+          <p class="prayer-text">
           Melskis už mus Šventoji Rože.<br>
           Kad taptume verti Kristaus pažadų.<br><br>
-          
+          <p class="prayer-text">
           Melskimės.<br><br>
-
+<p class="prayer-text">
           Visagali Dieve,<br>
           visų gėrybių autoriau ir davėjau,<br>
           kuris norėjai, kad palaimintoji Rožė<br>
@@ -150,13 +211,15 @@
           saldžiu Kristaus kvapu,<br>
           kuris gyvena ir viešpatauja<br>
           per amžių amžius.<br><br>
-          
+          <p class="prayer-text">
           Amen.
-          </p>
-    </section>
+          <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Litanijos</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Lithuanian Prayers to the Mother of God</p>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
-          
