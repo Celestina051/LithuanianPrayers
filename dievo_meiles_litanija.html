@@ -1,118 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dievo Meilės litanija - Lithuanian Prayers</title>
+    <title>Dievo Meilės Litanija</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ensure the page takes at least the full height of the viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif; /* Ensure consistent font */
+        }
+
+        /* Flexbox container to push footer to the bottom */
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Main content should take remaining space */
+        .flex-wrapper main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prayer-content {
+            max-width: 600px; /* Set a maximum width for the prayer content */
+            width: 100%; /* Ensure the content is responsive */
+            margin: 20px; /* Margin for spacing around the content */
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+        }
+
+        .prayer-text {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: left; /* Keep the text left-aligned */
+        }
+
+        .prayer-navigation {
+            margin-top: 20px;
+            text-align: center; /* Center align the navigation */
+        }
+
+        .back-to-prayers {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .back-to-prayers:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Dievo Meilės litanija</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prayers.html">Prayers</a></li>
-                <li><a href="litanies.html">Litanies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="dievo_meiles_litanija">
-        <h2>Dievo Meilės litanija</h2>
-        <p>
+    <div class="flex-wrapper">
+        <header>
+            <div class="logo">
+                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+                <h1>Lietuviškas atsidavimas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                    <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                    <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                    <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                    <li><a href="about.html" aria-label="About Us">Apie mus</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="prayer-content">
+                <h2>Dievo Meilės Litanija</h2>
+                <p class="prayer-text">
           Kyrie, eleison! Christe, eleison! Kyrie, eleison!<br>
           Kristau, išgirsk mus! Kristau, išklausyk mus!<br><br>
-
+ <p class="prayer-text">
           Tėve, dangaus Dieve, pasigailėk mūsų!<br>
           Sūnau, pasaulio Atpirkėjau, Dieve, pasigailėk mūsų!<br>
           Šventoji Dvasia, Dieve, pasigailėk mūsų!<br>
           Šventoji Trejybe, vienas Dieve, pasigailėk mūsų!<br><br>
-          
+           <p class="prayer-text">
           Tu, kuris esi begalinė Meilė,<br>
           pasigailėk mūsų.<br><br>
-          
+           <p class="prayer-text">
           Tu, kuris pirmas mane pamilo,<br>
           pasigailėk mūsų.<br><br>
-          
+           <p class="prayer-text">
           Tu, Kuris liepei man Tave mylėti,<br>
           pasigailėk mūsų.<br><br>
-          
+           <p class="prayer-text">
           Visa širdimi,<br>
           myliu Tave, mano Dieve.<br><br>
-          
+           <p class="prayer-text">
           Visa savo siela,<br>
           myliu Tave, mano Dieve.<br><br>
-
+ <p class="prayer-text">
           Visu savo protu,<br>
           myliu Tave, mano Dieve.<br><br>
-          
+           <p class="prayer-text">
           Visomis savo jėgomis,<br>
           myliu Tave, mano Dieve.<br><br>
-          
+           <p class="prayer-text">
           Labiau už visus turtus ir garbes,<br>
           myliu Tave, mano Dieve.<br><br>
-          
+           <p class="prayer-text">
           Virš visų malonumų ir troškimų,<br>
           myliu Tave, mano Dieve.<br><br>
-          
+           <p class="prayer-text">
           Labiau už save ir viską, kas man priklauso,<br>
           myliu Tave, mano Dieve.<br><br>
-          
+           <p class="prayer-text">
           Labiau už visus savo artimuosius ir draugus,<br>
           myliu Tave, o mano Dieve.<br><br>
-          
+           <p class="prayer-text">
           Labiau už visus žmones ir angelus,<br>
           myliu Tave, mano Dieve.<br><br>
-          
+           <p class="prayer-text">
           Labiau už visus kūrinius danguje ir žemėje,<br>
           myliu Tave, mano Dieve.<br><br>
-
+ <p class="prayer-text">
           Tik dėl Tavęs,<br>
           myliu Tave, mano Dieve.<br><br>
-          
+           <p class="prayer-text">
           Nes Tu esi viešpataujantis Gėris,<br>
           myliu Tave, mano Dieve.<br><br>
-          
+           <p class="prayer-text">
           Nes Tu esi be galo vertas būti mylimas,<br>
           myliu Tave, mano Dieve.<br><br>
-          
+           <p class="prayer-text">
           Nes Tu esi be galo tobulas,<br>
           myliu Tave, mano Dieve.<br><br>
-          
+           <p class="prayer-text">
           Net jei Tu nebūtum man pažadėjęs dangaus,<br>
           myliu Tave, mano Dieve.<br><br>
-          
+           <p class="prayer-text">
           Net jei Tu nebūtum man grasinęs pragaru,<br>
           myliu Tave, mano Dieve.<br><br>
-          
+           <p class="prayer-text">
           Net jei Tu bandytum mane nepritekliumi ir nelaimėmis,<br>
           myliu Tave, mano Dieve.<br><br>
-
+ <p class="prayer-text">
           Ir turtuose, ir varge,<br>
           myliu Tave, mano Dieve.<br><br>
-          
+           <p class="prayer-text">
           Sveikatoje ir ligoje,<br>
           myliu Tave, mano Dieve.<br><br>
-          
+           <p class="prayer-text">
           Gyvenime ir mirtyje,<br>
           myliu Tave, mano Dieve.<br><br>
-          
+           <p class="prayer-text">
           Laike ir amžinybėje,<br>
           myliu Tave, mano Dieve.<br><br>
-          
+           <p class="prayer-text">
           Vienybėje su šia meile<br>
           kuria visi šventieji<br>
           ir visi angelai myli Tave danguje,<br>
           myliu Tave, mano Dieve.<br><br>
-          
+           <p class="prayer-text">
           Vienybėje su ta meile<br>
           kuria Tave myli Švenčiausioji Mergelė Marija,<br>
           myliu Tave, mano Dieve.<br><br>
-          
+           <p class="prayer-text">
           Melskimės.<br><br>
-
+ <p class="prayer-text">
           Mano Dieve, kuris turi nesuvokiamą gausybę<br>
           visa, kas tobula ir verta meilės,<br>
           sunaikink manyje visa, kas kalta, jausminga,<br>
@@ -123,12 +184,15 @@
           ir galėsiu amžinai Tave mylėti<br>
           su išrinktaisiais danguje,<br>
           tyros meilės šalyje.<br><br>
-          
+           <p class="prayer-text">
           Amen.
-           </p>
-    </section>
+           <div class="prayer-navigation">
+                <a href="prayers.html" class="back-to-prayers" aria-label="Back to Prayers">← Grįžti į Litanijos</a>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Lithuanian Prayers to the Mother of God</p>
+        <p>&copy; 2024 Lietuviškas atsidavimas. Visos teisės saugomos.</p>
     </footer>
 </body>
 </html>
