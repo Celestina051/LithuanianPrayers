@@ -10,18 +10,59 @@
         html, body {
             height: 100%;
             margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
         }
-
         /* Flexbox container to push footer to the bottom */
         .flex-wrapper {
             display: flex;
             flex-direction: column;
             min-height: 100vh;
         }
-
         /* Main content should take remaining space */
         .flex-wrapper main {
             flex: 1;
+        }
+        header {
+            background: #f4f4f4;
+            padding: 1rem;
+            border-bottom: 1px solid #ccc;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            max-width: 50px;
+            margin-right: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 1rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        nav ul li a.active {
+            font-weight: bold;
+        }
+        .about-content {
+            padding: 2rem;
+        }
+        details {
+            margin-bottom: 1rem;
+        }
+        details summary {
+            font-weight: bold;
+            cursor: pointer;
+        }
+        details p {
+            margin: 0.5rem 0;
         }
     </style>
 </head>
@@ -41,419 +82,140 @@
                     <li><a href="atsidavimas.sopulingajai.mergelei.html" aria-label="Atsidavimas" class="active">Atsidavimas sopulingajai Mergelei</a></li>
                     <li><a href="about.html" aria-label="About Us">Apie mane</a></li>
                     <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
-                    </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="about-content">
-            <p class="intro">
-    <title>Atsidavimas Sopulingajai Mergelei</title>
-</head>
-<body>
-    <h1>Atsidavimas Sopulingajai Mergelei</h1>
-
-    <h3>Įvadas</h3>
-<p>
-    Esu atsidavusi Sopulingajai Mergelei Marijai ir jaučiu įkvėpimą pasidalinti
-    jos skausmų vizijomis su mūsų žmonėmis. Jei jaučiate įkvėpimą ar susidomėjimą
-    melstis vainikėlio versiją, kurią Marija man padiktavo, kviečiu prisijungti. Jei ne, galite melstis labiau tradicinę versiją
-    <a href="https://melskis.lt/marijai/7-skausmu-vainikelis/" target="_blank">čia</a>.
-</p>
-<p>
-    Jaučiu poreikį ir jos įkvėpimą skleisti atsidavimą jos skausmams visame
-    pasaulyje, bet ypač mūsų šalyje. Čia taip pat rasite informaciją apie
-    Sopulingąją Mergelę ir įvairius šventuosius, susijusius su ja.
-</p>
-
-
-    <h3>Aparicijos ir Vizijos</h3>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="about-content">
+                <h1>Atsidavimas Sopulingajai Mergelei</h1>
+                <h3>Įvadas</h3>
+                <p>
+                    Esu atsidavusi Sopulingajai Mergelei Marijai ir jaučiu įkvėpimą pasidalinti jos skausmų vizijomis su mūsų žmonėmis. Jei jaučiate įkvėpimą ar susidomėjimą melstis vainikėlio versiją, kurią Marija man padiktavo, kviečiu prisijungti. Jei ne, galite melstis labiau tradicinę versiją <a href="https://melskis.lt/marijai/7-skausmu-vainikelis/" target="_blank">čia</a>.
+                </p>
+                <p>
+                    Jaučiu poreikį ir jos įkvėpimą skleisti atsidavimą jos skausmams visame pasaulyje, bet ypač mūsų šalyje. Čia taip pat rasite informaciją apie Sopulingąją Mergelę ir įvairius šventuosius, susijusius su ja.
+                </p>
+                <h3>Aparicijos ir Vizijos</h3>
                 <details>
                     <summary>Pirmoji diena</summary>
-                    <p>Man pasirodė Dievo Motina, visa balta, su nuostabia balta suknele, jos veidas ir
-                    kūnas švytėjo. „Ateik, vaikeli, ir pamatyk mano sužeistą širdį“, - tarė Ji. Ji parodė
-                    man savo sopulingają širdį, kraujuojančią, bet be kardų. „Tu stebiesi, kodėl
-                    nematai kalavijų, kurie pervėrė Mano širdį, tiesa? Nes, mano brangus vaike, Aš
-                    įsleisiu tave į savo Skausmingąją širdį, ir tie kalavijai pervers tavo pačios širdį taip,
-                    kaip pervėrė mano. Tu man aukosi visų pasaulio nusidėjėlių skausmą, kiekvieną
-                    dieną vis kitokį. Tu kentėsi kartu su manimi dėl jų, ir mes paaukosime juos mano
-                    dieviškajam Sūnui ir mūsų Dievui už pasaulio atsivertimą“.
-
-                    Tada pamačiau angelą, ateinantį pas mus su pirmuoju kalaviju rankoje. Jis
-                    atsiklaupė priešais Mūsų Karalienę ir pasiūlė jai jį. Ji paėmė jį ir pasiūlė man.
-                    „Nuo šios akimirkos tu kentėsi. Tau atrodys, kad miršti, bet taip nebus. Ar sutinki
-                    su tuo, mano dukra? Ar sutinki su pirmuoju kalaviju? Kai ateis laikas tai paskelbti
-                    visiems, jie aukos savo skausmą man, kaip aš noriu. Bet tada tavo skausmai bus
-                    patys stipriausi“. Ji pažvelgė į mane liūdna, bet švelnia veido išraiška.
-
-                    „Taip, motina, sutinku, - atsakiau. „Mano širdis yra tavo. Perverk ją.“ Marija taip ir
-                    padarė. Skausmas buvo beprotiškas. Tai buvo ne fizinė, o dvasinė agonija. Tai
-                    labai sunku paaiškinti. Mačiau kalaviją savo kūne ir dvasioje, ir tas pojūtis varė
-                    mane iš proto. Dabar Marija taip pat turėjo pirmąjį kalaviją savo širdyje.
-
-                    Mačiau, kaip Juozapas ir Marija ėjo į šventyklą. Marija laikė kūdikį Jėzų, o aš
-                    buvau šalia jos. Mūsų širdyse vis dar buvo kalavijas, bet niekas to nematė. Kai
-                    atėjome, Marija padėjo Jėzų ant altoriaus. Jaučiau Jos liūdesį, kai ji tai darė, ir ji
-                    sušnabždėjo: „Teesie Tavo valia, mano Dieve“. Kai pažvelgiau į Kūdikėlį Jėzų,
-                    gulintį ant altoriaus, skausmas dar labiau sustiprėjo. Man atrodė, kad mane
-                    pervėrė meilės strėlė. Mylėjau Jį ir verkiau iš skausmo, nes žinojau, kad Jį
-                    prarasime. Tada Marija uždėjo rankas man ant peties: „Nusiramink, vaikeli. Jo
-                    valia bus įvykdyta“.
-
-                    Tada Simeonas priėjo prie Kūdikio, paėmė Jį ant rankų ir pakėlė. Jis palaimino Jo
-                    galvą, kojas ir rankas. Angelai buvo prie altoriaus, klūpojo ir giedojo iš sielvarto:
-                    „Mūsų Dievas ir mūsų Avinėlis, kuriam lemta kentėti ir mirti“. Skausmas tapo šiek tiek
-                    stipresnis. Simeonas atidavė Jėzų Marijai ir pranašavo apie jo skausmus kaip
-                    Biblijoje. Pranašė Ana taip pat atėjo ir pranašavo šlovingus dalykus apie Jėzų.
-                    Mūsų širdys prisipildė saldžiarūgščio džiaugsmo, žinant apie nusidėjėlių
-                    atpirkimą. Tačiau paskui jas vėl pripildė liūdesys ir sielvartas, žinant, ką Jis turės
-                    iškęsti.
-
-                    Marija atidavė kūdikį man. Kūdikėlis Jėzus man nusišypsojo, ir vėl meilės strėlė
-                    sužeidė mane, o liūdesys tapo stipresnis. Nenorėjau Jo prarasti; žinojimas, kas Jo
-                    laukia, buvo agonija. Tada mes grįžome namo. Kai Marija Jį aprengė, jaučiau ir
-                    mačiau, kaip drabužiai bus nuo Jo nuplėšti. Kai šukavau Jo plaukus, jutau
-                    erškėčių skausmą galvoje ir mačiau Jį su juo. Kai Marija Jį maitino, jutau rūgštų
-                    acto skonį burnoje. Kai glostėme Jo mažas pėdutes ir rankas, matėme ir jautėme,
-                    kaip jos bus prikaltos. Mačiau savo ranką kraujuojančią toje pačioje vietoje, kur
-                    bus Jo žaizda. Kai paguldėme Jį į lovą, matėme Jį suvystytą ir palaidotą. Po
-                    kiekvienos iš šių akimirkų aš verkdavau iš skausmo. Skaudžiausias buvo erškėčių
-                    vainikas.
-
-                    Galiausiai Marija pabučiavo Jėzaus kaktą ir pradėjo su manimi kalbėtis: „Aš
-                    niekada nepraradau tikėjimo savo Dievu. Net ir jausdama tokį skausmą galėjau
-                    nusigręžti. Aš to nepadariau. Mano širdis ir Dievo malonė neleido man to
-                    padaryti. Tai buvo mano liūdniausias sielvartas. Žinia apie Jo artėjančią kančią
-                    persmelkė mano širdį nesibaigiančiu liūdesiu“. Tada ji pažvelgė į mane. „Štai
-                    kodėl galiu suprasti žmonių skausmą. Dievas Tėvas padarė mane labiausiai
-                    kenčiančią, kad visi kenčiantys rastų paguodą ir išsilaisvinimą mano rankose.
-                    Mano mylima dukra, šiandien atnešk man visus nusidėjėlius į mano sopulingąją
-                    širdį. Bet labiausiai tuos, kurie kenčia nuo depresijos, nerimo, liūdesio ir emocinio
-                    skausmo. Atnašauk man jų agoniją ir skausmą ir primink jiems, kad aš esu jų
-                    motina, jų liūdesio karalienė. Kad po savo sūnaus aš juos labiausiai suprantu.
-                    Vesk juos į mano rankas ir širdį, ir aš panaudosiu jų skausmą pasaulio ir jų pačių
-                    sielų atsivertimui“.
-
-                    Vizija baigėsi, bet kardas mano širdyje liko.</p>
+                    <p>Man pasirodė Dievo Motina, visa balta, su nuostabia balta suknele, jos veidas ir kūnas švytėjo. „Ateik, vaikeli, ir pamatyk mano sužeistą širdį“, - tarė Ji. Ji parodė man savo sopulingają širdį, kraujuojančią, bet be kardų. „Tu stebiesi, kodėl nematai kalavijų, kurie pervėrė Mano širdį, tiesa? Nes, mano brangus vaike, Aš įsleisiu tave į savo Skausmingąją širdį, ir tie kalavijai pervers tavo pačios širdį taip, kaip pervėrė mano. Tu man aukosi visų pasaulio nusidėjėlių skausmą, kiekvieną dieną vis kitokį. Tu kentėsi kartu su manimi dėl jų, ir mes paaukosime juos mano dieviškajam Sūnui ir mūsų Dievui už pasaulio atsivertimą“.</p>
+                    <p>Tada pamačiau angelą, ateinantį pas mus su pirmuoju kalaviju rankoje. Jis atsiklaupė priešais Mūsų Karalienę ir pasiūlė jai jį. Ji paėmė jį ir pasiūlė man. „Nuo šios akimirkos tu kentėsi. Tau atrodys, kad miršti, bet taip nebus. Ar sutinki su tuo, mano dukra? Ar sutinki su pirmuoju kalaviju? Kai ateis laikas tai paskelbti visiems, jie aukos savo skausmą man, kaip aš noriu. Bet tada tavo skausmai bus patys stipriausi“. Ji pažvelgė į mane liūdna, bet švelnia veido išraiška.</p>
+                    <p>„Taip, motina, sutinku, - atsakiau. „Mano širdis yra tavo. Perverk ją.“ Marija taip ir padarė. Skausmas buvo beprotiškas. Tai buvo ne fizinė, o dvasinė agonija. Tai labai sunku paaiškinti. Mačiau kalaviją savo kūne ir dvasioje, ir tas pojūtis varė mane iš proto. Dabar Marija taip pat turėjo pirmąjį kalaviją savo širdyje.</p>
+                    <p>Mačiau, kaip Juozapas ir Marija ėjo į šventyklą. Marija laikė kūdikį Jėzų, o aš buvau šalia jos. Mūsų širdyse vis dar buvo kalavijas, bet niekas to nematė. Kai atėjome, Marija padėjo Jėzų ant altoriaus. Jaučiau Jos liūdesį, kai ji tai darė, ir ji sušnabždėjo: „Teesie Tavo valia, mano Dieve“. Kai pažvelgiau į Kūdikėlį Jėzų, gulintį ant altoriaus, skausmas dar labiau sustiprėjo. Man atrodė, kad mane pervėrė meilės strėlė. Mylėjau Jį ir verkiau iš skausmo, nes žinojau, kad Jį prarasime. Tada Marija uždėjo rankas man ant peties: „Nusiramink, vaikeli. Jo valia bus įvykdyta“.</p>
+                    <p>Tada Simeonas priėjo prie Kūdikio, paėmė Jį ant rankų ir pakėlė. Jis palaimino Jo galvą, kojas ir rankas. Angelai buvo prie altoriaus, klūpojo ir giedojo iš sielvarto: „Mūsų Dievas ir mūsų Avinėlis, kuriam lemta kentėti ir mirti“. Skausmas tapo šiek tiek stipresnis. Simeonas atidavė Jėzų Marijai ir pranašavo apie jo skausmus kaip Biblijoje. Pranašė Ana taip pat atėjo ir pranašavo šlovingus dalykus apie Jėzų. Mūsų širdys prisipildė saldžiarūgščio džiaugsmo, žinant apie nusidėjėlių atpirkimą. Tačiau paskui jas vėl pripildė liūdesys ir sielvartas, žinant, ką Jis turės iškęsti.</p>
+                    <p>Marija atidavė kūdikį man. Kūdikėlis Jėzus man nusišypsojo, ir vėl meilės strėlė sužeidė mane, o liūdesys tapo stipresnis. Nenorėjau Jo prarasti; žinojimas, kas Jo laukia, buvo agonija. Tada mes grįžome namo. Kai Marija Jį aprengė, jaučiau ir mačiau, kaip drabužiai bus nuo Jo nuplėšti. Kai šukavau Jo plaukus, jutau erškėčių skausmą galvoje ir mačiau Jį su juo. Kai Marija Jį maitino, jutau rūgštų acto skonį burnoje. Kai glostėme Jo mažas pėdutes ir rankas, matėme ir jautėme, kaip jos bus prikaltos. Mačiau savo ranką kraujuojančią toje pačioje vietoje, kur bus Jo žaizda. Kai paguldėme Jį į lovą, matėme Jį suvystytą ir palaidotą. Po kiekvienos iš šių akimirkų aš verkdavau iš skausmo. Skaudžiausias buvo erškėčių vainikas.</p>
+                    <p>Galiausiai Marija pabučiavo Jėzaus kaktą ir pradėjo su manimi kalbėtis: „Aš niekada nepraradau tikėjimo savo Dievu. Net ir jausdama tokį skausmą galėjau nusigręžti. Aš to nepadariau. Mano širdis ir Dievo malonė neleido man to padaryti. Tai buvo mano liūdniausias sielvartas. Žinia apie Jo artėjančią kančią persmelkė mano širdį nesibaigiančiu liūdesiu“. Tada ji pažvelgė į mane. „Štai kodėl galiu suprasti žmonių skausmą. Dievas Tėvas padarė mane labiausiai kenčiančią, kad visi kenčiantys rastų paguodą ir išsilaisvinimą mano rankose. Mano mylima dukra, šiandien atnešk man visus nusidėjėlius į mano sopulingąją širdį. Bet labiausiai tuos, kurie kenčia nuo depresijos, nerimo, liūdesio ir emocinio skausmo. Atnašauk man jų agoniją ir skausmą ir primink jiems, kad aš esu jų motina, jų liūdesio karalienė. Kad po savo sūnaus aš juos labiausiai suprantu. Vesk juos į mano rankas ir širdį, ir aš panaudosiu jų skausmą pasaulio ir jų pačių sielų atsivertimui“.</p>
+                    <p>Vizija baigėsi, bet kardas mano širdyje liko.</p>
                 </details>
                 <details>
                     <summary>Antroji diena</summary>
-                    <p>Pradžia buvo tokia pati kaip ir vakar. Atėjo Marija, angelas davė jai antrąjį
-                    kalaviją, ir ji pervėrė mano širdį. Šį kartą pirmieji kalavijai dar tebebuvo mūsų
-                    širdyse, o Marija pasirodė labiau nuliūdusi, jos suknelė tapo šiek tiek juoda.
+                    <p>Pradžia buvo tokia pati kaip ir vakar. Atėjo Marija, angelas davė jai antrąjį kalaviją, ir ji pervėrė mano širdį. Šį kartą pirmieji kalavijai dar tebebuvo mūsų širdyse, o Marija pasirodė labiau nuliūdusi, jos suknelė tapo šiek tiek juoda.</p>
+                    <p>Marija ir Juozapas miegojo, kai Juozapas gavo angelo žinią pasiimti Jėzų ir bėgti. Juozapas švelniai pažadino Mariją, o jam kalbant Marijos akys išsiplėtė, ir aš pajutau, kaip jos, kaip ir mano, širdis prisipildė baimės. Marija paėmė miegantį Jėzų ant rankų, ir mes skubiai išėjome iš namų. Juozapas padėjo Marijai užlipti ant asilo, ir mes pradėjome kelionę į Egiptą. Ėjome ir ėjome, kol pasiekėme dykumą. Buvo karšta, visi buvome prakaituoti ir pavargę. Nors Marija nieko negalėjo pasiūlyti savo kūdikiui, ji stengėsi savo apsiaustu apsaugoti Jėzų nuo saulės ir karščio. Pajutau nuovargį, man ėmė skaudėti kojas.</p>
+                    <p>Po kurio laiko sustojome po medžiu. Artėjant nakčiai padėjau Juozapui įkurti ugnį. Atsisėdome, ir Juozapas kiekvienam iš mūsų davė po gabalėlį senos, kietos duonos. Su savimi nieko nebuvome pasiėmę. Marija paėmė Jėzų, o Juozapas - šiek tiek duonos, kurią turėjo. Aš paėmiau savo gabalėlį, bet pasiūliau jį Marijai. „Nesu tokia alkana“, - pasakiau. „Valgyk, - atsakė Marija. Papurčiau galvą, kad ne. „Aš primygtinai reikalauju, tai mažiausia, ką galiu padaryti“. Marija nusišypsojo man ir padavė ramiai miegantį Kūdikėlį Jėzų.</p>
+                    <p>Atėjus nakčiai, visi miegojome glaudžiai vienas prie kito, kad nesušaltume. Nors grėsė laukinių žvėrių pavojus, mačiau mus supančius angelus su liepsnojančiais kalavijais, saugančius Šventąją Šeimą nuo mirtino pavojaus. Tada pamačiau mus einančius priešingu klimatu. Šį kartą buvo šalta ir snigo. Marija vėl bandė apsaugoti Jėzų savo apsiaustu, kartodama sau: „Teesie Dievo valia, teesie Dievo valia“.</p>
+                    <p>Pagaliau atvykome į Egiptą, tačiau vietiniai gyventojai į mus žvelgė pasibjaurėtinai ir įtariai. Mūsų drabužiai buvo permirkę ir su skylėmis. Iš tiesų atrodėme kaip elgetos. Kadangi Juozapas nebuvo vietinis, jam buvo labai sunku gauti darbą, todėl kurį laiką turėjome gyventi gatvėje. Marijai skaudėjo širdį ne dėl savęs, bet dėl savo Jėzaus, Visatos Karaliaus, tapusio menku elgeta, kurį niekino žmonės, kurių Jis atėjo išgelbėti.</p>
+                    <p>Po kurio laiko mums buvo suteiktas apleistas pastatas. Žmogus, kuris mums jį atidavė, piktdžiugiškai šypsojosi, beveik mėgaudamasis mūsų sunkia padėtimi. Tačiau mes nuolankiai jį priėmėme. Jame nebuvo šviesos ir langų, todėl naktį buvo šalta. Miegojome arti vienas kito, kad nesušaltume. Juozapas susirado darbą už centus, o aš likau su Marija rūpintis Jėzumi. Buvome purvini ir neturėjome vandens nusiprausti; tą truputį vandens, kurį turėjome, naudojome gėrimui. Marijos veidas buvo liūdnas, kai ji žiūrėjo į Jėzų, bet jos lūpose mačiau nedidelę šypseną. Net ir tokioje sunkioje padėtyje ji buvo su įsikūnijusiu Dievu. Mums plyšo širdis, kai Jėzus paprašė duonos gabalėlio, bet mes jos neturėjome.</p>
+                    <p>Laikas bėgo, ir artėjo septynerių metų pabaiga. Pastatas tebebuvo be baldų, bet turėjome šiek tiek audinio vietoj langų. Jėzus augo mūsų akivaizdoje ir virto gražiu berniuku. Vis dar turėjome tuos pačius drabužius, su kuriais atėjome iš pradžių, bet buvome švarūs. Atėjo laikas iškeliauti, ir Juozapas vėl padėjo Marijai užlipti ant asilo. Šį kartą Jėzus buvo per didelis, kad galėtų joti ant asilo, bet ir per mažas, kad galėtų vaikščioti pats, todėl Juozapas nešė Jį ant nugaros. Aš ėjau šalia Marijos. Tada ji prakalbo: „Matai, vaikeli? Mes tapome niekuo, kad jūs visi galėtumėte turėti viską. Šiandien atnešk man visus nusidėjėlius, ypač tuos, kurie yra apleisti, benamiai ir neturi nieko. Primink jiems kad aš esu jų motina, vargšų
+                    motina, ir vesk juos atgal į mano rankas. Aš juos vesiu atgal pas savo mieląjį Sūnų, kuris yra viskas. Visų Karalius tapo niekuo, kad tie, kurie yra niekas ir neturi nieko šio pasaulio akyse, galėtų turėti viską ir būti viskuo Dievo akyse. Tebūna įvykdyta Jo valia.“
+</p>
+</details>
+<details>
+    <summary>Trečioji diena</summary>
+    <p>
+        Abejojau, ar pradėti šį skausmą, nes žinojau pagrindinę jo mintį. Prieš jį pradėdama gavau užuominą. Tie patys dalykai vyko iki širdies pervėrimo. Tačiau Marija su kiekviena diena atrodė vis labiau nuliūdusi, vis panašesnė į mums pažįstamą sopulingają motiną. Jos apsiaustas ir suknelė darėsi vis juodesni.
+    </p>
+    <p>
+        Kelionė buvo pagal lytį. Vyrai vienoje pusėje, moterys kitoje. Ėjome į Velykų šventę Jeruzalėje. Aš ėjau šalia Marijos ir Jėzus su Juozapu. Po šventės grįžome atgal ir sustojome. Juozapas priėjo prie mūsų. Marija jo paklausė, kur Jėzus, o Juozapas pamanė, kad Jis yra su mumis. Kokia panika mus apėmė. Kalavijas buvo skaudesnis man ir mums abiem, nes Jo nematėme, kaip ir kitais kartais.
+    </p>
+    <p>
+        Karštligiškai ir apimti panikos grįžome atgal. Apsižvalgėme ir pajutome dar didesnę paniką. Klausinėjome aplink, bet niekas Jo nematė. Atėjus vakarui, verkdami meldėmės Dievui Tėvui, veidus nuleidę ant žemės. Aš tiesiog maldavau Jo neatimti iš mūsų Jėzaus. Meldžiau, kad Jis neatimtų Jėzaus iš manęs. Verkdama ir panikuodama prašiau atleidimo. O Marijos malda buvo kitokia, tačiau kupina liūdesio: „Mano Tėve, tebūnie Tavo valia, bet kodėl man taip padarei? Argi aš neverta rūpintis Juo? Jis yra mano saulė, o dabar aš esu tamsoje“. Visas šias tris dienas ji nevalgė, nemiegojo, tik meldėsi ir ieškojo Jėzaus.
+    </p>
+    <p>
+        Tada pagaliau Jį surado. Neįsiveržėme į vidų; palaukėme, kol Jėzus baigs juos mokyti ir kol jie išeis. Marija pribėgo prie Jo, švelniai sugriebė už pečių ir tarė: „Kodėl mums tai padarei? Mes Tavęs ieškojome iš sielvarto“. Ji pakartojo: „Kodėl mums tai padarei?“ tarsi iš savo maldos Tėvui. Ji buvo laiminga, bet vis dar kupina užsitęsusio nevertumo ir baimės jausmo, tarsi bijodama, kad Jis vėl dings. Jėzus atsakė: „Kodėl jūs manęs ieškojote? Argi nežinojote, kad Aš turiu būti savo Tėvo reikaluose?“ Marija Jį paleido, ir Jėzus grįžo su mumis.
+    </p>
+    <p>
+        Vizija baigėsi, ir Marija kaip visada pradėjo kalbėti: „Mano dukra, aš kentėjau šias tris kankinančias dienas dėl trijų rūšių žmonių: dėl tų, kurie prarado Dievą ir dėl to kenčia, dėl atstumtųjų, apleistų ir išsižadėtųjų ir dėl tų, kurie tikėjo, kad nėra verti Dievo ar Jo meilės jiems.“ Nukreipiau nuo jos žvilgsnį, nes tai pagrindinė mano problema. Netikiu, kad nusipelniau ko nors gero: meilės, rūpesčio, šilumos, Dievo, o kartais net jos. Ji paėmė mano smakrą ir privertė mane pažvelgti į ją: „Žinau, kad tai labai jautri tema, bet noriu, kad tu kartu su visais šiais žmonėmis pasiūlytum man savo skausmą. Padovanok man tą erškėčiuotą rožę, kuri įstrigusi tavo širdyje. Aš nuimsiu erškėčius ir į tavo širdį įdėsiu naują rožę, rožę iš savo dangiškojo sodo, kupiną visokio gerumo. Kai aukoji skausmą, įsivaizduok, kad skausmas yra tarsi spygliuota rožė, o aš nuimsiu spyglius, pasiūlysiu juos savo Sūnui, spyglius, simbolizuojančius tavo ir kitų žmonių skausmą, ir grąžinsiu į kraujuojančią žmogaus širdį gražią dievišką rožę, kuri visada turėjo ten būti. Kitas dalykas, trys tamsos dienos, kurias kentėjau, prilygo trims pragaro tamsos dienoms per Jėzaus mirtį. Jis yra pasaulio šviesa. Primink jiems tai, mano brangioji. Jis yra pasaulio šviesa. Ir kartu tavo esybės šviesa. Jums nereikia nusipelnyti Jo ar Jo meilės. Jis atiduoda save visiškai ir pilnai kiekvienam, kuris Jį priima. Jis nieko nesulaiko. Atvesk man visus nusidėjėlius, apleistus, paliktus, praradusius savo šviesą, mano žavųjį Sūnų ir tuos, kurie jaučiasi Jo nenusipelnę apskritai. Nebijokite, jei Jį praradote. Jis visada su jumis, pasislėpęs jūsų širdyje, sieloje ir visur aplink jus. Atgailaukite, visiškai ir nuoširdžiai atgailaukite, ir Jis vėl jums pasirodys“.
+    </p>
+</details>
+<details>
+    <summary>Ketvirtoji diena</summary>
+    <p>
+        Tas pats, kaip ir prieš tai buvusiomis dienomis, tačiau Marijos drabužiai buvo vis juodesni. Ji atrodė vis liūdnesnė.
+    </p>
+    <p>
+        Matėme kruvinus Jėzaus žingsnius ir žinojome, kad Jis praėjo pro šalį. Mes bėgome, Marijos akys buvo išplėstos, burna šiek tiek pravira, riedėjo ašaros. Mes veržėmės per minią. Matėme, kaip vienas sargybinis nešė vinis, kitas - plaktuką. Ir tada pamatėme Jį. Labai sunku paaiškinti, kaip Jis atrodė, bet pajutau didžiausią liūdesį, kokį iki šiol buvau jautusi. Marija bandė prieiti prie Jo, bet sargybiniai ją atstūmė. Jos skruostais riedėjo ašaros. Tada Jėzus pažvelgė į ją. Mano sielvartas tapo dar didesnis. Tada Jis pažvelgė į mane. Geriausiai galiu apibūdinti taip: Jis pažvelgė į mane liūdnai, labai liūdnai. Tada pamačiau aplink Jį angelus, maldaujančius Jį to nedaryti. „Mūsų Viešpatie, kodėl Tu tai darai? Argi nematai, ką jie su Tavimi daro? Tik tark žodį, ir mes juos visus sunaikinsime“. Jėzus angelams atsakė: „Mano gailestingumas jums visiems nesuvokiamas. Daugiau manęs nebeklauskite“.
+    </p>
+    <p>
+        Tada matėme kiekvieną žingsnį. Akimirką, kai Jis buvo plakamas prie stulpo. Jis buvo išrengtas ir prirakintas prie stulpo. Tada priėjo sargybinis ir pradėjo Jį plakti, rėžis po rėžio. Aš pašokau ir krūptelėjau. Buvau įsitikinusi, kad jei būčiau viena iš dangaus kareivijų, negalėčiau matyti, kaip mano Viešpats buvo šitaip kankinamas. Tačiau negalėjau atitraukti akių. Skruostais riedėjo ašaros; dvasinė kančia buvo kankinanti. Verkiau po kiekvienos Jam padarytos žaizdos. Marija taip pat negalėjo atitraukti nuo Jo žvilgsnio. Ji verkė ir verkė kartu su manimi ir maldavo: „Pasigailėk, pasigailėk“. Sargybiniai sadistiškai juokėsi iš Jo skausmo. O mes meldėmės dėl tų sargybinių: „Pasigailėk, pasigailėk.“
+    </p>
+    <p>
+        Tada erškėčių vainikas. Pirmiausia matėme, kaip Jį aprengė purpuriniu apsiaustu, įteikė netikrą skeptrą. Jie pašaipiai nusilenkė: „Sveikas, žydų Karaliau“, ir juokėsi. Juokdamiesi jie spjaudė Jam į veidą, spardė jį ir stūmė Jo žavų veidą į žemę. Šioje scenoje pajutau pykčio dvelksmą, bet jausmą užvaldė liūdesys. Mes buvome šalia, kartojome tuos pačius žodžius: „Pasigailėk, pasigailėk, tebūnie Tavo valia“. Tarsi Marija norėjo, kad pasitikėčiau Jo valia. Tada jie padarė erškėčių vainiką ir vėl, tyčiodamiesi ir juokdamiesi, vienas atsiklaupė ant kelių sakydamas: „Mes tave vainikuojame, o Karaliau“, ir stipriai įspraudė vainiką į Jo galvą. Iš visų Jo galvos pusių tekėjo Jo žavusis kraujas. Erodas žvelgė į Jėzų su pasibjaurėjimu ir neapykanta: „Taip, karalius“, - pasakė jis tyčiodamasis ir pargriovė Jį ant žemės.
+    </p>
+    <p>
+        Tada grįžome į pradžią. Ėjome paskui Jėzų per minią. Pati minia į mus žiūrėjo su neapykanta, net spjaudė į mus. Mums tai nerūpėjo. Mūsų akys buvo nukreiptos į Jėzų. Marija per minią ištiesė ranką, siekdama Jėzaus, tačiau minia mus suklupdė. Galiausiai sekėme paskui Jėzų į Golgotą. Slėpinys baigėsi, ir, kaip visada, Marija ėmė kalbėti: „Mes kentėjome šį skausmą už blogiausius iš žmonių: piktžodžiautojus, Dievo niekintojus, žiauriausius iš jūsų. Mano dukra, atvesk man šiandien tokius žmones. Jie toli nuo Dievo, labai toli nuo Jo. Bet su aukomis jie gali būti atpirkti. Atvesk juos į mano nuliūdusią širdį. Kad ir kokie jie būtų paklydę, jie yra mano vaikai ir Dievo vaikai. Juos reikia surasti, jiems reikia tavi aukų. Melskis už tokius žmones, melskis uoliai, nes dabar tokie dominuoja žemėje. Mano Sūnus mirė ne už teisiuosius, bet už tokius žmones kaip jie. Primink jiems, kad esu gailestinga Motina, kad jie gaus laisvę ir atleidimą iš mano Sūnaus, jei sugrįš. Jiems nereikia bijoti. Ateikite, mano vaikai. Grįžkite namo. Atgailaukite, atgailaukite, atgailaukite. Jei galėtume dar kartą kentėti tą pačią agoniją, mes tai padarytume. Grįžkite namo ir sugrįžkite į savo mylinčios motinos rankas.“
+    </p>
+</details>
+<details>
+    <summary>Penktoji diena</summary>
+    <p>
+        Tas pats, kaip ir kitomis dienomis, tačiau Marija atrodė vis labiau nuliūdusi, beveik kaip sopulingoji motina, jos skruostais riedėjo ašaros. Jos suknelėje buvo likęs tik baltas lašas.
+    </p>
+    <p>
+        Mes buvome ant Golgotos. Kryžius buvo padėtas ant žemės, o Jėzus buvo išrengtas ir paguldytas ant kryžiaus. Kai Jo rankos ir kojos buvo prikaltos vinimis, pajutau tai savo kūnu ir dvasia. Regėjime mano ir Marijos rankos buvo kruvinos ir prikaltos. Ne fiziškai, bet mistiškai; niekas kitas, išskyrus mus, tų žaizdų nematė. Marija negalėjo atitraukti akių; ji verkė.
+    </p>
+    <p>
+        Paskui kryžius buvo įleistas giliai į žemę ir šiek tiek pakratytas, kad Jėzaus kūnas atitrūko nuo Jo kaulų. Jėzus dusliai kvėpavo, o kraujas tekėjo Jo veidu į žemę. Aš mačiau šventąjį Joną. „Pasiimk su savimi mano širdį. Paimk mano širdį su savimi,“ - meldėsi Marija. Jėzus tarė: „Aš trokštu.“ Marija meldėsi: „Jei tik galėčiau Tau ką nors duoti, kad nors lašelį palengvėjimo pajustum.“ Kai Jėzui davė gerti acto, burnoje pajutome rūgštų skonį. Galiausiai Marija palūžo; ji užmerkė akis, uždengė burną ir verkė. „Aukoju Tau savo skausmą, mano Viešpatie, dėl Tavo valios. Tu man suteikei garbę būti Tavo viengimio Sūnaus motina, dabar aš priimsiu tai, ką Tu dabar panorėsi man duoti. Esu Tavo tarnaitė, tebūnie man pagal Tavo žodį.“ Dabar ji buvo kupina tamsos ir liūdesio, palyginti su Apreiškimo džiaugsmu ir šviesa. Marija puolė ant kelių. Šokau ją paguosti, kiek galėjau. Šventasis Jonas ir šventoji Marija Magdalietė taip pat atėjo į pagalbą.
+    </p>
+    <p>
+        Marija su tokiu liūdesiu žvelgė į savo Sūnų. Jėzaus žvilgsnis suminkštėjo, ir tuomet Jis tarė: „Moterie, štai tavo sūnus. Sūnau, štai tavo motina.“ Tai nė kiek nenuramino Marijos. Ji visuomet, per visas šias kančias, vis kartojo tuos pačius žodžius: „Teesie Tavo valia.“ Šventasis Jonas padėjo jai atsistoti.
+    </p>
+    <p>
+        Jėzus dejavo iš skausmo ir šaukė: „Mano Dieve, mano Dieve, kodėl mane apleidai?“ Jėzus jautėsi apleistas, Marija taip pat jautėsi apleista. Ji nenustojo verkti. „Tėve, atleisk jiems, nes jie nežino, ką daro.“ „Atleisk jiems, mano Dieve, atleisk jiems,“ - atsakė Marija savo širdyje. Aš taip pat prisijungiau: „Atleisk jiems, atleisk jiems.“ Ir galiausiai Jis atidavė savo dvasią. Viskas baigėsi, tačiau Marijos skausmas nesibaigė. Ji jautė kažkokią tuštumą, tuštumą, kurios niekas negalėjo užpildyti. Ji pasiekė Jo kojas, švelniai pirštais braukdama per Jo pėdas ir jose esančią vinį. Ji vėl puolė ant kelių, verkdama. Per visą šį liūdesį ji nenustojo verkti.
+    </p>
+    <p>
+        Vizija baigėsi. „Mano brangioji dukra, aš išliejau š šias karčias ašaras dėl
+                    Certainly! Here is the improved and more readable version of your HTML code starting from the specified point:
 
-                    Marija ir Juozapas miegojo, kai Juozapas gavo angelo žinią pasiimti Jėzų ir bėgti.
-                    Juozapas švelniai pažadino Mariją, o jam kalbant Marijos akys išsiplėtė, ir aš
-                    pajutau, kaip jos, kaip ir mano, širdis prisipildė baimės. Marija paėmė miegantį
-                    Jėzų ant rankų, ir mes skubiai išėjome iš namų. Juozapas padėjo Marijai užlipti
-                    ant asilo, ir mes pradėjome kelionę į Egiptą. Ėjome ir ėjome, kol pasiekėme
-                    dykumą. Buvo karšta, visi buvome prakaituoti ir pavargę. Nors Marija nieko
-                    negalėjo pasiūlyti savo kūdikiui, ji stengėsi savo apsiaustu apsaugoti Jėzų nuo
-                    saulės ir karščio. Pajutau nuovargį, man ėmė skaudėti kojas.
+<p>
+    žmonijos meilės, dėl nusidėjėlių. Ypač tų, kurie bus velnio apgauti ir nuklydę nuo mano žavingojo Sūnaus. Aš to neleisiu. Neleisiu, kad mano Sūnaus skausmas ir kraujas nueitų perniek, ir taip nebus. Pažadu tau. Ir visai žmonijai: Aš neleisiu, kad žmonija būtų amžiams prarasta. Aš iškelsiu tokius karius kaip tu, kad jie kovotų su velniu. Metai po metų atvesiu savo sūnų ir dukterų armiją, pridengtą mano apsiaustu, padengtą brangiuoju mano Sūnaus krauju. Juos lydės šventieji ir dangaus angelai, bet taip pat ir agonija. Mano dukra, atvesk man visus nusidėjėlius, ypač tuos, kurie yra apgauti ir atitraukti nuo tiesos, tuos, kurie yra sektose ar netikrose religijose, tuos, kurie visai netiki. Atvesk juos pas mane. Primink jiems, kad tik mano žavusis Sūnus, jų Viešpats ir Gelbėtojas, yra vertas garbinimo ir kad tik Jis yra kelias, tiesa ir gyvenimas.“
+</p>
+</details>
+<details>
+    <summary>Šeštoji diena</summary>
+    <p>
+        Tas pats, kaip ir ankstesniais kartais. Dabar Marija atrodė lygiai taip pat, kaip sopulingoji motina. Jos drabužiai ir apsiaustas buvo visiškai juodi.
+    </p>
+    <p>
+        Mes buvome Golgotoje ir žiūrėjome į mirusį Jėzų. Marija vis dar verkė. Priėjo sargybiniai su ietimis. Marija su baime pažvelgė į juos. Jos tylus prašymas buvo: „Ne, nelieskite Jo. Jis jau miręs“. Tačiau jie vis tiek perdūrė Jo šoną. Kai jie tai padarė, mes abu tai pajutome. Marija krūptelėjo iš skausmo. „Tu norėjai atiduoti save visą, net iki paskutinio kraujo lašo“, - buvo jos mintis. Prie kryžiaus klūpojo angelai ir tyliai garbino Jėzų.
+    </p>
+    <p>
+        Kai visi žmonės nuėjo savo keliais, Marija, Magdalietė, Jonas ir aš likome prie kryžiaus. Tada Nikodemas ir Juozapas iš Arimatėjos nuėmė Jėzų nuo kryžiaus, iš pradžių nuimdami vinis nuo Jo kojų, o paskui nuo rankų. Marija ištiesė abi rankas, kad priimtų Jį į savo rankas, ir atsisėdo po kryžiumi su Jėzumi ant rankų. Jis atrodė apgailėtinai ir kankinančiai. Jis buvo taip smarkiai nuplaktas, kad galėjai matyti Jo kaulus. Marija švelniai nuėmė nuo Jo galvos erškėčių vainiką. Erškėčiai buvo įsirėžę giliai į Jo kaukolę. Ji pabučiavo Jo kaktą. Jos drabužiai ir rankos buvo kruvini nuo Jo kraujo. Tada ji tarė: „Mano Dieve, Tavo valia išsipildė. Tu nuo pat pradžių davei Jį man, kad Jis būtų mano ir pasaulio šviesa. Dabar atnešu Jį atgal, aukoju Tau Jo sielą. Tavo valia išsipildė. Net jei dabar esu apleista ir be jokios paguodos, Tavo valia tebūnie įvykdyta“. Ji apkabino Jo mirusį kūną ir verkė. Kiti ir aš negalėjome nieko daryti, tik žiūrėti. Ji verkė taip, tarsi būtų praradusi viską. Tą akimirką taip ir buvo. Ją supo angelai ir verkė kartu su ja. Kai kurie iš jų rinko jos ašaras. Žinojau, kad ašaros, kurias ji išliejo nuo Jo nukryžiavimo iki šios akimirkos ir per visas kančias, buvo labai stiprios. Kaip jos Sūnaus kraujas yra mūsų išgelbėjimas, taip Marijos ašaros yra mūsų viltis ir saugus kelias pas jos žavųjį Sūnų.
+    </p>
+    <p>
+        Vizija baigėsi. „Mano dukra, atnešk man nusidėjėlius. Ypač tuos, kurie viską prarado, kurie yra vieniši, kurie patiria bet kokią prievartą ir bet kokiu būdu kenčia. Mano ašaros nuplaus rąstą iš jų akių, ypač iš jų širdžių. Atvesk juos visus prie mano nuliūdusios širdies ir primink jiems, kad šiame pasaulyje jie neras nieko verto. Tik mano dieviškame Sūnuje ir Jo karalystėje. Jis yra jų laisvė ir paguoda. Tik Jis gali suteikti jiems viską, ko trokšta jų sielos. Mano ašaros bus jų viltis ir ramybė, ir aš juos sugrąžinsiu pas vienintelį, kuris gali juos visiškai mylėti. Pripildyti juos tokios dieviškos meilės, kad jie nenorėtų nieko kito.“
+    </p>
+</details>
+<details>
+    <summary>Septintoji diena</summary>
+    <p>
+        Ji atėjo kaip sopulingoji motina, visiškai įkūnijanti liūdesį. Ji paėmė iš angelo paskutinį kalaviją. „Paskutinis.“ Kiti šeši kalavijai jau buvo širdyje, sukeldami šiek tiek skausmo. Šį kartą paskutinis širdies dūris buvo skausmingiausias. Nežinau kodėl.
+    </p>
+    <p>
+        Marija vis dar verkė ir gniaužė Jėzų ant rankų, sėdėdama po kryžiumi. „Motina,“ - švelniai pašaukiau ją. Jokio atsako. „Motina,“ - kiek griežčiau, bet vis dar švelniai sušuko jai šventasis Jonas. Vis dar jokio atsako. Priėjau prie Marijos ir bandžiau ją paguosti, o Jonas švelniai atitraukė kūną. Padėjau Marijai atsistoti. Pagaliau ji nustojo verkti, bet dabar atrodė be emocijų. Galbūt ne be emocijų, bet liūdinčios motinos įsikūnijimas. Ji nenuleido akių nuo Jėzaus.
+    </p>
+    <p>
+        Tada Jo kūną suvyniojome į laidojimo audeklą. Nikodemas ir Juozapas paėmė Jį ant rankų, o Marija, Marija Magdalietė ir aš sekėme paskui juos. Žvelgiau į Jėzaus kūną ir tikrai pajutau Marijos sielvartą. Mačiau tik audeklą, į kurį buvo suvyniotas Jo kūnas, bet tai buvo antgamtinis liūdesys. Angelai sekė paskui mus ir kūną, giedodami tokias gedulingas giesmes, kad tai buvo tarsi dūris į širdį. Giesmės buvo ne žmonių kalba.
+    </p>
+    <p>
+        Atvykome į laidojimo vietą. Padėjome Jo kūną ant akmeninės plokštės. Marija atsiklaupė ir pradėjo gedėti. Ji buvo išliejusi visas ašaras, tad tik kelios riedėjo jos skruostais. Aš stovėjau, bet verčiama jos sielvarto, taip pat pradėjau verkti ir atsiklaupiau šalia jos. Šalia mūsų verkė ir daugiau angelų. Tada Marija meldėsi: „Aš nebegyvenu, mano meile, nes tu buvai mano gyvenimas, mano džiaugsmas. Kai praradau tave, praradau viską. Bet dėl savo didžio gailestingumo Tu man padovanojai žmoniją kaip mano vaikus. Aukoju tau savo skausmą, savo širdį, savo sielą, mano mylimasis Sūnau. Pasiimk juos su savimi, nes jiems nebėra vietos manyje. Teesie Tavo valia!“
+    </p>
+    <p>
+        Po kurio laiko Jonas pašaukė mus: „Motina, laikas eiti. Prašau, atsisveikink su juo paskutinį kartą“. Mes atsistojome, ji pabučiavo Jo kaktą, pridengtą drobule, ir sušnabždėjo: „Tai ne atsisveikinimas, mes dar kartą susitiksime danguje“. Išėjusi ir uždariusi akmenį, Marija jį palaimino, o paskui išėjome namo. Sustojome prie kryžiaus, vis dar šlapio ir padengto Jo krauju. Marija palietė jį ir taip pat palaimino. Tada, vis dar žiūrėdama į kryžių, ji kalbėjo su manimi: „Tai, mano dukra, yra pats stebuklingiausias įrankis. Nes ant kryžiaus dieviškasis Avinėlis nuo amžių pradžios planavo išlieti savo kraują už visą žmoniją. Tai išganymo, laisvės ir pergalės simbolis. Mano Jėzus išlaisvino visą žmoniją iš nuodėmės pančių ir kartą ir visiems laikams nugalėjo mirtį. Paskutinį kartą prašau atvesti man nusidėjėlius, ypač tuos, kurie išgyvena paskutinę agoniją arba yra bet kokioje nelaisvėje, bet kokioje priklausomybėje. Primink jiems, mano brangus vaike, kad mano Sūnus yra didžiausias nugalėtojas. Atvesk juos į mano skausmingą širdį, o aš nuvesiu juos pas savo Sūnų kaip mažus vaikus, kuriems reikia savo tėvo. Nes tokie žmonės giliai širdyje yra tarsi maži vaikai - išsigandę, įstrigę, sutrikę. Su Juo jie gali padaryti viską, net nugalėti iššūkius, kuriuos laikė neįmanomais. Su Juo nėra nieko neįmanomo.“
+    </p>
+</details>
 
-                    Po kurio laiko sustojome po medžiu. Artėjant nakčiai padėjau Juozapui įkurti
-                    ugnį. Atsisėdome, ir Juozapas kiekvienam iš mūsų davė po gabalėlį senos, kietos
-                    duonos. Su savimi nieko nebuvome pasiėmę. Marija paėmė Jėzų, o Juozapas - 
-                    šiek tiek duonos, kurią turėjo. Aš paėmiau savo gabalėlį, bet pasiūliau jį Marijai.
-                    „Nesu tokia alkana“, - pasakiau. „Valgyk, - atsakė Marija. Papurčiau galvą, kad ne.
-                    „Aš primygtinai reikalauju, tai mažiausia, ką galiu padaryti“. Marija nusišypsojo
-                    man ir padavė ramiai miegantį Kūdikėlį Jėzų.
-
-                    Atėjus nakčiai, visi miegojome glaudžiai vienas prie kito, kad nesušaltume. Nors
-                    grėsė laukinių žvėrių pavojus, mačiau mus supančius angelus su liepsnojančiais
-                    kalavijais, saugančius Šventąją Šeimą nuo mirtino pavojaus. Tada pamačiau mus
-                    einančius priešingu klimatu. Šį kartą buvo šalta ir snigo. Marija vėl bandė
-                    apsaugoti Jėzų savo apsiaustu, kartodama sau: „Teesie Dievo valia, teesie Dievo
-                    valia“.
-
-                    Pagaliau atvykome į Egiptą, tačiau vietiniai gyventojai į mus žvelgė
-                    pasibjaurėtinai ir įtariai. Mūsų drabužiai buvo permirkę ir su skylėmis. Iš tiesų
-                    atrodėme kaip elgetos. Kadangi Juozapas nebuvo vietinis, jam buvo labai sunku
-                    gauti darbą, todėl kurį laiką turėjome gyventi gatvėje. Marijai skaudėjo širdį ne
-                    dėl savęs, bet dėl savo Jėzaus, Visatos Karaliaus, tapusio menku elgeta, kurį
-                    niekino žmonės, kurių Jis atėjo išgelbėti.
-
-                    Po kurio laiko mums buvo suteiktas apleistas pastatas. Žmogus, kuris mums jį
-                    atidavė, piktdžiugiškai šypsojosi, beveik mėgaudamasis mūsų sunkia padėtimi.
-                    Tačiau mes nuolankiai jį priėmėme. Jame nebuvo šviesos ir langų, todėl naktį
-                    buvo šalta. Miegojome arti vienas kito, kad nesušaltume. Juozapas susirado
-                    darbą už centus, o aš likau su Marija rūpintis Jėzumi. Buvome purvini ir
-                    neturėjome vandens nusiprausti; tą truputį vandens, kurį turėjome, naudojome
-                    gėrimui. Marijos veidas buvo liūdnas, kai ji žiūrėjo į Jėzų, bet jos lūpose mačiau
-                    nedidelę šypseną. Net ir tokioje sunkioje padėtyje ji buvo su įsikūnijusiu Dievu.
-                    Mums plyšo širdis, kai Jėzus paprašė duonos gabalėlio, bet mes jos neturėjome.
-
-                    Laikas bėgo, ir artėjo septynerių metų pabaiga. Pastatas tebebuvo be baldų, bet
-                    turėjome šiek tiek audinio vietoj langų. Jėzus augo mūsų akivaizdoje ir virto
-                    gražiu berniuku. Vis dar turėjome tuos pačius drabužius, su kuriais atėjome iš
-                    pradžių, bet buvome švarūs. Atėjo laikas iškeliauti, ir Juozapas vėl padėjo Marijai
-                    užlipti ant asilo. Šį kartą Jėzus buvo per didelis, kad galėtų joti ant asilo, bet ir
-                    per mažas, kad galėtų vaikščioti pats, todėl Juozapas nešė Jį ant nugaros. Aš ėjau
-                    šalia Marijos. Tada ji prakalbo: „Matai, vaikeli? Mes tapome niekuo, kad jūs visi
-                    galėtumėte turėti viską. Šiandien atnešk man visus nusidėjėlius, ypač tuos, kurie
-                    yra apleisti, benamiai ir neturi nieko. Primink jiems, kad aš esu jų motina, vargšų
-                    motina, ir vesk juos atgal į mano rankas. Aš juos vesiu atgal pas savo mieląjį
-                    Sūnų, kuris yra viskas. Visų Karalius tapo niekuo, kad tie, kurie yra niekas ir neturi
-                    nieko šio pasaulio akyse, galėtų turėti viską ir būti viskuo Dievo akyse. Tebūna
-                    įvykdyta Jo valia.“</p>
-                </details>
-                <details>
-                    <summary>trečioji diena</summary>
-                    <p>Abejojau, ar pradėti šį skausmą, nes žinojau pagrindinę jo mintį. Prieš jį
-                    pradėdama gavau užuominą Tie patys dalykai vyko iki širdies pervėrimo. Tačiau 
-                    Marija su kiekviena diena atrodė vis labiau nuliūdusi, vis panašesnė į mums
-                    pažįstamą sopulingają motiną. Jos apsiaustas ir suknelė darėsi vis juodesni.
-    
-                    Kelionė buvo pagal lytį. Vyrai vienoje pusėje, moterys kitoje. Ėjome į Velykų
-                    šventę Jeruzalėje Aš ėjau šalia Marijos ir Jėzus su Juozapu. Po šventės grįžome
-                    atgal ir sustojome. Juozapas priėjo prie mūsų. Marija jo paklausė, kur Jėzus, o 
-                    Juozapas pamanė, kad Jis yra su mumis. Kokia panika mus apėmė. Kalavijas buvo
-                    skaudesnis man ir mums abiem, nes Jo nematėme, kaip ir kitais kartais.
-                    Karštligiškai ir apimti panikos grįžome atgal. Apsižvalgėme ir pajutome dar
-                    didesnę paniką. Klausinėjome aplink, bet niekas Jo nematė. Atėjus vakarui,
-                    verkdami meldėmės Dievui Tėvui, veidus nuleidę ant žemės. Aš tiesiog
-                    maldavau Jo neatimti iš mūsų Jėzaus. Meldžiau, kad Jis neatimtų Jėzaus iš
-                    manęs. Verkdama ir panikuodama prašiau atleidimo. O Marijos malda buvo
-                    kitokia, tačiau kupina liūdesio: „Mano Tėve, tebūnie Tavo valia, bet kodėl man
-                    taip padarei? Argi aš neverta rūpintis Juo? Jis yra mano saulė, o dabar aš esu
-                    tamsoje“. Visas šias tris dienas ji nevalgė, nemiegojo, tik meldėsi ir ieškojo
-                    Jėzaus.
-
-                    Tada pagaliau Jį surado. Neįsiveržėme į vidų; palaukėme, kol Jėzus baigs juos
-                    mokyti ir kol jie išeis. Marija pribėgo prie Jo, švelniai sugriebė už pečių ir tarė:
-                    „Kodėl mums tai padarei? Mes Tavęs ieškojome iš sielvarto“. Ji pakartojo: „Kodėl
-                    mums tai padarei?“ tarsi iš savo maldos Tėvui. Ji buvo laiminga, bet vis dar
-                    kupina užsitęsusio nevertumo ir baimės jausmo, tarsi bijodama, kad Jis vėl dings.
-                    Jėzus atsakė: „Kodėl jūs manęs ieškojote? Argi nežinojote, kad Aš turiu būti savo
-                    Tėvo reikaluose?“ Marija Jį paleido, ir Jėzus grįžo su mumis.
-    
-                    Vizija baigėsi, ir Marija kaip visada pradėjo kalbėti: „Mano dukra, aš kentėjau šias
-                    tris kankinančias dienas dėl trijų rūšių žmonių: dėl tų, kurie prarado Dievą ir dėl
-                    to kenčia, dėl atstumtųjų, apleistų ir išsižadėtųjų ir dėl tų, kurie tikėjo, kad nėra
-                    verti Dievo ar Jo meilės jiems.“ Nukreipiau nuo jos žvilgsnį, nes tai pagrindinė
-                    mano problema. Netikiu, kad nusipelniau ko nors gero: meilės, rūpesčio, šilumos,
-                    Dievo, o kartais net jos. Ji paėmė mano smakrą ir privertė mane pažvelgti į ją:
-                    „Žinau, kad tai labai jautri tema, bet noriu, kad tu kartu su visais šiais žmonėmis
-                    pasiūlytum man savo skausmą. Padovanok man tą erškėčiuotą rožę, kuri įstrigusi
-                    tavo širdyje. Aš nuimsiu erškėčius ir į tavo širdį įdėsiu naują rožę, rožę iš savo
-                    dangiškojo sodo, kupiną visokio gerumo. Kai aukoji skausmą, įsivaizduok, kad
-                    skausmas yra tarsi spygliuota rožė, o aš nuimsiu spyglius, pasiūlysiu juos savo
-                    Sūnui, spyglius, simbolizuojančius tavo ir kitų žmonių skausmą, ir grąžinsiu į
-                    kraujuojančią žmogaus širdį gražią dievišką rožę, kuri visada turėjo ten būti. Kitas
-                    dalykas, trys tamsos dienos, kurias kentėjau, prilygo trims pragaro tamsos
-                    dienoms per Jėzaus mirtį. Jis yra pasaulio šviesa. Primink jiems tai, mano
-                    brangioji. Jis yra pasaulio šviesa. Ir kartu tavo esybės šviesa. Jums nereikia
-                    nusipelnyti Jo ar Jo meilės. Jis atiduoda save visiškai ir pilnai kiekvienam, kuris Jį
-                    priima. Jis nieko nesulaiko. Atvesk man visus nusidėjėlius, apleistus, paliktus,
-                    praradusius savo šviesą, mano žavųjį Sūnų ir tuos, kurie jaučiasi Jo nenusipelnę
-                    apskritai. Nebijokite, jei Jį praradote. Jis visada su jumis, pasislėpęs jūsų širdyje,
-                    sieloje ir visur aplink jus. Atgailaukite, visiškai ir nuoširdžiai atgailaukite, ir Jis vėl
-                    jums pasirodys“.</p>
-                </details>
-                <details>
-                    <summary>Ketvirtoji diena</summary>
-                    </p>Tas pats, kaip ir prieš tai buvusiomis dienomis, tačiau Marijos drabužiai buvo vis
-                    juodesni. Ji atrodė vis liūdnesnė. 
-
-                    Matėme kruvinus Jėzaus žingsnius ir žinojome, kad Jis praėjo pro šalį. Mes
-                    bėgome, Marijos akys buvo išplėstos, burna šiek tiek pravira, riedėjo ašaros. Mes
-                    veržėmės per minią. Matėme, kaip vienas sargybinis nešė vinis, kitas - plaktuką.
-                    Ir tada pamatėme Jį. Labai sunku paaiškinti, kaip Jis atrodė, bet pajutau
-                    didžiausią liūdesį, kokį iki šiol buvau jautusi. Marija bandė prieiti prie Jo, bet
-                    sargybiniai ją atstūmė. Jos skruostais riedėjo ašaros. Tada Jėzus pažvelgė į ją.
-                    Mano sielvartas tapo dar didesnis. Tada Jis pažvelgė į mane. Geriausiai galiu
-                    apibūdinti taip: Jis pažvelgė į mane liūdnai, labai liūdnai. Tada pamačiau aplink Jį
-                    angelus, maldaujančius Jį to nedaryti. „Mūsų Viešpatie, kodėl Tu tai darai? Argi
-                    nematai, ką jie su Tavimi daro? Tik tark žodį, ir mes juos visus sunaikinsime“.
-                    Jėzus angelams atsakė: „Mano gailestingumas jums visiems nesuvokiamas.
-                    Daugiau manęs nebeklauskite“.
-
-                    Tada matėme kiekvieną žingsnį. Akimirką, kai Jis buvo plakamas prie stulpo. Jis
-                    buvo išrengtas ir prirakintas prie stulpo. Tada priėjo sargybinis ir pradėjo Jį plakti,
-                    rėžis po rėžio. Aš pašokau ir krūptelėjau. Buvau įsitikinusi, kad jei būčiau viena iš
-                    dangaus kareivijų, negalėčiau matyti, kaip mano Viešpats buvo šitaip
-                    kankinamas. Tačiau negalėjau atitraukti akių. Skruostais riedėjo ašaros; dvasinė
-                    kančia buvo kankinanti. Verkiau po kiekvienos Jam padarytos žaizdos. Marija taip
-                    pat negalėjo atitraukti nuo Jo žvilgsnio. Ji verkė ir verkė kartu su manimi ir
-                    maldavo: „Pasigailėk, pasigailėk“. Sargybiniai sadistiškai juokėsi iš Jo skausmo. O
-                    mes meldėmės dėl tų sargybinių: „Pasigailėk, pasigailėk.“
-
-                    Tada erškėčių vainikas. Pirmiausia matėme, kaip Jį aprengė purpuriniu apsiaustu,
-                    įteikė netikrą skeptrą. Jie pašaipiai nusilenkė: „Sveikas, žydų Karaliau“, ir
-                    juokėsi. Juokdamiesi jie spjaudė Jam į veidą, spardė jį ir stūmė Jo žavų veidą į
-                    žemę. Šioje scenoje pajutau pykčio dvelksmą, bet jausmą užvaldė liūdesys. Mes
-                    buvome šalia, kartojome tuos pačius žodžius: „Pasigailėk, pasigailėk, tebūnie
-                    Tavo valia“. Tarsi Marija norėjo, kad pasitikėčiau Jo valia. Tada jie padarė erškėčių
-                    vainiką ir vėl, tyčiodamiesi ir juokdamiesi, vienas atsiklaupė ant kelių sakydamas:
-                    „Mes tave vainikuojame, o Karaliau“, ir stipriai įspraudė vainiką į Jo galvą. Iš visų
-                    Jo galvos pusių tekėjo Jo žavusis kraujas. Erodas žvelgė į Jėzų su pasibjaurėjimu
-                    ir neapykanta: „Taip, karalius“, - pasakė jis tyčiodamasis ir pargriovė Jį ant žemės.
-
-                    Tada grįžome į pradžią. Ėjome paskui Jėzų per minią. Pati minia į mus žiūrėjo su
-                    neapykanta, net spjaudė į mus. Mums tai nerūpėjo. Mūsų akys buvo nukreiptos į
-                    Jėzų. Marija per minią ištiesė ranką, siekdama Jėzaus, tačiau minia mus suklupdė.
-                    Galiausiai sekėme paskui Jėzų į Golgotą. Slėpinys baigėsi, ir, kaip visada, Marija
-                    ėmė kalbėti: „Mes kentėjome šį skausmą už blogiausius iš žmonių:
-                    piktžodžiautojus, Dievo niekintojus, žiauriausius iš jūsų. Mano dukra, atvesk man
-                    šiandien tokius žmones. Jie toli nuo Dievo, labai toli nuo Jo. Bet su aukomis jie
-                    gali būti atpirkti. Atvesk juos į mano nuliūdusią širdį. Kad ir kokie jie būtų
-                    paklydę, jie yra mano vaikai ir Dievo vaikai. Juos reikia surasti, jiems reikia tavi
-                    aukų. Melskis už tokius žmones, melskis uoliai, nes dabar tokie dominuoja
-                    žemėje. Mano Sūnus mirė ne už teisiuosius, bet už tokius žmones kaip jie.
-                    Primink jiems, kad esu gailestinga Motina, kad jie gaus laisvę ir atleidimą iš mano
-                    Sūnaus, jei sugrįš. Jiems nereikia bijoti. Ateikite, mano vaikai. Grįžkite namo.
-                    Atgailaukite, atgailaukite, atgailaukite. Jei galėtume dar kartą kentėti tą pačią
-                    agoniją, mes tai padarytume. Grįžkite namo ir sugrįžkite į savo mylinčios motinos
-                    rankas.“</p>
-                </details>
-                <details>
-                    <summary>Penktoji diena</summary>
-                    </p>Tas pats, kaip ir kitomis dienomis, tačiau Marija atrodė vis labiau nuliūdusi,
-                    beveik kaip sopulingoji motina, jos skruostais riedėjo ašaros. Jos suknelėje buvo 
-                    likęs tik baltas lašas. 
-
-                    Mes buvome ant Golgotos. Kryžius buvo padėtas ant žemės, o Jėzus buvo
-                    išrengtas ir paguldytas ant kryžiaus. Kai Jo rankos ir kojos buvo prikaltos vinimis,
-                    pajutau tai savo kūnu ir dvasia. Regėjime mano ir Marijos rankos buvo kruvinos
-                    ir prikaltos. Ne fiziškai, bet mistiškai; niekas kitas, išskyrus mus, tų žaizdų nematė.
-                    Marija negalėjo atitraukti akių; ji verkė.
-
-                    Paskui kryžius buvo įleistas giliai į žemę ir šiek tiek pakratytas, kad Jėzaus kūnas
-                    atitrūko nuo Jo kaulų. Jėzus dusliai kvėpavo, o kraujas tekėjo Jo veidu į žemę. Aš
-                    mačiau šventąjį Joną. „Pasiimk su savimi mano širdį. Paimk mano širdį su savimi,
-                    - meldėsi Marija. Jėzus tarė: „Aš trokštu.“ Marija meldėsi: „Jei tik galėčiau Tau ką
-                    nors duoti, kad nors lašelį palengvėjimo pajustum“. Kai Jėzui davė gerti acto,
-                    burnoje pajutome rūgštų skonį. Galiausiai Marija palūžo; ji užmerkė akis,
-                    uždengė burną ir verkė. „Aukoju Tau savo skausmą, mano Viešpatie, dėl Tavo
-                    valios. Tu man suteikei garbę būti Tavo viengimio Sūnaus motina, dabar aš
-                    priimsiu tai, ką Tu dabar panorėsi man duoti. Esu Tavo tarnaitė, tebūnie man
-                    pagal Tavo žodį“. Dabar ji buvo kupina tamsos ir liūdesio, palyginti su
-                    Apreiškimo džiaugsmu ir šviesa. Marija puolė ant kelių. Šokau ją paguosti, kiek
-                    galėjau. Šventasis Jonas ir šventoji Marija Magdalietė taip pat atėjo į pagalbą.
-                    Marija su tokiu liūdesiu žvelgė į savo Sūnų. Jėzaus žvilgsnis suminkštėjo, ir
-                    tuomet Jis tarė: „Moterie, štai tavo sūnus. Sūnau, štai tavo motina“. Tai nė kiek
-                    nenuramino Marijos. Ji visuomet, per visas šias kančias, vis kartojo tuos pačius
-                    žodžius: „Teesie Tavo valia.“ Šventasis Jonas padėjo jai atsistoti.
-
-                    Jėzus dejavo iš skausmo ir šaukė: „Mano Dieve, mano Dieve, kodėl mane
-                    apleidai?“. Jėzus jautėsi apleistas, Marija taip pat jautėsi apleista. Ji nenustojo
-                    verkti. „Tėve, atleisk jiems, nes jie nežino, ką daro.“ „Atleisk jiems, mano Dieve,
-                    atleisk jiems“, - atsakė Marija savo širdyje. Aš taip pat prisijungiau: „Atleisk jiems,
-                    atleisk jiems.“ Ir galiausiai Jis atidavė savo dvasią. Viskas baigėsi, tačiau Marijos
-                    skausmas nesibaigė. Ji jautė kažkokią tuštumą, tuštumą, kurios niekas negalėjo
-                    užpildyti. Ji pasiekė Jo kojas, švelniai pirštais braukdama per Jo pėdas ir jose
-                    esančią vinį. Ji vėl puolė ant kelių, verkdama. Per visą šį liūdesį ji nenustojo verkti.
-                    Vizija baigėsi.
-
-                    „Mano brangioji dukra, aš išliejau šias karčias ašaras dėl
-                    žmonijos meilės, dėl nusidėjėlių. Ypač tų, kurie bus velnio apgauti ir nuklydę nuo mano žavingojo
-                    Sūnaus. Aš to neleisiu. Neleisiu, kad mano Sūnaus skausmas ir kraujas nueitų
-                    perniek, ir taip nebus. Pažadu tau. Ir visai žmonijai: Aš neleisiu, kad žmonija būtų
-                    amžiams prarasta. Aš iškelsiu tokius karius kaip tu, kad jie kovotų su velniu.
-                    Metai po metų atvesiu savo sūnų ir dukterų armiją, pridengtą mano apsiaustu,
-                    padengtą brangiuoju mano Sūnaus krauju. Juos lydės šventieji ir dangaus
-                    angelai, bet taip pat ir agonija. Mano dukra, atvesk man visus nusidėjėlius, ypač
-                    tuos, kurie yra apgauti ir atitraukti nuo tiesos, tuos, kurie yra sektose ar netikrose
-                    religijose, tuos, kurie visai netiki. Atvesk juos pas mane. Primink jiems, kad tik
-                    mano žavusis Sūnus, jų Viešpats ir Gelbėtojas, yra vertas garbinimo ir kad tik Jis
-                    yra kelias, tiesa ir gyvenimas.“</p>
-                </details>
-                <details>
-                    <summary>Šeštoji diena</summary>
-                    </p>Tas pats, kaip ir ankstesniais kartais. Dabar Marija atrodė lygiai taip pat, kaip
-                    sopulingoji motina. Jos drabužiai ir apsiaustas buvo visiškai juodi. 
-
-                    Mes buvome Golgotoje ir žiūrėjome į mirusį Jėzų. Marija vis dar verkė. Priėjo
-                    sargybiniai su ietimis. Marija su baime pažvelgė į juos. Jos tylus prašymas buvo:
-                    „Ne, nelieskite Jo. Jis jau miręs“. Tačiau jie vis tiek perdūrė Jo šoną. Kai jie tai
-                    padarė, mes abu tai pajutome. Marija krūptelėjo iš skausmo. „Tu norėjai atiduoti
-                    save visą, net iki paskutinio kraujo lašo“, - buvo jos mintis. Prie kryžiaus klūpojo
-                    angelai ir tyliai garbino Jėzų.
-
-                    Kai visi žmonės nuėjo savo keliais, Marija, Magdalietė, Jonas ir aš likome prie
-                    kryžiaus. Tada Nikodemas ir Juozapas iš Arimatėjos nuėmė Jėzų nuo kryžiaus, iš
-                    pradžių nuimdami vinis nuo Jo kojų, o paskui nuo rankų. Marija ištiesė abi
-                    rankas, kad priimtų Jį į savo rankas, ir atsisėdo po kryžiumi su Jėzumi ant rankų.
-                    Jis atrodė apgailėtinai ir kankinančiai. Jis buvo taip smarkiai nuplaktas, kad
-                    galėjai matyti Jo kaulus. Marija švelniai nuėmė nuo Jo galvos erškėčių vainiką.
-                    Erškėčiai buvo įsirėžę giliai į Jo kaukolę. Ji pabučiavo Jo kaktą. Jos drabužiai ir
-                    rankos buvo kruvini nuo Jo kraujo. Tada ji tarė: „Mano Dieve, Tavo valia išsipildė.
-                    Tu nuo pat pradžių davei Jį man, kad Jis būtų mano ir pasaulio šviesa. Dabar
-                    atnešu Jį atgal, aukoju Tau Jo sielą. Tavo valia išsipildė. Net jei dabar esu apleista
-                    ir be jokios paguodos, Tavo valia tebūnie įvykdyta“. Ji apkabino Jo mirusį kūną ir
-                    verkė. Kiti ir aš negalėjome nieko daryti, tik žiūrėti. Ji verkė taip, tarsi būtų
-                    praradusi viską. Tą akimirką taip ir buvo. Ją supo angelai ir verkė kartu su ja. Kai
-                    kurie iš jų rinko jos ašaras. Žinojau, kad ašaros, kurias ji išliejo nuo Jo
-                    nukryžiavimo iki šios akimirkos ir per visas kančias, buvo labai stiprios. Kaip jos
-                    Sūnaus kraujas yra mūsų išgelbėjimas, taip Marijos ašaros yra mūsų viltis ir
-                    saugus kelias pas jos žavųjį Sūnų.
-
-                    Vizija baigėsi. „Mano dukra, atnešk man nusidėjėlius. Ypač tuos, kurie viską
-                    prarado, kurie yra vieniši, kurie patiria bet kokią prievartą ir bet kokiu būdu
-                    kenčia. Mano ašaros nuplaus rąstą iš jų akių, ypač iš jų širdžių. Atvesk juos visus
-                    prie mano nuliūdusios širdies ir primink jiems, kad šiame pasaulyje jie neras
-                    nieko verto. Tik mano dieviškame Sūnuje ir Jo karalystėje. Jis yra jų laisvė ir
-                    paguoda. Tik Jis gali suteikti jiems viską, ko trokšta jų sielos. Mano ašaros bus jų
-                    viltis ir ramybė, ir aš juos sugrąžinsiu pas vienintelį, kuris gali juos visiškai mylėti.
-                    Pripildyti juos tokios dieviškos meilės, kad jie nenorėtų nieko kito“.</p>
-                </details>
-                <details>
-                    <summary>Septintoji diena</summary>
-                    </p>Ji atėjo kaip sopulingoji motina, visiškai įkūnijanti liūdesį. Ji paėmė iš angelo
-                    paskutinį kalaviją. „ Paskutinis.“ Kiti šeši kalavijai jau buvo širdyje, sukeldami šiek
-                    tiek skausmo. Šį kartą paskutinis širdies dūris buvo skausmingiausias. Nežinau 
-                    kodėl. 
-
-                    Marija vis dar verkė ir gniaužė Jėzų ant rankų, sėdėdama po kryžiumi.
-                    „Motina, - švelniai pašaukiau ją. Jokio atsako. „Motina, - kiek griežčiau, bet vis
-                    dar švelniai sušuko jai šventasis Jonas. Vis dar jokio atsako. Priėjau prie Marijos ir
-                    bandžiau ją paguosti, o Jonas švelniai atitraukė kūną. Padėjau Marijai atsistoti.
-                    Pagaliau ji nustojo verkti, bet dabar atrodė be emocijų. Galbūt ne be emocijų,
-                    bet liūdinčios motinos įsikūnijimas. Ji nenuleido akių nuo Jėzaus.
-
-                    Tada Jo kūną suvyniojome į laidojimo audeklą. Nikodemas ir Juozapas paėmė Jį
-                    ant rankų, o Marija, Marija Magdalietė ir aš sekėme paskui juos. Žvelgiau į Jėzaus
-                    kūną ir tikrai pajutau Marijos sielvartą. Mačiau tik audeklą, į kurį buvo suvyniotas
-                    Jo kūnas, bet tai buvo antgamtinis liūdesys. Angelai sekė paskui mus ir kūną,
-                    giedodami tokias gedulingas giesmes,kad tai buvo tarsi dūris į širdį. Giesmės
-                    buvo ne žmonių kalba.
-
-                    Atvykome į laidojimo vietą. Padėjome Jo kūną ant akmeninės plokštės. Marija
-                    atsiklaupė ir pradėjo gedėti. Ji buvo išliejusi visas ašaras, tad tik kelios riedėjo jos
-                    skruostais. Aš stovėjau, bet verčiama jos sielvarto, taip pat pradėjau verkti ir
-                    atsiklaupiau šalia jos. Šalia mūsų verkė ir daugiau angelų. Tada Marija meldėsi:
-                    „Aš nebegyvenu, mano meile, nes tu buvai mano gyvenimas, mano džiaugsmas.
-                    Kai praradau tave, praradau viską. Bet dėl savo didžio gailestingumo Tu man
-                    padovanojai žmoniją kaip mano vaikus. Aukoju tau savo skausmą, savo širdį,
-                    savo sielą, mano mylimasis Sūnau. Pasiimk juos su savimi, nes jiems nebėra
-                    vietos manyje. Teesie Tavo valia!“
-
-                    Po kurio laiko Jonas pašaukė mus: Jonas pakvietė: „ Motina, laikas eiti. Prašau,
-                    atsisveikink su juo paskutinį kartą“. Mes atsistojome, ji pabučiavo Jo kaktą,
-                    pridengtą drobule, ir sušnabždėjo: „Tai ne atsisveikinimas, mes dar kartą
-                    susitiksime danguje“. Išėjusi ir uždariusi akmenį, Marija jį palaimino, o paskui
-                    išėjome namo. Sustojome prie kryžiaus, vis dar šlapio ir padengto Jo krauju.
-                    Marija palietė jį ir taip pat palaimino. Tada, vis dar žiūrėdama į kryžių, ji kalbėjo
-                    su manimi: „Tai, mano dukra, yra pats stebuklingiausias įrankis. Nes ant kryžiaus
-                    dieviškasis Avinėlis nuo amžių pradžios planavo išlieti savo kraują už visą
-                    žmoniją. Tai išganymo, laisvės ir pergalės simbolis. Mano Jėzus išlaisvino visą
-                    žmoniją iš nuodėmės pančių ir kartą ir visiems laikams nugalėjo mirtį. Paskutinį
-                    kartą prašau atvesti man nusidėjėlius, ypač tuos, kurie išgyvena paskutinę
-                    agoniją arba yra bet kokioje nelaisvėje, bet kokioje priklausomybėje. Primink
-                    jiems, mano brangus vaike, kad mano Sūnus yra didžiausias nugalėtojas. Atvesk
-                    juos į mano skausmingą širdį, o aš nuvesiu juos pas savo Sūnų kaip mažus
-                    vaikus, kuriems reikia savo tėvo. Nes tokie žmonės giliai širdyje yra tarsi maži
-                    vaikai - išsigandę, įstrigę, sutrikę. Su Juo jie gali padaryti viską, net nugalėti
-                    iššūkius, kuriuos laikė neįmanomais. Su Juo nėra nieko neįmanomo“.</p>
-                    
-                    
-                    
-                    
-                        
-                    
-
-    <h2>Sopulingosios Mergelės Rožinis</h2>
-    <p>(Ši dalis bus išplėsta vėliau)</p>
-
-    <a href="#">Melskis kitą versiją</a>
+<h2>Sopulingosios Mergelės Rožinis</h2>
+<p>(Ši dalis bus išplėsta vėliau)</p>
+<a href="#">Melskis kitą versiją</a>
 </body>
 </html>
