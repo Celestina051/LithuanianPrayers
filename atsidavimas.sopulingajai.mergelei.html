@@ -1,102 +1,33 @@
-<!DOCTYPE html>
-<html lang="lt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Lithuanian Prayers</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Ensure the page takes at least the full height of the viewport */
-        html, body {
-            height: 100%;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-        /* Flexbox container to push footer to the bottom */
-        .flex-wrapper {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        /* Main content should take remaining space */
-        .flex-wrapper main {
-            flex: 1;
-        }
-        header {
-            background: #f4f4f4;
-            padding: 1rem;
-            border-bottom: 1px solid #ccc;
-        }
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-        .logo img {
-            max-width: 50px;
-            margin-right: 1rem;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 1rem;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-        }
-        nav ul li a.active {
-            font-weight: bold;
-        }
-        .about-content {
-            padding: 2rem;
-        }
-        details {
-            margin-bottom: 1rem;
-        }
-        details summary {
-            font-weight: bold;
-            cursor: pointer;
-        }
-        details p {
-            margin: 0.5rem 0;
-        }
-    </style>
-</head>
-<body>
-    <div class="flex-wrapper">
-        <header>
-            <div class="logo">
-                <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
-                <h1>Apie mane - Lietuviškas Atsidavimas</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html" aria-label="Home">Pradinis</a></li>
-                    <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
-                    <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
-                    <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
-                    <li><a href="atsidavimas.sopulingajai.mergelei.html" aria-label="Atsidavimas" class="active">Atsidavimas sopulingajai Mergelei</a></li>
-                    <li><a href="about.html" aria-label="About Us">Apie mane</a></li>
-                    <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="about-content">
-                <h1>Atsidavimas Sopulingajai Mergelei</h1>
-                <h3>Įvadas</h3>
-                <p>
-                    Esu atsidavusi Sopulingajai Mergelei Marijai ir jaučiu įkvėpimą pasidalinti jos skausmų vizijomis su mūsų žmonėmis. Jei jaučiate įkvėpimą ar susidomėjimą melstis vainikėlio versiją, kurią Marija man padiktavo, kviečiu prisijungti. Jei ne, galite melstis labiau tradicinę versiją <a href="https://melskis.lt/marijai/7-skausmu-vainikelis/" target="_blank">čia</a>.
-                </p>
-                <p>
-                    Jaučiu poreikį ir jos įkvėpimą skleisti atsidavimą jos skausmams visame pasaulyje, bet ypač mūsų šalyje. Čia taip pat rasite informaciją apie Sopulingąją Mergelę ir įvairius šventuosius, susijusius su ja.
-                </p>
-                <h3>Aparicijos ir Vizijos</h3>
-                <details>
+<div class="flex-wrapper">
+    <header>
+        <div class="logo">
+            <img src="images/LietuviskasAtsidavimas.png" alt="Lithuanian Prayers Logo">
+            <link rel="stylesheet" href="styles.css">
+            <h1>Apie mane - Lietuviškas Atsidavimas</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" aria-label="Home">Pradinis</a></li>
+                <li><a href="prayers.html" aria-label="Prayers">Maldos</a></li>
+                <li><a href="chaplets.html" aria-label="Chaplets">Vainikėliai</a></li>
+                <li><a href="litanies.html" aria-label="Litanies">Litanijos</a></li>
+                <li><a href="atsidavimas.sopulingajai.mergelei.html" aria-label="Atsidavimas" class="active">Atsidavimas sopulingajai Mergelei</a></li>
+                <li><a href="about.html" aria-label="About Us">Apie mane</a></li>
+                <li><a href="contact.html" aria-label="Contact Us">Susisiekite</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about-content">
+            <h1>Atsidavimas Sopulingajai Mergelei</h1>
+            <h3>Įvadas</h3>
+            <p>
+                Esu atsidavusi Sopulingajai Mergelei Marijai ir jaučiu įkvėpimą pasidalinti jos skausmų vizijomis su mūsų žmonėmis. Jei jaučiate įkvėpimą ar susidomėjimą melstis vainikėlio versiją, kurią Marija man padiktavo, kviečiu prisijungti. Jei ne, galite melstis labiau tradicinę versiją <a href="https://melskis.lt/marijai/7-skausmu-vainikelis/" target="_blank">čia</a>.
+            </p>
+            <p>
+                Jaučiu poreikį ir jos įkvėpimą skleisti atsidavimą jos skausmams visame pasaulyje, bet ypač mūsų šalyje. Čia taip pat rasite informaciją apie Sopulingąją Mergelę ir įvairius šventuosius, susijusius su ja.
+            </p>
+            <h3>Aparicijos ir Vizijos</h3>
                     <summary>Pirmoji diena</summary>
                     <p>Man pasirodė Dievo Motina, visa balta, su nuostabia balta suknele, jos veidas ir kūnas švytėjo. „Ateik, vaikeli, ir pamatyk mano sužeistą širdį“, - tarė Ji. Ji parodė man savo sopulingają širdį, kraujuojančią, bet be kardų. „Tu stebiesi, kodėl nematai kalavijų, kurie pervėrė Mano širdį, tiesa? Nes, mano brangus vaike, Aš įsleisiu tave į savo Skausmingąją širdį, ir tie kalavijai pervers tavo pačios širdį taip, kaip pervėrė mano. Tu man aukosi visų pasaulio nusidėjėlių skausmą, kiekvieną dieną vis kitokį. Tu kentėsi kartu su manimi dėl jų, ir mes paaukosime juos mano dieviškajam Sūnui ir mūsų Dievui už pasaulio atsivertimą“.</p>
                     <p>Tada pamačiau angelą, ateinantį pas mus su pirmuoju kalaviju rankoje. Jis atsiklaupė priešais Mūsų Karalienę ir pasiūlė jai jį. Ji paėmė jį ir pasiūlė man. „Nuo šios akimirkos tu kentėsi. Tau atrodys, kad miršti, bet taip nebus. Ar sutinki su tuo, mano dukra? Ar sutinki su pirmuoju kalaviju? Kai ateis laikas tai paskelbti visiems, jie aukos savo skausmą man, kaip aš noriu. Bet tada tavo skausmai bus patys stipriausi“. Ji pažvelgė į mane liūdna, bet švelnia veido išraiška.</p>
