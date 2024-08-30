@@ -7,8 +7,6 @@ body {
     color: #333;
 }
 
-}
-
 header {
     background-color: #ffffff; /* White background */
     border-bottom: 1px solid #ddd;
@@ -151,7 +149,6 @@ footer {
     nav ul {
         flex-direction: column;
     }
-
     nav ul li {
         margin: 10px 0;
     }
@@ -162,15 +159,12 @@ footer {
         height: 70px; /* Adjust height for smaller screens */
         margin-right: 5px;
     }
-
     .logo h1 {
         font-size: 1.2em;
     }
-
     ul.maldų-list {
         padding: 0 10px;
     }
-
     .search-bar input {
         width: 100%;
     }
@@ -294,7 +288,7 @@ footer {
 html, body {
     height: 100%;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Ensure Roboto is used */
     line-height: 1.6;
 }
 
@@ -368,4 +362,3 @@ footer {
     text-align: center;
     padding: 1rem 0;
 }
-
