@@ -1,11 +1,11 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 16px !important;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5; /* Light grey background */
     color: #333;
-    line-height: 1.6;
+    line-height: 1.6 !important;
 }
 
 header {
@@ -68,7 +68,7 @@ main {
 
 section {
     margin-bottom: 50px; /* Ensure footer does not overlap content */
-    text-align: center;
+    text-align: center !important;
 }
 
 h1, h2 {
@@ -289,8 +289,8 @@ footer {
 html, body {
     height: 100%;
     margin: 0;
-    font-family: 'Roboto', sans-serif; /* Ensure Roboto is used */
-    line-height: 1.6;
+    font-family: 'Roboto', sans-serif !important; /* Ensure Roboto is used */
+    line-height: 1.6 !important;
 }
 
 /* Flexbox container to push footer to the bottom */
