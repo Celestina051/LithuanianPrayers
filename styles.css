@@ -1,13 +1,20 @@
-body {
-    font-family: 'Roboto', sans-serif !important;
-    font-size: 16px !important;
+/* Global Styles */
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
+    font-family: 'Roboto', sans-serif !important; /* Ensure Roboto is used */
+    line-height: 1.6 !important;
     background-color: #f5f5f5; /* Light grey background */
     color: #333;
-    line-height: 1.6 !important;
 }
 
+/* Body Styles */
+body {
+    font-size: 16px !important;
+    padding: 0;
+}
+
+/* Header Styles */
 header {
     background-color: #ffffff; /* White background */
     border-bottom: 1px solid #ddd;
@@ -15,6 +22,7 @@ header {
     text-align: center;
 }
 
+/* Logo Styles */
 .logo {
     display: flex;
     align-items: center;
@@ -34,6 +42,7 @@ header {
     color: #0000FF; /* Blue color for header */
 }
 
+/* Navigation Styles */
 nav {
     text-align: center;
 }
@@ -62,10 +71,12 @@ nav ul li a.active {
     color: #007BFF; /* Hover and active link color */
 }
 
+/* Main Content Styles */
 main {
     padding: 20px;
 }
 
+/* Section Styles */
 section {
     margin-bottom: 50px; /* Ensure footer does not overlap content */
     text-align: center !important;
@@ -75,6 +86,7 @@ h1, h2 {
     color: #0000FF; /* Blue color for headers */
 }
 
+/* List Styles */
 ul.maldų-list {
     list-style-type: none;
     padding: 0;
@@ -102,6 +114,7 @@ ul.maldų-list li a.highlight {
     background-color: #ffff00; /* Highlight color */
 }
 
+/* Footer Styles */
 footer {
     background-color: #333;
     color: white;
@@ -111,7 +124,7 @@ footer {
     width: 100%;
 }
 
-/* Search bar styling */
+/* Search Bar Styles */
 .search-bar {
     margin-bottom: 20px;
 }
@@ -124,7 +137,7 @@ footer {
     border-radius: 4px;
 }
 
-/* Back to top button styling */
+/* Back to Top Button Styles */
 #backToTop {
     display: none; /* Hidden by default */
     position: fixed;
@@ -285,14 +298,6 @@ footer {
     margin-bottom: 20px;
 }
 
-/* Ensure the page takes at least the full height of the viewport */
-html, body {
-    height: 100%;
-    margin: 0;
-    font-family: 'Roboto', sans-serif !important; /* Ensure Roboto is used */
-    line-height: 1.6 !important;
-}
-
 /* Flexbox container to push footer to the bottom */
 .flex-wrapper {
     display: flex;
@@ -305,6 +310,7 @@ html, body {
     flex: 1;
 }
 
+/* Additional Header Styles */
 header {
     background: #f4f4f4;
     padding: 1rem;
@@ -340,6 +346,7 @@ nav ul li a.active {
     font-weight: bold;
 }
 
+/* About Content Styles */
 .about-content {
     padding: 2rem;
     text-align: center !important;
@@ -349,6 +356,7 @@ nav ul li a.active {
     margin-bottom: 20px !important;
 }
 
+/* Details Element Styles */
 details {
     margin-bottom: 1rem;
 }
@@ -362,6 +370,7 @@ details p {
     margin: 0.5rem 0;
 }
 
+/* Footer Styles */
 footer {
     background: #333;
     color: #fff;
