@@ -25,6 +25,14 @@ body {
 .flex-wrapper main {
     flex: 1;
     padding: 20px;
+    max-width: 800px; /* Limit line length */
+    margin: 0 auto; /* Center align main content */
+}
+
+/* Paragraph Styles */
+p {
+    margin-bottom: 1.5em; /* Add space between paragraphs */
+    text-align: left; /* Left-align text */
 }
 
 /* Header Styles */
