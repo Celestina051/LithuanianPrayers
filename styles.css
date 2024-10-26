@@ -342,3 +342,12 @@ details summary {
 details p {
     margin: 0.5rem 0;
 }
+/* Logo Styles */
+.logo img {
+    height: 100px; /* Increase the height to 100px */
+    margin-right: 10px;
+    max-width: 50px;
+    background-color: transparent; /* Ensure no background color */
+    mix-blend-mode: multiply; /* Blends with background */
+    opacity: 0.9; /* Optional: adjust to make it more subtle */
+}
