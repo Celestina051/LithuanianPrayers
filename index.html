@@ -48,9 +48,32 @@
 
         .logo h1 {
             font-family: 'Georgia', serif;
-            font-size: 1.5em;
+            font-size: 2em; /* Increased font size for emphasis */
             margin: 0;
             color: #0000FF;
+        }
+
+        /* Navigation Styling */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 8px 12px; /* Added padding for easier tap targets */
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #0000FF; /* Color change on hover for interactivity */
         }
 
         /* Content column styling */
@@ -71,7 +94,7 @@
             padding: 10px 0;
             font-size: 0.9em;
             background-color: #eee;
-            color: #555;
+            color: #333; /* Darker color for improved readability */
         }
     </style>
 </head>
