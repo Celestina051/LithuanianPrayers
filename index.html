@@ -144,3 +144,39 @@
     </div>
 </body>
 </html>
+    <script>
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('keyup', function() {
+            let filter = this.value.toUpperCase();
+            let ul = document.getElementById("prayerList");
+            let li = ul.getElementsByTagName('li');
+            for (let i = 0; i < li.length; i++) {
+                let a = li[i].getElementsByTagName("a")[0];
+                if (a.textContent.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                    a.classList.add("highlight"); // Highlight matching text
+                } else {
+                    li[i].style.display = "none";
+                    a.classList.remove("highlight"); // Remove highlight
+                }
+            }
+        });
+
+        // Back to top functionality
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        // Show the back-to-top button when scrolling down
+        window.onscroll = function() {
+            let button = document.getElementById("backToTop");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>
+
